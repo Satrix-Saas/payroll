@@ -21,15 +21,14 @@
  .header .header-new-menu {
     float: left;
     list-style: none;
-    margin: 0 0 0 30px;
+    /* margin: 0 0 0 30px; */
     padding: 0;
     line-height: 60px;
     display: flex;
     
 }
-.header .header-new-menu li {
-    position: relative;
-}
+ 
+
 .header .header-new-menu li a {
     color: #fff;
     font-weight: 600;
@@ -55,7 +54,7 @@
     padding: 0.5rem 0;
     margin: 0;
     font-size: 1rem;
-    color: #212529;
+    color: black;
     text-align: left;
     list-style: none;
     background-color: #fff;
@@ -63,13 +62,18 @@
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 0.25rem;
 }
-.header .header-new-menu li a::after {
+.header .header-new-menu li #dropmain::after {
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-size: 11px;
     position: relative;
     top: 0;
     right: -10px;
+   
+}
+
+.headerli{
+    position: relative;
 }
 .header-new-menu a{
     color:#fff;
@@ -83,7 +87,7 @@
     margin: 0px;
    transform: translate3d(0px, 42px, 0px);
     display: block;
-    background-color: #34444c;
+    background-color: #fff;
 }
 .header .header-new-menu li a.dropdown-item {
     line-height: 30px;
@@ -101,12 +105,45 @@
     padding: 0.25rem 1rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: black;
     text-align: inherit;
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
     border: 0;
+}
+
+#dropitem{
+    background-color: white;
+    color :black;
+    
+}
+
+@media (max-width: 991px) {
+    
+    *{
+        box-sizing: border-box;
+    }
+    #headerNewMenu{
+
+         display: none;
+    }
+
+    
+    
+}
+@media (min-width: 992px) and (max-width : 1180px) {
+    
+    #searchbar{
+        display: none;
+    }
+    i.fa.fa-search{
+        display: none;
+    }
+      
+
+    
+    
 }
 
 
