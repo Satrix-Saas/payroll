@@ -1,13 +1,13 @@
 import React from 'react'
-import logo from '../../../images/logo.png';
+import logo from '../../../images/satrixlogo.png';
 import logo2 from '../../../images/logo2.png'
 import { Link } from "react-router-dom";
 
 
 export default function AdminLogo(props) {
     let mystyle={
-        height:50,
-        width:50,
+        height:40,
+        width:150,
     }
     return (
 

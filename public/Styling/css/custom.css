@@ -71,7 +71,48 @@
     right: -10px;
    
 }
+.header {
+    background: #f6f8fc !important;
+    background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+  }
+  .header .header-new-menu li a {
+    color: #001d35;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    padding: 0 20px;
+  }
 
+  #hambtn{ 
+    color: #5f6368;
+  }
+  #toggle_btn{
+     border-radius:10px ;  
+  }
+
+  .header .top-nav-search form .form-control {
+    background-color:#eaf1fb;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    height: 40px;
+    padding: 10px 50px 10px 15px;
+    border-radius: 50px;
+  }
+  .fa, .fas {
+    font-weight: 900;
+    color: #001d35
+  }
+  #faitem{
+    color: #5f6368;
+  }
+  #flagname{
+    color:#001d35;
+  }
+  .header .user-menu.nav > li > a .badge {
+    color: #5f6368;
+    font-weight: 700;
+    background-color:#eaf1fb;  
+  }
 .headerli{
     position: relative;
 }
@@ -127,24 +168,77 @@
     #headerNewMenu{
 
          display: none;
-    }
-
-    
-    
+    } 
 }
 @media (min-width: 992px) and (max-width : 1180px) {
     
     #searchbar{
         display: none;
-    }
+    }  
+}
+@media (max-width: 991px){
     i.fa.fa-search{
         display: none;
     }
-      
-
-    
-    
 }
 
+.sidebar, .two-col-bar {
+    background-color:#292a2d;
+    background-color:#f6f8fc ;
+  
 
+}
 
+.sidebar .sidebar-menu ul li a, .two-col-bar .sidebar-menu ul li a {
+    font-size: 15px;
+    color: #292a2d;
+  }
+  .sidebar .sidebar-menu ul ul a.active, .two-col-bar .sidebar-menu ul ul a.active {
+    color: #001d35;
+    /* text-decoration: underline; */
+  }
+  .sidebar .sidebar-menu ul li.submenu .noti-dot::before, .two-col-bar .sidebar-menu ul li.submenu .noti-dot::before {
+
+    border: 5px solid #001d35;
+    background-color: #001d35;
+    display: none;
+
+  }
+  .sidebar .sidebar-menu ul li a:focus, .two-col-bar .sidebar-menu ul li a:focus {
+ 
+    background-color: #d3e3fd;
+  }
+  .sidebar .sidebar-menu ul li a:hover, .two-col-bar .sidebar-menu ul li a:hover {
+   background-color:#dee2e6;
+   color: #292a2d;
+  }
+  .submenu ul li a{
+    font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: normal;
+    color: #202124;
+    text-shadow: none;
+  }
+  /* Register_form */
+  .account-page .main-wrapper .account-content .account-logo img {
+    width: 150px;
+    margin-top: 30px;
+  } 
+  .account-page .main-wrapper .account-content .account-box {
+    background-color:#ffffff;
+    border: 1px solid #ededed;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    overflow: hidden;
+    width: 480px;
+  }
+  .account-page .main-wrapper .account-content .account-box {
+ 
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+ 
+
+.account-page .main-wrapper .account-content .account-box .account-btn {
+        border: 0;
+        background-image: linear-gradient(to bottom right, #37D5D6, #36096D);     
+}

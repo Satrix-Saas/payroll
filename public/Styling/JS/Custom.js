@@ -1,6 +1,4 @@
-// Registration form validation
 $(document).ready(function () {
-
         // Registeration validation
         $(document).on('click', "#register", function (e) {
                 e.preventDefault();
@@ -155,8 +153,28 @@ $(document).ready(function () {
 
         $(".header-new-menu").on('click','li', function(){
                 $('li div').removeClass('show');
-                $(this).find('div').addClass('show');
-                
+                $(this).find('div').addClass('show');               
         })
+
+        var arr = [];
+        $(document).on('click','.form-group input',function(){
+                var field_id =  $(this).attr('id');
+                
+                arr.push(field_id);
+                console.log(arr)
+                for(i=0;i<arr.length;i++){
+                        if(arr[i]==field_id){
+                                $('#'+field_id).focus().css({'border':'2px solid #a8c0e2','border-color':'#a8c0e2'});
+                        }else{
+                                $('#'+arr[i]).focus().css({'border':'','border-color':''});              
+                        }
+                }
+                
+  
+        });
+
+
+    
+      
 })
 
