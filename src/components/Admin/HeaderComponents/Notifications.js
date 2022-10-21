@@ -8,9 +8,9 @@ export default function Notifications() {
         e.preventDefault();
     }
 	return (
-		<li className="nav-item dropdown">
+		<li className="nav-item dropdown" id="notificationItem">
 			<Link to="#" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-			<i className="fa fa-bell"></i> <span className="badge rounded-pill">3</span>
+			<i className="fa fa-bell" id="faitem"></i> <span className="badge rounded-pill">3</span>
 			</Link>
 			<div className="dropdown-menu notifications">
 				<div className="topnav-dropdown-header">

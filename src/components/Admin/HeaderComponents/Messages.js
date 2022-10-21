@@ -9,9 +9,9 @@ export default function Messages() {
 }
   return (
     <>
-    <li className="nav-item dropdown">
+    <li className="nav-item dropdown" id="MessageItem">
       <Link href="#" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-        <i className="fa fa-comment"></i> <span className="badge rounded-pill">8</span>
+        <i className="fa fa-comment" id="faitem"></i> <span className="badge rounded-pill">8</span>
       </Link>
       <div className="dropdown-menu notifications">
         <div className="topnav-dropdown-header">
@@ -27,7 +27,7 @@ export default function Messages() {
             <MessageDropdown avatar={avatar9} author="Author Name" time="12:00 AM" content="Message details"/>
           </ul>
         </div>
-        <div class="topnav-dropdown-footer">
+        <div className="topnav-dropdown-footer">
 								<Link to="chat.html">View all Messages</Link>
 							</div>
       </div>

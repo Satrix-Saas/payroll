@@ -18,12 +18,14 @@ export default function Register_form() {
       <div className="main-wrapper">
         <div className="account-content">
           <div className="container">
-            {/* LOGO */}
-            <Logo dashboard="/admin-dashboard" />
-            {/* LOGO */}
+          
 
             <div className="account-box">
+                        {/* LOGO */}
+            <Logo dashboard="/admin-dashboard" />
+            {/* LOGO */}
               <div className="account-wrapper">
+        
                 <Heading title="Register" subtitle="Access to Our Dashboard" />
 
                 {/* FORM START */}

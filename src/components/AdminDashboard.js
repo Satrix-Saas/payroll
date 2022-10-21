@@ -1,9 +1,9 @@
 import React from 'react'
 import AdminHeader from './Admin/AdminHeader'
-// import Sidebar from './Admin/Sidebar'
-// import TwoColSideBar from './Admin/TwoColSideBar'
+import Sidebar from './Admin/SidebarComponents/Sidebar'
+import TwoColSideBar from './Admin/TwoColSideBar'
 // import PageHeader from './Admin/PageHeader'
-// import TotalRevenue from './Admin/TotalRevenue'
+import TotalRevenue from './Admin/TotalRevenue'
 
 export default function AdminDashboard() {
   return (
@@ -15,20 +15,21 @@ export default function AdminDashboard() {
           <AdminHeader/>
          
             </div>
-            {/* <div className="sidebar">
+            <div className="sidebar">
           <Sidebar/>
           </div>
            <div className="twocolslidebar">
            <TwoColSideBar/>
            </div>
 
-           <div className="pageheader">
+           {/* <div className="pageheader">
             <PageHeader/>
-           </div>
+           </div> */}
+
            <div className="totalrevenue">
            <TotalRevenue/>
-
-           </div> */}
+           </div>
+           
             </div>
   )
 }

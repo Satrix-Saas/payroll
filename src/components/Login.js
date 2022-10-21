@@ -15,11 +15,12 @@ export default function Login() {
                 <div className="account-content">
                     <div className="container">
 
-                        {/* <!-- Account Logo --> */}
-                        <Logo dashboard="/admin-dashboard" />
-                        {/* <!-- /Account Logo --> */}
+                     
 
                         <div className="account-box">
+                            .   {/* <!-- Account Logo --> */}
+                        <Logo dashboard="/admin-dashboard" />
+                        {/* <!-- /Account Logo --> */}
                             <div className="account-wrapper">
 
                                 <Heading title="Login" subtitle="Access to Our Dashboard" />

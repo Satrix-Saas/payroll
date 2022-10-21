@@ -10,9 +10,9 @@ import FlagdropDown from '../../utility/FlagdropDown';
 export default function Flag(props) {
   return (
    <>
-	<li className="nav-item dropdown has-arrow flag-nav">
+	<li className="nav-item dropdown has-arrow flag-nav" id="flagItem">
 	<Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" to="#" role="button">
-		<img src={Us} alt="" height="20"/> <span>{props.langname}</span>
+		<img src={Us} alt="" height="20"/> <span id="flagname">{props.langname}</span>
 	</Link>
 	<div className="dropdown-menu dropdown-menu-right">
 		<FlagdropDown  flagimg={Us} langname="English"/>
