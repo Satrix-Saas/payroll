@@ -1,0 +1,113 @@
+.validation-wrong{
+    color: red;
+    margin: 5px;
+    padding: 0.5rem;
+    font-size: 12px;
+}
+.fa-exclamation-triangle , .fa-check{
+    padding-right: 5px;
+}
+.validation-check{
+    color: green;
+    margin: 5px;
+    padding: 0.5rem;
+    font-size: 12px;
+}
+ .input_focus{
+        outline: none;
+     box-shadow: 0px 0px 8px 2px  #BE1D15;
+ }
+
+ .header .header-new-menu {
+    float: left;
+    list-style: none;
+    margin: 0 0 0 30px;
+    padding: 0;
+    line-height: 60px;
+    display: flex;
+    
+}
+.header .header-new-menu li {
+    position: relative;
+}
+.header .header-new-menu li a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    padding: 0 20px;
+}
+.dropdown-menu{
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inherit;
+    font-size: 14px;
+    border-radius: 3px;
+    transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    -ms-transform-origin: left top 0;
+}
+.dropdown-menu{
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+}
+.header .header-new-menu li a::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-size: 11px;
+    position: relative;
+    top: 0;
+    right: -10px;
+}
+.header-new-menu a{
+    color:#fff;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #FF7849;
+  }
+  .dropdown-menu.show {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+   transform: translate3d(0px, 42px, 0px);
+    display: block;
+    background-color: #34444c;
+}
+.header .header-new-menu li a.dropdown-item {
+    line-height: 30px;
+}
+.header .header-new-menu li link {
+    
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    padding: 0 20px;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+
+
