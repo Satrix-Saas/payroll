@@ -9,9 +9,9 @@ import options from "./utility/Options";
 import { dropDownArray } from "./utility/Dropdownutill";
 import $ from 'jquery';
 
+
 export default function Register_form() {
   document.title = "Register - HRMS admin template";
-
   const [full_name, setFull_name] = useState("");
   const [org_name, setOrg_name] = useState("");
   const [email, setEmail] = useState("");
@@ -39,27 +39,27 @@ export default function Register_form() {
   // }
   // const board = this.props.routeParams.tag;
 
-  const handleSubmit =async  (e) => {
+  // const handleSubmit =async  (e) => {
     
   
     
-  $.ajax({
-    type:"GET",
-    url:'http://192.168.0.100:8074/Satrix_Saas/pub/company/index/index',
-    data:{q:'idiom'},
-    async:true,
-    dataType : 'json',   //you may use jsonp for cross origin request
-    crossDomain:true,
-    success: function(data, status, xhr) {
-      console.log(data);
-     alert(data.email)
-    }
-  });
+  // $.ajax({
+  //   type:"GET",
+  //   url:'http://192.168.0.100:8074/Satrix_Saas/pub/company/index/index',
+  //   data:{q:'idiom'},
+  //   async:true,
+  //   dataType : 'json',   //you may use jsonp for cross origin request
+  //   crossDomain:true,
+  //   success: function(data, status, xhr) {
+  //     console.log(data);
+  //    alert(data.email)
+  //   }
+  // });
  
-  }  
-  useEffect(() => {
+  // }  
+  // useEffect(() => {
     
-  },[])
+  // },[])
     
  
  
@@ -115,7 +115,7 @@ export default function Register_form() {
         <div className="account-content">
           <div className="container">
             {/* LOGO */}
-            <Logo dashboard="/admin-dashboard" />
+            <Logo dashboard="/register" />
             {/* LOGO */}
 
             <div className="account-box">
@@ -169,7 +169,7 @@ export default function Register_form() {
                   </SelectInputFields>
             
                   <div className="form-group text-center">
-                  <button type="button" className="btn btn-primary account-btn" id="register" onClick={handleSubmit}>Register</button>
+                  <button type="button" className="btn btn-primary account-btn" id="register" onClick >Register</button>
                   </div>
                   <div className="account-footer">
                     <p>

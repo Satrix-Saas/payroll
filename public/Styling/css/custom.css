@@ -111,3 +111,11 @@
 
 
 
+.indicator {
+    background-color: black;
+    width: 143px;
+    height: 7px;
+    margin: 0px auto 20px auto;
+    float: center;
+    text-align: center;
+}

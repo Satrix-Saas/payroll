@@ -34,8 +34,16 @@ const options = {
                     'name': 'employee',
                     'option': 'employee',
                     'optionvalue': 'Employee'
-                }]
+                }],
+
+                'State': [
+                    {
+                      'name': 'StateName',
+                      'option': 'Option',
+                      'optionvalue': 'OptionValue'
+                  }],
             }
+
      
 
 export default options;

@@ -1,8 +1,64 @@
 import React from 'react'
-import Address from './Basicdetailspage/Address'
+import Textfields from './common_component/Textfields'
+import SelectInputFields from './common_component/SelectInputFields'
+import { dropDownArray } from "../components/utility/Dropdownutill";
+import options from '../components/utility/Options'
+import Heading from '../components/common_component/Heading';
+import Logo from '../components/common_component/Logo'
+
 
 export default function BasicDetails() {
-  return (
-    <Address/>
-  )
+    document.title = "Basic details";
+
+    const optionArray2 = dropDownArray(options, "State");
+    return (
+        <>
+            <div className="account-page">
+                <div className="main-wrapper">
+                    <div className="account-content">
+                        <div className="container">
+                            {/* LOGO */}
+                            <Logo dashboard="/basicdetails" />
+                            <div className="account-box">
+                                <div className="account-wrapper">
+                                    <Heading title="Address & Tax Setup" subtitle="Enter Basic Details" />
+
+                                    {/* FORM START */}
+                                    <form id="register_form">
+                                        <Textfields label="Company Name" mandatory="*" type="text" name="com_name" id="com_name" content="The name of the legal entity." />
+
+                                        <Textfields label="Brand Name" mandatory="*" type="text" name="brand_name" id="brand_name" content="your company is publicly known by a different brand name, then please enter that here." />
+
+                                        <Textfields label="Registered Address" mandatory="*" type="text" name="address" id="address" content="If you have a GSTIN, provide the address mentioned on your GST certificate." />
+
+                                        <SelectInputFields
+                                            label="State" mandatory="*" type="text" select_id="state" >
+                                            {optionArray2.map((e) => {
+                                                return (
+                                                    <option key={e.name} name={e.name} option={e.option} value={e.optionvalue}>
+                                                        {e.optionvalue}
+                                                    </option>
+                                                );
+                                            })}
+                                        </SelectInputFields>
+
+                                        <Textfields label="PIN code" mandatory="*" type="text" name="pincode" id="pincode" />
+
+                                        <Textfields label="Company PAN" mandatory="*" type="text" name="pan_num" id="pan_num" content="You can verify your PAN" links=" here." />
+                                        <Textfields label="Company TAN" mandatory="*" type="text" name="tan_num" id="tan_num" content="You can verify your PAN" links=" here." />
+                                        <Textfields label="Company GSTIN" mandatory="*" type="text" name="gstin" id="gstin" content="Enter a valid GSTIN to claim GST credit on our invoices." links=" Details" />
+                                        <div className="form-group text-center">
+                                            <button type="button" className="btn btn-primary account-btn" id="continue" >Next</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </>
+
+    )
 }

@@ -5,6 +5,8 @@ import Login from './components/Login';
 import ForgotPassword from './components/ForgotPassword';
 import AdminDashboard from './components/AdminDashboard';
 import BasicDetails from './components/BasicDetails';
+import EmployeeOnboarding from './components/EmployeeOnboarding';
+// import Apps from './components/test/apps';
 
 function App() {
   return (
@@ -24,6 +26,10 @@ function App() {
            <Routes>
               <Route exact path="/basicdetails" element={<BasicDetails/>}/>
            </Routes>
+           <Routes>
+              <Route exact path="/employeeonboarding" element={<EmployeeOnboarding/>}/>
+           </Routes>
+           
          
       </BrowserRouter>
   );
