@@ -7,7 +7,6 @@ import Heading from "./common_component/Heading";
 import SelectInputFields from "./common_component/SelectInputFields";
 import options from "./utility/Options";
 import { dropDownArray } from "./utility/Dropdownutill";
-
 export default function Register_form() {
   document.title = "Register - HRMS admin template";
 
