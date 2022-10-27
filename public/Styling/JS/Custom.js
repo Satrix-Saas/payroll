@@ -1,6 +1,7 @@
 $(document).ready(function () {
         // Registeration validation
         $(document).on('click', "#register", function (e) {
+              
                 e.preventDefault();
                 var full_name = $("#full_name").val();
                 var org_name = $("#org_name").val();
@@ -14,6 +15,9 @@ $(document).ready(function () {
                 var reg_email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
                 var reg_num = /^\d{10}$/;
                 var reg_pass = /^[0-9a-zA-Z]+$/;
+
+                var error = false;
+                var arr=[];
                 $(".valid").remove();
 
                 $("input").keydown(function () {
@@ -25,64 +29,84 @@ $(document).ready(function () {
                         $("select").removeClass("input_focus");
                         $(".valid").remove();
                 })
-                // Full Name Validation
+                //Full Name Validation
                 if (full_name != "" && (full_name.match(reg_name))) {
+                        arr['name'] = full_name;
                         $("#full_name").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {
                         $("#full_name").addClass("input_focus");
                         $("#full_name").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Enter Valid Name</span>");
+                        error=true;
                 }
 
                 // Organisation validation
                 if (org_name != "") {
+                        arr['org_name'] = org_name;
                         $("#org_name").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {
                         $("#org_name").addClass("input_focus");
                         $("#org_name").after("<span class=' valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Enter Organisation Name</span>");
+                        error=true;
                 }
 
                 //Email Validation
                 if (email != "" && (email.match(reg_email))) {
+                        arr['email'] = email;
                         $("#email").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {
                         $("#email").addClass("input_focus");
                         $("#email").after(" <span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Enter Valid Email</span>");
+                        error=true;
                 }
 
                 //phoneNumber Validation
                 if (phn_num != "" && (phn_num.match(reg_num))) {
+                        arr['cont_no'] = phn_num;
                         $("#phn_num").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {
                         $("#phn_num").addClass("input_focus");
                         $("#phn_num").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Enter Valid Phone Number</span>");
+                        error=true;
                 }
                 //Password validation
                 if (password != "" && (password.match(reg_pass))) {
+                        arr['password'] = password;
                         $("#password").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {
                         $("#password").addClass("input_focus");
                         $("#password").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Enter Aplhanumeric Password</span>");
+                        error=true;        
                 }
                 //Option Validation
                 if (no_of_employees != "") {
+                        arr['org_size'] = no_of_employees;
                         $("#no_of_employees").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {
                         $("#no_of_employees").addClass("input_focus");
                         $("#no_of_employees").after("<span class=' valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Must Choose An Option</span>");
+                        error=true;
                 }
 
                 if (title != "") {
+                        arr['emp_type'] = title;
                         $("#title").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {
                         $("#title").addClass("input_focus");
                         $("#title").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Must Choose An Option</span>");
+                        error=true;
+                }
+
+                if(error){
+                        return false;
+                }else{
+                        ApiCall(arr,'register');
                 }
 
         }),

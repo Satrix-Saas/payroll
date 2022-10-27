@@ -26,7 +26,7 @@ export default function ForgotPassword() {
                                 <Heading title="Forgot Password?" subtitle="Enter your email to get a password reset link" />
 
                                 <form>
-                                    <Textfields type="text" label="Email Address" id="forgotpswd_email"/>
+                                    <Textfields type="text" label="Email Address" id="forgotpswd_email" name="email_address"/>
                                     <SubmitButton submitvalue="Reset Password" btn_id="reset" />
                                     <div className="account-footer">
                                         <p>Remember your password? <Link to="/login">Login</Link></p>
