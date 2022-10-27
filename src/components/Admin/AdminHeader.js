@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import AdminHeaderMenu from './HeaderComponents/AdminHeaderMenu'
-import AdminHeading from './HeaderComponents/AdminHeading'
+// import AdminHeading from './HeaderComponents/AdminHeading'
 import AdminLogo from './HeaderComponents/AdminLogo'
-import AdminMobileMenu from './HeaderComponents/AccountMenu'
+// import AdminMobileMenu from './HeaderComponents/AccountMenu'
 import Flag from './HeaderComponents/Flag'
 import Messages from './HeaderComponents/Messages'
 import Notifications from './HeaderComponents/Notifications'
@@ -18,9 +18,9 @@ export default function AdminHeader() {
       <div className="main-wrapper">
         <div className="header">
           
-          <Link id="toggle_btn"  class="rounded-circle">
+          <Link id="toggle_btn"  className="rounded-circle">
 					<span className="bar-icon " >
-					<i class="fas fa-bars" id="hambtn"></i>
+					<i className="fas fa-bars" id="hambtn"></i>
 					</span>
 				</Link>
         <AdminLogo dashboard="/admindashboard" />
