@@ -30,9 +30,6 @@
     
 }
 
- 
-
-
 .header .header-new-menu li a {
     color: #fff;
     font-weight: 600;
@@ -196,10 +193,13 @@
     i.fa.fa-search{
         display: none;
     }
+    #toggle_btn{
+      display: none;
+    }
 }
 
 .sidebar, .two-col-bar {
-    background-color:#292a2d;
+   
     background-color:#f6f8fc ;
   
 
