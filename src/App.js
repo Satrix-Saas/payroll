@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './components/Login';
 import ForgotPassword from './components/ForgotPassword';
 import AdminDashboard from './components/AdminDashboard';
-
 import BasicDetails from './components/BasicDetails';
 import EmployeeOnboarding from './components/EmployeeOnboarding';
 // import Apps from './components/test/apps';

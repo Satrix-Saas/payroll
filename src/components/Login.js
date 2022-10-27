@@ -26,7 +26,7 @@ export default function Login() {
 
                                 {/* <!-- Account Form --> */}
                                 <form action="/basicdetails">
-                                    <Textfields type="text" label="Email" id="login_email"/>
+                                    <Textfields type="text" label="Email" id="login_email" name="login_id"/>
                                     <div className="form-group">
                                         <div className="row">
                                             <div className="col">
@@ -40,7 +40,7 @@ export default function Login() {
                                         </div>
                                         <div className="position-relative">
                                            
-                                            <input className="form-control" type="password" id="password"/>
+                                            <input className="form-control" type="password" id="password" name='email_password'/>
 										<span className="fa fa-eye-slash" id="toggle-password"></span>
                                         </div>
                                     </div>

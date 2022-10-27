@@ -4,8 +4,8 @@ function ApiCall(arr,name){
     var data = Object.assign({}, arr)
     $.ajax({
     type:'GET',
-    url:'http://192.168.0.100:8074/Satrix_Saas/pub/attendance/index/index',
-   // data:{q:'idiom'}
+    url:'http://192.168.0.100:8074/Satrix_Saas/pub/register/index/index',
+   data:data,
    dataType : 'json',
    cors: true ,
     headers : {
@@ -20,7 +20,7 @@ function ApiCall(arr,name){
     async:false,
     success: function(data, status, xhr) {
       console.log(data);
-      alert(data);
+      // alert(data);
     }
   });
 }

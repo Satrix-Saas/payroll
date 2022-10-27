@@ -4,3 +4,8 @@ export const dropDownArray= function (optionObject , key) {
     });
     
 }
+ export const radioArray = function(radioObject , key){
+    return radioObject[key].map((radioArray)=>{
+        return radioArray;
+    })
+ }

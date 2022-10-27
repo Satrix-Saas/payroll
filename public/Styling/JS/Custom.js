@@ -74,6 +74,7 @@ $(document).ready(function () {
                 }
                 //Password validation
                 if (password != "" && (password.match(reg_pass))) {
+                        arr['password'] = password;
                         $("#password").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {

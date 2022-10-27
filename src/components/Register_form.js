@@ -1,12 +1,12 @@
 import React, {useEffect, useState } from "react";
 import Logo from "./common_component/Logo";
-import SubmitButton from "./common_component/Submit_button";
 import Textfields from "./common_component/Textfields";
 import { Link } from "react-router-dom";
 import Heading from "./common_component/Heading";
 import SelectInputFields from "./common_component/SelectInputFields";
 import options from "./utility/Options";
 import { dropDownArray } from "./utility/Dropdownutill";
+
 export default function Register_form() {
   document.title = "Register - HRMS admin template";
   const [full_name, setFull_name] = useState("");
@@ -29,81 +29,6 @@ export default function Register_form() {
     setValue(e.target.value);
   }
 
-  // const header = {
-
-  //   "Content-Type": "multipart/form-data",
-  //   "Access-Control-Allow-Origin": "*"
-  // }
-  // const board = this.props.routeParams.tag;
-
-  // const handleSubmit =async  (e) => {
-    
-  
-    
-  // $.ajax({
-  //   type:"GET",
-  //   url:'http://192.168.0.100:8074/Satrix_Saas/pub/company/index/index',
-  //   data:{q:'idiom'},
-  //   async:true,
-  //   dataType : 'json',   //you may use jsonp for cross origin request
-  //   crossDomain:true,
-  //   success: function(data, status, xhr) {
-  //     console.log(data);
-  //    alert(data.email)
-  //   }
-  // });
- 
-  // }  
-  // useEffect(() => {
-    
-  // },[])
-    
- 
- 
-
-  // let handleSubmit = async (e) => {
-  //   alert("api");
-  //  alert(e.target.elements.full_name.value);
-
-  //   e.preventDefault();
-  //   try {
-  //     let res = await fetch("http://192.168.0.100:8074/Satrix_Saas/pub/company/index/index", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         full_name: full_name,
-  //         org_name: org_name,
-  //         email: email,
-  //         phone: phone,
-  //         password: password,
-  //         value: value,
-  //         titlevalue: titlevalue
-
-  //       }),
-  //       headers:header
-
-  //     });
-  //     // console.log(
-  //     //   full_name, org_name, email, phone, password, value, titlevalue
-  //     // )
-  //       let resJson = await res.json();
-  //       if (res.status === 200) {
-  //         setFull_name("");
-  //         setOrg_name("");
-  //         setEmail("");
-  //         setPhone("");
-  //         setPassword("");
-  //         setTitle("");
-  //         setValue("");
-  //       } 
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  // const handleSubmit = (e) => {
-  //   alert("api");
-  // }
-
-
   const optionArray = dropDownArray(options, "No_of_employees");
   const optionArray2 = dropDownArray(options, "Title");
   return (
@@ -111,21 +36,19 @@ export default function Register_form() {
       <div className="main-wrapper">
         <div className="account-content">
           <div className="container">
-            {/* LOGO */}
-            <Logo dashboard="/register" />
-            {/* LOGO */}
+          
 
             <div className="account-box">
+            <Logo dashboard="/register" />
               <div className="account-wrapper">
+
                 <Heading title="Register" subtitle="Access to Our Dashboard" />
 
                 {/* FORM START */}
                 <form id="register_form">
                   {/* TEXT FIELDS */}
                   <Textfields
-                    label="Full Name" type="text" mandatory="*" name="full_name" id="full_name" value={full_name}
-                    onChange={onChange_value}
-                  />
+                    label="Full Name" type="text" mandatory="*" name="name" id="full_name" />
 
                   <Textfields
                     label="Organization Name" type="text" mandatory="*" name="org_name" id="org_name"
@@ -136,7 +59,7 @@ export default function Register_form() {
                   />
 
                   <Textfields
-                    label="Phone Number" type="tel" mandatory="*" name="phn_num" id="phn_num"
+                    label="Phone Number" type="tel" mandatory="*" name="cont_no." id="phn_num"
                   />
 
                   <Textfields
@@ -144,10 +67,10 @@ export default function Register_form() {
                   />
 
                   <SelectInputFields
-                    label="Number Of Employees" mandatory="*" type="text" select_id="no_of_employees" >
+                    label="Number Of Employees" mandatory="*" type="text" select_id="no_of_employees" name="org_size">
                     {optionArray.map((e) => {
                       return (
-                        <option key={e.name} name={e.name} option={e.option} value={e.optionvalue}>
+                        <option key={e.option} name={e.name} option={e.option} value={e.optionvalue}>
                           {e.optionvalue}
                         </option>
                       );
@@ -155,10 +78,10 @@ export default function Register_form() {
                   </SelectInputFields>
 
                   <SelectInputFields
-                    label="Your Title" mandatory="*" type="text" select_id="title" >
+                    label="Your Title" mandatory="*" type="text" select_id="title" name="type">
                     {optionArray2.map((e) => {
                       return (
-                        <option key={e.name} name={e.name} option={e.option} value={e.optionvalue}>
+                        <option key={e.option} name={e.name} option={e.option} value={e.optionvalue}>
                           {e.optionvalue}
                         </option>
                       );

@@ -5,6 +5,7 @@ import { dropDownArray } from "../components/utility/Dropdownutill";
 import options from '../components/utility/Options'
 import Heading from '../components/common_component/Heading';
 import Logo from '../components/common_component/Logo'
+import { Link } from 'react-router-dom';
 
 
 export default function BasicDetails() {
@@ -17,14 +18,15 @@ export default function BasicDetails() {
                 <div className="main-wrapper">
                     <div className="account-content">
                         <div className="container">
-                            {/* LOGO */}
-                            <Logo dashboard="/basicdetails" />
+
+                         
                             <div className="account-box">
+                            <Logo dashboard="/basicdetails" />
                                 <div className="account-wrapper">
                                     <Heading title="Address & Tax Setup" subtitle="Enter Basic Details" />
 
                                     {/* FORM START */}
-                                    <form id="register_form">
+                                    <form id="address_taxsetup">
                                         <Textfields label="Company Name" mandatory="*" type="text" name="com_name" id="com_name" content="The name of the legal entity." />
 
                                         <Textfields label="Brand Name" mandatory="*" type="text" name="brand_name" id="brand_name" content="your company is publicly known by a different brand name, then please enter that here." />
@@ -48,7 +50,7 @@ export default function BasicDetails() {
                                         <Textfields label="Company TAN" mandatory="*" type="text" name="tan_num" id="tan_num" content="You can verify your PAN" links=" here." />
                                         <Textfields label="Company GSTIN" mandatory="*" type="text" name="gstin" id="gstin" content="Enter a valid GSTIN to claim GST credit on our invoices." links=" Details" />
                                         <div className="form-group text-center">
-                                            <button type="button" className="btn btn-primary account-btn" id="continue" >Next</button>
+                                        <Link to="/employeeonboarding">  <button type="button" className="btn btn-primary account-btn" id="next">Next</button></Link>
                                         </div>
                                     </form>
                                 </div>

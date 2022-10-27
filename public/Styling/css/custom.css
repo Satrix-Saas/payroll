@@ -259,3 +259,11 @@
         background-image: linear-gradient(to bottom right, #37D5D6, #36096D);     
 
 }
+.header{
+  height: 60px;
+  z-index: 1002;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
