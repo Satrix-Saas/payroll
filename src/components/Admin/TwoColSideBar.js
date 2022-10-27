@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
+
 export default function TwoColSideBar() {
     const styling ={display:'none'}
   return (
@@ -235,7 +236,7 @@ export default function TwoColSideBar() {
 									<li><Link to="leave-settings.html">Leave Settings</Link></li>
 									<li><Link to="attendance.html">Attendance (Admin)</Link></li>
 									<li><Link to="attendance-employee.html">Attendance (Employee)</Link></li>
-									<li><Link to="departments.html">Departments</Link></li>
+									<li><Link to="departments">Departments</Link></li>								
 									<li><Link to="designations.html">Designations</Link></li>
 									<li><Link to="timesheet.html">Timesheet</Link></li>
 									<li><Link to="shift-scheduling.html">Shift & Schedule</Link></li>
@@ -482,19 +483,19 @@ export default function TwoColSideBar() {
 								<p>Multi Level</p>
 								<ul>
 									<li className="sub-menu">
-										<Link to="javascript:void(0);">Level 1 <span className="menu-arrow"></span></Link>
+										<Link to="#">Level 1 <span className="menu-arrow"></span></Link>
 										<ul style={styling} className="ms-3">
 											<li className="sub-menu">
-												<Link to="javascript:void(0);">Level 1 <span className="menu-arrow"></span></Link>
+												<Link to="#">Level 1 <span className="menu-arrow"></span></Link>
 												<ul>
-													<li><Link to="javascript:void(0);">Level 2</Link></li>
-													<li><Link to="javascript:void(0);">Level 3</Link></li>
+													<li><Link to="#">Level 2</Link></li>
+													<li><Link to="#">Level 3</Link></li>
 												</ul>
 											</li>
 										</ul>
 									</li>								
-									<li><Link to="javascript:void(0);">Level 2</Link></li>
-									<li><Link to="javascript:void(0);">Level 3</Link></li>
+									<li><Link to="#">Level 2</Link></li>
+									<li><Link to="#">Level 3</Link></li>
 								</ul>
 							</div>
 						</div>

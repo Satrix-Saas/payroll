@@ -3,6 +3,7 @@ import React from 'react'
 export default function TotalRevenue() {
   return (
     <>
+  
     <div className="row">
     <div className="col-md-12">
         <div className="row">
@@ -25,6 +26,7 @@ export default function TotalRevenue() {
         </div>
     </div>
 </div>
+
 </>
   )
 }
