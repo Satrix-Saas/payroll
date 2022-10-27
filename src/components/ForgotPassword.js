@@ -16,11 +16,12 @@ export default function ForgotPassword() {
                 <div className="account-content">
                     <div className="container">
 
-                        {/* <!-- Account Logo --> */}
+                      
+                        <div className="account-box">
+                              {/* <!-- Account Logo --> */}
                         <Logo />
                         {/* <!-- /Account Logo --> */}
 
-                        <div className="account-box">
                             <div className="account-wrapper">
 
                                 <Heading title="Forgot Password?" subtitle="Enter your email to get a password reset link" />

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import Departments from './Departments'
-import UlLi from './UlLi'
+import UlLi from '../../common_component/UlLi'
 
 
 
@@ -20,7 +19,7 @@ export default function Sidebar() {
               <Link to="#"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
               <ul style={styling}>
                 <li><Link  to="admin-dashboard.html">Admin Dashboard</Link></li>
-                <li><Link  to="employee-dashboard.html">Employee Dashboard</Link></li>
+                <li><Link  to="\basicdetails">Employee Dashboard</Link></li>
               </ul>
             </li>
             <li className="submenu">
@@ -56,7 +55,7 @@ export default function Sidebar() {
                <UlLi  navigationLink="leave-settings.html" navigatedpagename="Leave Settings"/>
                <UlLi  navigationLink="attendance.html" navigatedpagename="Attendance (Admin)"/>
                <UlLi  navigationLink="attendance-employee.html" navigatedpagename="Attendance (Employee)"/>
-               <Link to="/departments">Departments</Link>
+               <UlLi  navigationLink="\department" navigatedpagename="Departments"/>
                <UlLi  navigationLink="designations.htm" navigatedpagename="Designations"/>
                <UlLi  navigationLink="timesheet.html" navigatedpagename="Timesheet"/>
                <UlLi  navigationLink="shift-scheduling.html" navigatedpagename="Shift & Schedule"/>
@@ -311,7 +310,7 @@ export default function Sidebar() {
             <Link to="#"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
             <ul style={styling}>
               <li><Link  className="active" to="admin-dashboard.html">Admin Dashboard</Link></li>
-              <li><Link  to="employee-dashboard.html">Employee Dashboard</Link></li>
+              <li><Link  to="/basicdetails">Employee Dashboard</Link></li>
             </ul>
           </li>
           <li className="submenu">

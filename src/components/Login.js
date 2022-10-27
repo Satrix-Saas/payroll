@@ -15,15 +15,13 @@ export default function Login() {
                 <div className="account-content">
                     <div className="container">
 
-                        {/* <!-- Account Logo --> */}
+           
+                        <div className="account-box">
+                                         {/* <!-- Account Logo --> */}
                         <Logo dashboard="/login" />
                         {/* <!-- /Account Logo --> */}
-
-                        <div className="account-box">
                             <div className="account-wrapper">
-
                                 <Heading title="Login" subtitle="Access to Our Dashboard" />
-
                                 {/* <!-- Account Form --> */}
                                 <form action="/basicdetails">
                                     <Textfields type="text" label="Email" id="login_email" name="login_id"/>

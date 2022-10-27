@@ -8,9 +8,6 @@ import Notifications from './HeaderComponents/Notifications'
 import SearchBar from './HeaderComponents/SearchBar'
 import AccountMenu from './HeaderComponents/AccountMenu'
 import MobileMenu from './HeaderComponents/MobileMenu'
-import Sidebar from './SidebarComponents/Sidebar'
-import TwoColSideBar from './TwoColSideBar'
-
 
 export default function AdminHeader() {
   return (
