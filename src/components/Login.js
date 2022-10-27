@@ -15,19 +15,18 @@ export default function Login() {
                 <div className="account-content">
                     <div className="container">
 
-                     
+                        {/* <!-- Account Logo --> */}
+                        <Logo dashboard="/login" />
+                        {/* <!-- /Account Logo --> */}
 
                         <div className="account-box">
-                            .   {/* <!-- Account Logo --> */}
-                        <Logo dashboard="/admin-dashboard" />
-                        {/* <!-- /Account Logo --> */}
                             <div className="account-wrapper">
 
                                 <Heading title="Login" subtitle="Access to Our Dashboard" />
 
                                 {/* <!-- Account Form --> */}
-                                <form action="">
-                                    <Textfields type="text" label="Email" id="login_email"/>
+                                <form action="/basicdetails">
+                                    <Textfields type="text" label="Email" id="login_email" name="login_id"/>
                                     <div className="form-group">
                                         <div className="row">
                                             <div className="col">
@@ -41,7 +40,7 @@ export default function Login() {
                                         </div>
                                         <div className="position-relative">
                                            
-                                            <input className="form-control" type="password" id="password"/>
+                                            <input className="form-control" type="password" id="password" name='email_password'/>
 										<span className="fa fa-eye-slash" id="toggle-password"></span>
                                         </div>
                                     </div>
