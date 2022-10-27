@@ -1,5 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+// import Departments from './Departments'
+import UlLi from './UlLi'
+
+
 
 export default function Sidebar() {
   const styling = {display:'none'}  
@@ -42,20 +46,22 @@ export default function Sidebar() {
               <span>Employees</span>
             </li>
             <li className="submenu">
-              <Link to="#" className="noti-dot"><i className="la la-user"></i> <span> Employees</span> <span className="menu-arrow"></span></Link>
-              <ul style={styling}>
-                <li><Link to="employees.html">All Employees</Link></li>
-                <li><Link to="holidays.html">Holidays</Link></li>
-                <li><Link to="leaves.html">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link></li>
-                <li><Link to="leaves-employee.html">Leaves (Employee)</Link></li>
-                <li><Link to="leave-settings.html">Leave Settings</Link></li>
-                <li><Link to="attendance.html">Attendance (Admin)</Link></li>
-                <li><Link to="attendance-employee.html">Attendance (Employee)</Link></li>
-                <li><Link to="departments.html">Departments</Link></li>
-                <li><Link to="designations.html">Designations</Link></li>
-                <li><Link to="timesheet.html">Timesheet</Link></li>
-                <li><Link to="shift-scheduling.html">Shift & Schedule</Link></li>
-                <li><Link to="overtime.html">Overtime</Link></li>
+
+              <Link  to="#" className="noti-dot"><i className="la la-user"></i> <span> Employees</span> <span className="menu-arrow"></span></Link> 
+               <ul style={styling}>
+               <UlLi  navigationLink="employees.html" navigatedpagename="All Employees"/>
+               <UlLi  navigationLink="holidays.html" navigatedpagename="Holidays"/>
+               <UlLi  navigationLink="leaves.html" navigatedpagename="Leaves (Admin)"/><span className="badge rounded-pill bg-primary float-end">1</span>
+               <UlLi  navigationLink="leaves-employee.html" navigatedpagename="Leaves (Employee)"/>
+               <UlLi  navigationLink="leave-settings.html" navigatedpagename="Leave Settings"/>
+               <UlLi  navigationLink="attendance.html" navigatedpagename="Attendance (Admin)"/>
+               <UlLi  navigationLink="attendance-employee.html" navigatedpagename="Attendance (Employee)"/>
+               <Link to="/departments">Departments</Link>
+               <UlLi  navigationLink="designations.htm" navigatedpagename="Designations"/>
+               <UlLi  navigationLink="timesheet.html" navigatedpagename="Timesheet"/>
+               <UlLi  navigationLink="shift-scheduling.html" navigatedpagename="Shift & Schedule"/>
+               <UlLi  navigationLink="overtime.html" navigatedpagename="Overtime"/>
+
               </ul>
             </li>
             <li> 
@@ -72,8 +78,10 @@ export default function Sidebar() {
             <li> 
               <Link to="leads.html"><i className="la la-user-secret"></i> <span>Leads</span></Link>
             </li>
-            <li> 
-              <Link to="tickets.html"><i className="la la-ticket"></i> <span>Tickets</span></Link>
+
+            <li> sidebar-vertical
+              <Link  to="tickets.html"><i className="la la-ticket"></i> <span>Tickets</span></Link> 
+
             </li>
             <li className="menu-title"> 
               <span>HR</span>
@@ -267,27 +275,29 @@ export default function Sidebar() {
               <Link to="#"><i className="la la-file-text"></i> <span>Documentation</span></Link>
             </li>
             <li> 
-              <Link to="#"><i className="la la-info"></i> <span>Change Log</span> <span className="badge badge-primary ms-auto">v3.4</span></Link>
+
+              <Link  to="#"><i className="la la-info"></i> <span>Change Log</span> <span className="badge badge-primary ms-auto">v3.4</span></Link> 
             </li>
             <li className="submenu">
-              <Link to="#"><i className="la la-share-alt"></i> <span>Multi Level</span> <span className="menu-arrow"></span></Link>
-              <ul style={styling}>
+              <Link  to="#"><i className="la la-share-alt"></i> <span>Multi Level</span> <span className="menu-arrow"></span></Link> 
+               <ul style={styling}>
                 <li className="submenu">
-                  <Link to="#"> <span>Level 1</span> <span className="menu-arrow"></span></Link>
-                  <ul style={styling}>
-                    <li><Link to="#"><span>Level 2</span></Link></li>
+                  <Link  to="#"> <span>Level 1</span> <span className="menu-arrow"></span></Link> 
+                   <ul style={styling}>
+                    <li><Link  to="#"><span>Level 2</span></Link> </li>
                     <li className="submenu">
-                      <Link to="#"> <span> Level 2</span> <span className="menu-arrow"></span></Link>
-                      <ul style={styling}>
-                        <li><Link to="#">Level 3</Link></li>
-                        <li><Link to="#">Level 3</Link></li>
+                      <Link  to="#"> <span> Level 2</span> <span className="menu-arrow"></span></Link> 
+                       <ul style={styling}>
+                       <UlLi  navigationLink="#" navigatedpagename="Level 3"/>
+                       <UlLi  navigationLink="#" navigatedpagename="Level 3"/>                  
                       </ul>
                     </li>
-                    <li><Link to="#"> <span>Level 2</span></Link></li>
+                    <li><Link  to="#"> <span>Level 2</span></Link> </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="#"> <span>Level 1</span></Link>
+                  <Link  to="#"> <span>Level 1</span></Link> 
+=======
                 </li>
               </ul>
             </li>
@@ -327,20 +337,22 @@ export default function Sidebar() {
             <span>Employees</span>
           </li>
           <li className="submenu">
-            <Link to="#" className="noti-dot"><i className="la la-user"></i> <span> Employees</span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
-              <li><Link to="employees.html">All Employees</Link></li>
-              <li><Link to="holidays.html">Holidays</Link></li>
-              <li><Link to="leaves.html">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link></li>
-              <li><Link to="leaves-employee.html">Leaves (Employee)</Link></li>
-              <li><Link to="leave-settings.html">Leave Settings</Link></li>
-              <li><Link to="attendance.html">Attendance (Admin)</Link></li>
-              <li><Link to="attendance-employee.html">Attendance (Employee)</Link></li>
-              <li><Link to="departments.html">Departments</Link></li>
-              <li><Link to="designations.html">Designations</Link></li>
-              <li><Link to="timesheet.html">Timesheet</Link></li>
-              <li><Link to="shift-scheduling.html">Shift & Schedule</Link></li>
-              <li><Link to="overtime.html">Overtime</Link></li>
+
+            <Link  to="#" className="noti-dot"><i className="la la-user"></i> <span> Employees</span> <span className="menu-arrow"></span></Link> 
+             <ul style={styling}>                      
+              <li><Link  to="employees.html">All Employees</Link> </li>
+              <li><Link  to="holidays.html">Holidays</Link> </li>
+              <li><Link  to="leaves.html">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link> </li>
+              <li><Link  to="leaves-employee.html">Leaves (Employee)</Link> </li>
+              <li><Link  to="leave-settings.html">Leave Settings</Link> </li>
+              <li><Link  to="attendance.html">Attendance (Admin)</Link> </li>
+              <li><Link  to="attendance-employee.html">Attendance (Employee)</Link> </li>
+              <li> <Link to="/department">Departments</Link></li>
+              <li><Link  to="designations.html">Designations</Link> </li>
+              <li><Link  to="timesheet.html">Timesheet</Link> </li>
+              <li><Link  to="shift-scheduling.html">Shift & Schedule</Link> </li>
+              <li><Link  to="overtime.html">Overtime</Link> </li>
+
             </ul>
           </li>
           <li> 
@@ -549,27 +561,29 @@ export default function Sidebar() {
             <Link to="#"><i className="la la-file-text"></i> <span>Documentation</span></Link>
           </li>
           <li> 
-            <Link to="#"><i className="la la-info"></i> <span>Change Log</span> <span className="badge badge-primary ms-auto">v3.4</span></Link>
+
+            <Link  to="#"><i className="la la-info"></i> <span>Change Log</span> <span className="badge badge-primary ms-auto">v3.4</span></Link> 
           </li>
           <li className="submenu">
-            <Link to="#"><i className="la la-share-alt"></i> <span>Multi Level</span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <Link  to="#"><i className="la la-share-alt"></i> <span>Multi Level</span> <span className="menu-arrow"></span></Link> 
+             <ul style={styling}>
               <li className="submenu">
-                <Link to="#"> <span>Level 1</span> <span className="menu-arrow"></span></Link>
-                <ul style={styling}>
-                  <li><Link to="#"><span>Level 2</span></Link></li>
+                <Link  to="#"> <span>Level 1</span> <span className="menu-arrow"></span></Link> 
+                 <ul style={styling}>
+                  <li><Link  to="#"><span>Level 2</span></Link> </li>
                   <li className="submenu">
-                    <Link to="#"> <span> Level 2</span> <span className="menu-arrow"></span></Link>
-                    <ul style={styling}>
-                      <li><Link to="#">Level 3</Link></li>
-                      <li><Link to="#">Level 3</Link></li>
+                    <Link  to="#"> <span> Level 2</span> <span className="menu-arrow"></span></Link> 
+                     <ul style={styling}>
+                      <li><Link  to="#">Level 3</Link> </li>
+                      <li><Link  to="#">Level 3</Link> </li>
                     </ul>
                   </li>
-                  <li><Link to="#"> <span>Level 2</span></Link></li>
+                  <li><Link  to="#"> <span>Level 2</span></Link> </li>
                 </ul>
               </li>
               <li>
-                <Link to="#"> <span>Level 1</span></Link>
+                <Link  to="#"> <span>Level 1</span></Link> 
+
               </li>
             </ul>
           </li>

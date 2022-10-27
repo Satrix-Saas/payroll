@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
+
 export default function TwoColSideBar() {
     const styling ={display:'none'}
   return (
@@ -228,18 +229,20 @@ export default function TwoColSideBar() {
 							<div className="tab-pane fade" id="v-pills-employees" role="tabpanel" aria-labelledby="v-pills-employees-tab">
 								<p>Employees</p>
 								<ul>
-									<li><Link href="employees.html">All Employees</Link></li>
-									<li><Link href="holidays.html">Holidays</Link></li>
-									<li><Link href="leaves.html">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link></li>
-									<li><Link href="leaves-employee.html">Leaves (Employee)</Link></li>
-									<li><Link href="leave-settings.html">Leave Settings</Link></li>
-									<li><Link href="attendance.html">Attendance (Admin)</Link></li>
-									<li><Link href="attendance-employee.html">Attendance (Employee)</Link></li>
-									<li><Link href="departments.html">Departments</Link></li>
-									<li><Link href="designations.html">Designations</Link></li>
-									<li><Link href="timesheet.html">Timesheet</Link></li>
-									<li><Link href="shift-scheduling.html">Shift & Schedule</Link></li>
-									<li><Link href="overtime.html">Overtime</Link></li>
+
+									<li><Link to="employees.html">All Employees</Link></li>
+									<li><Link to="holidays.html">Holidays</Link></li>
+									<li><Link to="leaves.html">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link></li>
+									<li><Link to="leaves-employee.html">Leaves (Employee)</Link></li>
+									<li><Link to="leave-settings.html">Leave Settings</Link></li>
+									<li><Link to="attendance.html">Attendance (Admin)</Link></li>
+									<li><Link to="attendance-employee.html">Attendance (Employee)</Link></li>
+									<li><Link to="departments">Departments</Link></li>								
+									<li><Link to="designations.html">Designations</Link></li>
+									<li><Link to="timesheet.html">Timesheet</Link></li>
+									<li><Link to="shift-scheduling.html">Shift & Schedule</Link></li>
+									<li><Link to="overtime.html">Overtime</Link></li>
+
 								</ul>
 							</div>
 							<div className="tab-pane fade" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-clients-tab">
@@ -482,20 +485,23 @@ export default function TwoColSideBar() {
 								<p>Multi Level</p>
 								<ul>
 									<li className="sub-menu">
-										<Link href="#">Level 1 <span className="menu-arrow"></span></Link>
+
+										<Link to="#">Level 1 <span className="menu-arrow"></span></Link>
 										<ul style={styling} className="ms-3">
 											<li className="sub-menu">
-												<Link href="#">Level 1 <span className="menu-arrow"></span></Link>
+												<Link to="#">Level 1 <span className="menu-arrow"></span></Link>
 												<ul>
-													<li><Link href="#">Level 2</Link></li>
-													<li><Link href="#">Level 3</Link></li>
+													<li><Link to="#">Level 2</Link></li>
+													<li><Link to="#">Level 3</Link></li>
+
 												</ul>
 											</li>
 										</ul>
 									</li>								
-									<li><Link href="#">Level 2</Link></li>
-									<li><Link href="#">Level 3</Link></li>
-								</ul>
+
+									<li><Link to="#">Level 2</Link></li>
+									<li><Link to="#">Level 3</Link></li>
+							</ul>
 							</div>
 						</div>
 					</div>
