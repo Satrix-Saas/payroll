@@ -29,7 +29,7 @@ $(document).ready(function () {
                         $("select").removeClass("input_focus");
                         $(".valid").remove();
                 })
-                // Full Name Validation
+                //Full Name Validation
                 if (full_name != "" && (full_name.match(reg_name))) {
                         arr['name'] = full_name;
                         $("#full_name").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
