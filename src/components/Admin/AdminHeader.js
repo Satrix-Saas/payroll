@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import AdminHeaderMenu from './HeaderComponents/AdminHeaderMenu'
 import AdminHeading from './HeaderComponents/AdminHeading'
 import AdminLogo from './HeaderComponents/AdminLogo'
+import AdminMobileMenu from './HeaderComponents/AccountMenu'
 import Flag from './HeaderComponents/Flag'
 import Messages from './HeaderComponents/Messages'
 import Notifications from './HeaderComponents/Notifications'
@@ -17,15 +18,13 @@ export default function AdminHeader() {
       <div className="main-wrapper">
         <div className="header">
           
-          <Link id="toggle_btn">
-					<span className="bar-icon">
-						<span></span>
-						<span></span>
-						<span></span>
+          <Link id="toggle_btn"  class="rounded-circle">
+					<span className="bar-icon " >
+					<i class="fas fa-bars" id="hambtn"></i>
 					</span>
 				</Link>
         <AdminLogo dashboard="/admindashboard" />
-        <AdminHeading heading="Name"/>
+   
         <AdminHeaderMenu/>
         <Link id="mobile_btn" className="mobile_btn" to="#sidebar"><i className="fa fa-bars"></i></Link>
 

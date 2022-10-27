@@ -6,9 +6,8 @@ export default function SearchBar(props) {
         e.preventDefault();
     }
 	return (
-
 		<>
-			<li className="nav-item">
+			<li className="nav-item" id="searchbar">
 				<div className="top-nav-search">
 					<Link to={preventDefault} className="responsive-search">
 						<i className="fa fa-search"></i>

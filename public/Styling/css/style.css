@@ -1911,7 +1911,7 @@ input[type=file].form-control {
   border-bottom: 1px solid transparent;
   height: 60px;
   z-index: 1002;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   right: 0;
   left: 0;
@@ -1924,7 +1924,7 @@ input[type=file].form-control {
   height: 60px;
   position: relative;
   text-align: center;
-  width: 230px;
+  /* width: 230px; */
   z-index: 1;
   padding: 0 20px;
   -webkit-transition: all 0.2s ease;
@@ -1945,8 +1945,10 @@ input[type=file].form-control {
   .header #toggle_btn {
     color: #999;
     float: left;
+    text-align: center;
     font-size: 26px;
-    line-height: 70px;
+    /* line-height: 70px; */
+    margin-top: 10px;
     padding: 0 10px;
   }
   .header #toggle_btn .bar-icon {
@@ -2318,7 +2320,7 @@ input[type=file].form-control {
 }
 .sidebar .sidebar-menu ul li.menu-title,
 .two-col-bar .sidebar-menu ul li.menu-title {
-  color: #ebebeb;
+  /* color: #ebebeb; */
   font-size: 14px;
   opacity: 1;
   padding: 5px 15px;
@@ -2478,7 +2480,7 @@ input[type=file].form-control {
 .sidebar .sidebar-menu ul ul a.active,
 .two-col-bar .sidebar-menu ul ul a.active {
   color: #ff9b44;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .slide-nav .sidebar {
@@ -6509,7 +6511,7 @@ textarea.form-control {
   padding: 20px 0;
 }
 .account-page .main-wrapper .account-content .account-logo {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   text-align: center;
 }
 .account-page .main-wrapper .account-content .account-logo img {

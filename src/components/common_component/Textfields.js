@@ -9,7 +9,7 @@ export default function Textfields(props) {
     <label>{props.label}
     <span className="mandatory">{props.mandatory}</span>
     </label>
-       <input className="form-control" type={props.type} name={props.name} id={props.id} />
+       <input className="form-control inputfield" type={props.type} name={props.name} id={props.id} />
        <div className='input-description'>{props.content}<Link to="">{props.links}</Link></div>
  </div>
 

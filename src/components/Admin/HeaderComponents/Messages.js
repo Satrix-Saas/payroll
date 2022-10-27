@@ -9,9 +9,9 @@ export default function Messages() {
 }
   return (
     <>
-    <li className="nav-item dropdown">
+    <li className="nav-item dropdown" id="MessageItem">
       <Link href="#" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-        <i className="fa fa-comment"></i> <span className="badge rounded-pill">8</span>
+        <i className="fa fa-comment" id="faitem"></i> <span className="badge rounded-pill">8</span>
       </Link>
       <div className="dropdown-menu notifications">
         <div className="topnav-dropdown-header">

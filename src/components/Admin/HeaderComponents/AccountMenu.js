@@ -4,7 +4,7 @@ import avatar21 from '../../../images/Avatars/avatar-21.jpg'
 
 export default function AccountMenu(props) {
   return (
-    <li className="nav-item dropdown has-arrow main-drop">
+    <li className="nav-item dropdown has-arrow main-drop" id="NavItemDrop">
       <Link href="#" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
         <span className="user-img">
           <img src={avatar21} alt="" />
