@@ -1,5 +1,5 @@
 import React from 'react'
-import StatsInfo from './Statsutitlity/StatsInfo'
+import Progressbar from '../../common_component/Progressbar'
 
 export default function PageStatistics(props) {
   return (
@@ -8,11 +8,11 @@ export default function PageStatistics(props) {
         <div className="card-body">
           <h5 className="card-title">{props.statsTitle}</h5>
           <div className="stats-list">
-             <StatsInfo bgcolor="progress-bar bg-primary"/>
-             <StatsInfo bgcolor="progress-bar bg-primary"/>
-             <StatsInfo bgcolor="progress-bar bg-primary"/>
-             <StatsInfo bgcolor="progress-bar bg-primary"/>
-             <StatsInfo bgcolor="progress-bar bg-primary"/>                       
+             <Progressbar heading="Today leave" barbgcolor="progress-bar bg-primary" obtained="4" overall="/ 65" style={{width:"31%"}} barvalue="31"/>
+             <Progressbar heading="Today leave" barbgcolor="progress-bar bg-primary" obtained="4" overall="/ 65" style={{width:"31%"}} barvalue="31"/>
+             <Progressbar heading="Today leave" barbgcolor="progress-bar bg-primary" obtained="4" overall="/ 65" style={{width:"31%"}} barvalue="31"/>
+             <Progressbar heading="Today leave" barbgcolor="progress-bar bg-primary" obtained="4" overall="/ 65" style={{width:"31%"}} barvalue="31"/>
+             <Progressbar heading="Today leave" barbgcolor="progress-bar bg-primary" obtained="4" overall="/ 65" style={{width:"31%"}} barvalue="31"/>                       
           </div>
         </div>
       </div>

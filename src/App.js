@@ -6,8 +6,10 @@ import ForgotPassword from './components/ForgotPassword';
 import AdminDashboard from './components/AdminDashboard';
 import BasicDetails from './components/BasicDetails';
 import EmployeeOnboarding from './components/EmployeeOnboarding';
-import Departments from './components/Admin/SidebarComponents/Departments';
-// import Apps from './components/test/apps';
+import Departments from './components/Departments'
+import AttendanceEmployee from './components/AttendanceEmployee'
+import LeavesEmployee from './components/LeavesEmployee';
+import AllEmployees from './components/AllEmployees';
 
 
 function App() {
@@ -33,6 +35,18 @@ function App() {
          </Routes>
          <Routes>
             <Route exact path="/department" element={<Departments/>} />
+         </Routes>
+         <Routes>
+            <Route exact path="/attendance-employee" element={<AttendanceEmployee/>} />
+         </Routes>
+         <Routes>
+            <Route exact path="/leaves-employee" element={<LeavesEmployee/>} />
+         </Routes>
+         <Routes>
+            <Route exact path="/all-employees" element={<AllEmployees/>} />
+         </Routes>
+         <Routes>
+            <Route exact path="/employees-list" element={<AllEmployees/>} />
          </Routes>
       </BrowserRouter>
    );
