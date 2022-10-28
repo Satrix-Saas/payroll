@@ -31,7 +31,7 @@ $(document).ready(function () {
                 })
                 //Full Name Validation
                 if (full_name != "" && (full_name.match(reg_name))) {
-                        arr['name'] = full_name;
+                        arr['username'] = full_name;
                         $("#full_name").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {
@@ -64,7 +64,7 @@ $(document).ready(function () {
 
                 //phoneNumber Validation
                 if (phn_num != "" && (phn_num.match(reg_num))) {
-                        arr['cont_no'] = phn_num;
+                        arr['contact'] = phn_num;
                         $("#phn_num").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {
@@ -74,6 +74,7 @@ $(document).ready(function () {
                 }
                 //Password validation
                 if (password != "" && (password.match(reg_pass))) {
+                        arr['password'] = password;
                         $("#password").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                 }
                 else {

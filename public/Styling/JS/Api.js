@@ -3,15 +3,15 @@ function ApiCall(arr,name){
     console.log(arr);
     var data = Object.assign({}, arr)
     $.ajax({
-    type:'GET',
-    url:'http://192.168.0.100:8074/Satrix_Saas/pub/attendance/index/index',
-   // data:{q:'idiom'}
+    type:'POST',
+    url:'http://192.168.0.100:8074/Satrix_Saas/pub/register/index/index',
+   data:data,
    dataType : 'json',
-   cors: true ,
+   cors: false ,
     headers : {
       'Content-type' : 'application/json',
       'Access-Control-Allow-Origin':'*',
-      'Access-Control-Allow-Headers':'*',
+      'Access-Control-Allow-Headers':'Content-Type, X-Auth-Token, Authorization, Origin',
       'token' : 'assss',
       "Access-Control-Allow-Methods": [ "POST", "GET", "OPTIONS","DELETE","PUT"],
   },
