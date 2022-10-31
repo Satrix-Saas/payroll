@@ -44,6 +44,7 @@ export default function Login() {
                                     <div className="form-group text-center">
                                         <button type="button" className="btn btn-primary account-btn" id="login" >Login</button>
                                     </div>
+
                                     <div className="account-footer">
                                         <p>Don't have an account yet? <Link to="/register">Register</Link></p>
                                     </div>

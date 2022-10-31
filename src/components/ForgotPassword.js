@@ -27,9 +27,11 @@ export default function ForgotPassword() {
 
                                 <form>
                                     <Textfields type="text" label="Email Address" id="forgotpswd_email" name="email_address"/>
+
                                     <div className="form-group text-center">
                                         <button type="button" className="btn btn-primary account-btn" id="reset" >Reset Password</button>
                                     </div>
+
                                     <div className="account-footer">
                                         <p>Remember your password? <Link to="/login">Login</Link></p>
                                     </div>
