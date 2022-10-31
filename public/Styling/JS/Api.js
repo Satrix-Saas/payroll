@@ -26,5 +26,6 @@ function ApiCall(arr,name){
       error: function(result) {
         alert("error");
       }
+
   });
 }
