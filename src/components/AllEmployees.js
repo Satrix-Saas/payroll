@@ -6,8 +6,9 @@ import SearchFilterEmployee from './Admin/PageContentComponents/SearchFilterEmpl
 import TwoColSideBar from './Admin/TwoColSideBar'
 import EmployeeProfileWidget from './common_component/EmployeeProfileWidget'
 import profile from '../images/Avatars/avatar-03.jpg'
-import AddEmployee from './popupForms/AddEmployee'
+import AddEditEmployee from './popupForms/AddEditEmployee'
 import { Link } from 'react-router-dom'
+import DeleteEmp from './popupForms/DeleteEmp'
 
 export default function AllEmployees() {
     return (
@@ -41,21 +42,27 @@ export default function AllEmployees() {
                                 </div>
                             </div>
                         </div>
-                        <SearchFilterEmployee/>
+                        <SearchFilterEmployee />
                         <div className="row staff-grid-row">
-                        <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer"/>
-                        <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer"/>
-                        <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer"/>
-                        <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer"/>
-                        <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer"/>
-                        <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer"/>
-                        <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer"/>
-                        <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer"/>
+                            <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer" />
+                            <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer" />
+                            <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer" />
+                            <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer" />
+                            <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer" />
+                            <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer" />
+                            <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer" />
+                            <EmployeeProfileWidget profile={profile} profilename="Employee Name" designation="Web Developer" />
                         </div>
                     </div>
                     <div id="add_employee" className="modal custom-modal fade" role="dialog">
-                        <AddEmployee/>
-                        </div>
+                        <AddEditEmployee action="Add Employee" Fname="First Name" Lname="Last Name" username="Username" email="Email" password="Password" confirm="Confirm Password" empID="Employee Id" joiningDate="Joining Date" number="Phone" submit="Submit" />
+                    </div>
+                    <div id="edit_employee" className="modal custom-modal fade" role="dialog">
+                        <AddEditEmployee action="Edit Employee" Fname="First Name" Lname="Last Name" username="Username" email="Email" password="Password" confirm="Confirm Password" empID="Employee Id" joiningDate="Joining Date" number="Phone" submit="Save" />
+                    </div>
+                    <div className="modal custom-modal fade" id="delete_employee" role="dialog">
+                        <DeleteEmp/>
+                    </div>
                 </div>
 
             </div>

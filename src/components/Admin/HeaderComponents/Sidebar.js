@@ -16,8 +16,8 @@ export default function Sidebar() {
           <li className="submenu">
             <Link to="#"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
             <ul style={styling}>
-              <li><Link to="\admindashboard">Admin Dashboard</Link></li>
-              <li><Link to="\basicdetails">Employee Dashboard</Link></li>
+              <li><Link to="/admindashboard">Admin Dashboard</Link></li>
+              <li><Link to="/basicdetails">Employee Dashboard</Link></li>
             </ul>
           </li>
           <li className="submenu">

@@ -3,7 +3,7 @@ import SelectInputFields from '../common_component/SelectInputFields';
 import { dropDownArray } from '../utility/Dropdownutill';
 import options from '../utility/Options';
 
-export default function AddEmployee() {
+export default function AddEditEmployee(props) {
     const optionArrayCompany = dropDownArray(options,"Company");
     const optionArrayDepartment = dropDownArray(options, "Department");
     const optionArrayDesignation = dropDownArray(options, "Designation");
@@ -13,7 +13,7 @@ export default function AddEmployee() {
             <div className="modal-dialog modal-dialog-centered modal-lg">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title">Add Employee</h5>
+                        <h5 className="modal-title">{props.action}</h5>
                         <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -23,55 +23,55 @@ export default function AddEmployee() {
                             <div className="row">
                                 <div className="col-sm-6">
                                     <div className="form-group">
-                                        <label className="col-form-label">First Name <span className="text-danger">*</span></label>
+                                        <label className="col-form-label">{props.Fname}<span className="text-danger">*</span></label>
                                         <input className="form-control" type="text" />
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="form-group">
-                                        <label className="col-form-label">Last Name</label>
+                                        <label className="col-form-label">{props.Lname}</label>
                                         <input className="form-control" type="text" />
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="form-group">
-                                        <label className="col-form-label">Username <span className="text-danger">*</span></label>
+                                        <label className="col-form-label">{props.username} <span className="text-danger">*</span></label>
                                         <input className="form-control" type="text" />
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="form-group">
-                                        <label className="col-form-label">Email <span className="text-danger">*</span></label>
+                                        <label className="col-form-label">{props.email} <span className="text-danger">*</span></label>
                                         <input className="form-control" type="email" />
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="form-group">
-                                        <label className="col-form-label">Password</label>
+                                        <label className="col-form-label">{props.password}</label>
                                         <input className="form-control" type="password" />
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="form-group">
-                                        <label className="col-form-label">Confirm Password</label>
+                                        <label className="col-form-label">{props.confirm}</label>
                                         <input className="form-control" type="password" />
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="form-group">
-                                        <label className="col-form-label">Employee ID <span className="text-danger">*</span></label>
+                                        <label className="col-form-label">{props.empID}<span className="text-danger">*</span></label>
                                         <input type="text" className="form-control" />
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="form-group">
-                                        <label className="col-form-label">Joining Date <span className="text-danger">*</span></label>
+                                        <label className="col-form-label">{props.joiningDate} <span className="text-danger">*</span></label>
                                         <div className="cal-icon"><input className="form-control datetimepicker" type="text" /></div>
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="form-group">
-                                        <label className="col-form-label">Phone </label>
+                                        <label className="col-form-label">{props.number} </label>
                                         <input className="form-control" type="text" />
                                     </div>
                                 </div>
@@ -298,7 +298,7 @@ export default function AddEmployee() {
                                 </table>
                             </div>
                             <div className="submit-section">
-                                <button className="btn btn-primary submit-btn">Submit</button>
+                                <button className="btn btn-primary submit-btn">{props.submit}</button>
                             </div>
                         </form>
                     </div>

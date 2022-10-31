@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Tablescontent() {
   return (
@@ -28,23 +29,23 @@ export default function Tablescontent() {
 											<td>Going to Hospital</td>
 											<td className="text-center">
 												<div className="action-label">
-													<a className="btn btn-white btn-sm btn-rounded" href="3">
+													<Link className="btn btn-white btn-sm btn-rounded" to="3">
 														<i className="fa fa-dot-circle-o text-purple"></i> New
-													</a>
+													</Link>
 												</div>
 											</td>
 											<td>
 												<h2 className="table-avatar">
-													<a href="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></a>
-													<a href="#">Richard Miles</a>
+													<Link to="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></Link>
+													<Link to="#">Richard Miles</Link>
 												</h2>
 											</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -57,23 +58,23 @@ export default function Tablescontent() {
 											<td>Going to Hospital</td>
 											<td className="text-center">
 												<div className="action-label">
-													<a className="btn btn-white btn-sm btn-rounded" href="#;">
+													<Link className="btn btn-white btn-sm btn-rounded" to="#;">
 														<i className="fa fa-dot-circle-o text-success"></i> Approved
-													</a>
+													</Link>
 												</div>
 											</td>
 											<td>
 												<h2 className="table-avatar">
-													<a href="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></a>
-													<a href="#">Richard Miles</a>
+													<Link to="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></Link>
+													<Link to="#">Richard Miles</Link>
 												</h2>
 											</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -86,23 +87,23 @@ export default function Tablescontent() {
 											<td>Personnal</td>
 											<td className="text-center">
 												<div className="action-label">
-													<a className="btn btn-white btn-sm btn-rounded" href="#;">
+													<Link className="btn btn-white btn-sm btn-rounded" to="#;">
 														<i className="fa fa-dot-circle-o text-success"></i> Approved
-													</a>
+													</Link>
 												</div>
 											</td>
 											<td>
 												<h2 className="table-avatar">
-													<a href="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></a>
-													<a href="#">Richard Miles</a>
+													<Link to="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></Link>
+													<Link to="#">Richard Miles</Link>
 												</h2>
 											</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -115,23 +116,23 @@ export default function Tablescontent() {
 											<td>Going to Hospital</td>
 											<td className="text-center">
 												<div className="action-label">
-													<a className="btn btn-white btn-sm btn-rounded" href="#;">
+													<Link className="btn btn-white btn-sm btn-rounded" to="#;">
 														<i className="fa fa-dot-circle-o text-danger"></i> Declined
-													</a>
+													</Link>
 												</div>
 											</td>
 											<td>
 												<h2 className="table-avatar">
-													<a href="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></a>
-													<a href="#">Richard Miles</a>
+													<Link to="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></Link>
+													<Link to="#">Richard Miles</Link>
 												</h2>
 											</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -144,23 +145,23 @@ export default function Tablescontent() {
 											<td>Going to Hospital</td>
 											<td className="text-center">
 												<div className="action-label">
-													<a className="btn btn-white btn-sm btn-rounded" href="#;">
+													<Link className="btn btn-white btn-sm btn-rounded" to="#;">
 														<i className="fa fa-dot-circle-o text-purple"></i> New
-													</a>
+													</Link>
 												</div>
 											</td>
 											<td>
 												<h2 className="table-avatar">
-													<a href="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></a>
-													<a href="#">Richard Miles</a>
+													<Link to="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></Link>
+													<Link to="#">Richard Miles</Link>
 												</h2>
 											</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -173,23 +174,23 @@ export default function Tablescontent() {
 											<td>Going to Hospital</td>
 											<td className="text-center">
 												<div className="action-label">
-													<a className="btn btn-white btn-sm btn-rounded" href="#;">
+													<Link className="btn btn-white btn-sm btn-rounded" to="#;">
 														<i className="fa fa-dot-circle-o text-success"></i> Approved
-													</a>
+													</Link>
 												</div>
 											</td>
 											<td>
 												<h2 className="table-avatar">
-													<a href="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></a>
-													<a href="#">Richard Miles</a>
+													<Link to="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></Link>
+													<Link to="#">Richard Miles</Link>
 												</h2>
 											</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -202,23 +203,23 @@ export default function Tablescontent() {
 											<td>Going to Hospital</td>
 											<td className="text-center">
 												<div className="action-label">
-													<a className="btn btn-white btn-sm btn-rounded" href="#;">
+													<Link className="btn btn-white btn-sm btn-rounded" to="#;">
 														<i className="fa fa-dot-circle-o text-success"></i> Approved
-													</a>
+													</Link>
 												</div>
 											</td>
 											<td>
 												<h2 className="table-avatar">
-													<a href="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></a>
-													<a href="#">Richard Miles</a>
+													<Link to="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></Link>
+													<Link to="#">Richard Miles</Link>
 												</h2>
 											</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -231,23 +232,23 @@ export default function Tablescontent() {
 											<td>Going to Hospital</td>
 											<td className="text-center">
 												<div className="action-label">
-													<a className="btn btn-white btn-sm btn-rounded" href="#;">
+													<Link className="btn btn-white btn-sm btn-rounded" to="#;">
 														<i className="fa fa-dot-circle-o text-danger"></i> Declined
-													</a>
+													</Link>
 												</div>
 											</td>
 											<td>
 												<h2 className="table-avatar">
-													<a href="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></a>
-													<a href="#">Richard Miles</a>
+													<Link to="profile.html" className="avatar avatar-xs"><img src="assets/img/profiles/avatar-09.jpg" alt=""/></Link>
+													<Link to="#">Richard Miles</Link>
 												</h2>
 											</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#edit_leave"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_approve"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>

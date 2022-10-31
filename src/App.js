@@ -10,6 +10,7 @@ import Departments from './components/Departments'
 import AttendanceEmployee from './components/AttendanceEmployee'
 import LeavesEmployee from './components/LeavesEmployee';
 import AllEmployees from './components/AllEmployees';
+import AllemployeeListView from './components/Admin/PageContentComponents/AllemployeeListView';
 
 
 function App() {
@@ -26,27 +27,17 @@ function App() {
          </Routes>
          <Routes>
             <Route exact path="/admindashboard" element={<AdminDashboard />} />
-         </Routes>
+           </Routes>
          <Routes>
-            <Route exact path="/basicdetails" element={<BasicDetails />} />
-         </Routes>
-         <Routes>
+             <Route exact path="/basicdetails" element={<BasicDetails />} />
             <Route exact path="/employeeonboarding" element={<EmployeeOnboarding />} />
          </Routes>
          <Routes>
-            <Route exact path="/department" element={<Departments/>} />
-         </Routes>
-         <Routes>
-            <Route exact path="/attendance-employee" element={<AttendanceEmployee/>} />
-         </Routes>
-         <Routes>
-            <Route exact path="/leaves-employee" element={<LeavesEmployee/>} />
-         </Routes>
-         <Routes>
-            <Route exact path="/all-employees" element={<AllEmployees/>} />
-         </Routes>
-         <Routes>
-            <Route exact path="/employees-list" element={<AllEmployees/>} />
+            <Route exact path="/department" element={<Departments />} />
+            <Route exact path="/attendance-employee" element={<AttendanceEmployee />} />
+            <Route exact path="/leaves-employee" element={<LeavesEmployee />} />
+            <Route exact path="/all-employees" element={<AllEmployees />} />
+            <Route exact path="/employees-list" element={<AllemployeeListView />} />
          </Routes>
       </BrowserRouter>
    );
