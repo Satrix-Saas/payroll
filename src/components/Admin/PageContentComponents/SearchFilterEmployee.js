@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { dropDownArray } from '../../utility/Dropdownutill';
 import options from '../../utility/Options';
 
@@ -36,7 +37,7 @@ export default function SearchFilterEmployee() {
                 </div>
                 <div className="col-sm-6 col-md-3">
                     <div className="d-grid">
-                        <a href="#" className="btn btn-success w-100"> Search </a>
+                        <Link to="#" className="btn btn-success w-100"> Search </Link>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,11 @@ import AttendanceEmployee from './components/AttendanceEmployee'
 import LeavesEmployee from './components/LeavesEmployee';
 import AllEmployees from './components/AllEmployees';
 import AllemployeeListView from './components/Admin/PageContentComponents/AllemployeeListView';
+import LeavesAdmin from './components/LeavesAdmin';
+import LeavesSettings from './components/LeavesSettings';
+import AttendanceAdmin from './components/AttendanceAdmin';
+import ResetPassword from './components/ResetPassword';
+import CompanyDetails from './components/CompanyDetails';
 
 
 function App() {
@@ -24,6 +29,7 @@ function App() {
          </Routes>
          <Routes>
             <Route exact path="/forgotpassword" element={<ForgotPassword />} />
+            <Route exact path="/resetpassword" element={<ResetPassword/>} />
          </Routes>
          <Routes>
             <Route exact path="/admindashboard" element={<AdminDashboard />} />
@@ -31,13 +37,17 @@ function App() {
          <Routes>
              <Route exact path="/basicdetails" element={<BasicDetails />} />
             <Route exact path="/employeeonboarding" element={<EmployeeOnboarding />} />
+            <Route exact path="/companydetails" element={<CompanyDetails/>} />
          </Routes>
          <Routes>
-            <Route exact path="/department" element={<Departments />} />
-            <Route exact path="/attendance-employee" element={<AttendanceEmployee />} />
-            <Route exact path="/leaves-employee" element={<LeavesEmployee />} />
             <Route exact path="/all-employees" element={<AllEmployees />} />
             <Route exact path="/employees-list" element={<AllemployeeListView />} />
+            <Route exact path="/leaves-employee" element={<LeavesEmployee />} />
+            <Route exact path="/leaves-admin" element={<LeavesAdmin />} />
+            <Route exact path='/leave-setting' element={<LeavesSettings/>}/>
+            <Route exact path="/department" element={<Departments />} />
+            <Route exact path="/attendance-employee" element={<AttendanceEmployee />} />
+            <Route exact path="/attendance-admin" element={<AttendanceAdmin />} />
          </Routes>
       </BrowserRouter>
    );

@@ -1,13 +1,12 @@
 import React from 'react'
 import Logo from './common_component/Logo'
-import SubmitButton from './common_component/Submit_button'
 import { Link } from "react-router-dom";
 import Textfields from './common_component/Textfields'
 import Heading from './common_component/Heading'
 
 export default function Login() {
     document.title = "Login - HRMS admin template";
-   
+
     return (
 
         <div className="account-page">
@@ -15,16 +14,16 @@ export default function Login() {
                 <div className="account-content">
                     <div className="container">
 
-           
+
                         <div className="account-box">
-                                         {/* <!-- Account Logo --> */}
-                        <Logo dashboard="/login" />
-                        {/* <!-- /Account Logo --> */}
+                            {/* <!-- Account Logo --> */}
+                            <Logo dashboard="/login" />
+                            {/* <!-- /Account Logo --> */}
                             <div className="account-wrapper">
                                 <Heading title="Login" subtitle="Access to Our Dashboard" />
                                 {/* <!-- Account Form --> */}
-                                <form action="/basicdetails">
-                                    <Textfields type="text" label="Email" id="login_email" name="login_id"/>
+                                <form action="/login">
+                                    <Textfields type="text" label="Email" id="login_email" name="login_id" />
                                     <div className="form-group">
                                         <div className="row">
                                             <div className="col">
@@ -37,12 +36,15 @@ export default function Login() {
                                             </div>
                                         </div>
                                         <div className="position-relative">
-                                           
-                                            <input className="form-control" type="password" id="password" name='email_password'/>
-										<span className="fa fa-eye-slash" id="toggle-password"></span>
+
+                                            <input className="form-control" type="password" id="password" name='email_password' />
+                                            <span className="fa fa-eye-slash" id="toggle-password"></span>
                                         </div>
                                     </div>
-                                    <button type="button" className="btn btn-primary account-btn" id="login" onClick >Login</button>
+                                    <div className="form-group text-center">
+                                        <button type="button" className="btn btn-primary account-btn" id="login" >Login</button>
+                                    </div>
+
                                     <div className="account-footer">
                                         <p>Don't have an account yet? <Link to="/register">Register</Link></p>
                                     </div>

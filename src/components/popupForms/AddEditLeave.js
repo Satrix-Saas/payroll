@@ -3,7 +3,7 @@ import SelectInputFields from '../common_component/SelectInputFields';
 import { dropDownArray } from '../utility/Dropdownutill';
 import options from '../utility/Options';
 
-export default function Addleave() {
+export default function AddEditLeave(props) {
     const optionArray = dropDownArray(options, "Leaves-type");
     return (
         <>
@@ -11,7 +11,7 @@ export default function Addleave() {
             <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title">Add Leave</h5>
+                        <h5 className="modal-title">{props.action}</h5>
                         <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -53,7 +53,7 @@ export default function Addleave() {
                                 <textarea rows="4" className="form-control"></textarea>
                             </div>
                             <div className="submit-section">
-                                <button className="btn btn-primary submit-btn">Submit</button>
+                                <button className="btn btn-primary submit-btn">{props.submit}</button>
                             </div>
                         </form>
                     </div>
