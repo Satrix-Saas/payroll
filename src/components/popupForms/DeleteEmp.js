@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function DeleteEmp() {
+export default function DeleteEmp(props) {
   return (
   
     <div className="modal-dialog modal-dialog-centered">
@@ -14,10 +14,10 @@ export default function DeleteEmp() {
                 <div className="modal-btn delete-action">
                     <div className="row">
                         <div className="col-6">
-                           <Link to="#" className="btn btn-primary continue-btn">Delete</Link>
+                           <Link to="#" className="btn btn-primary continue-btn">{props.delete}</Link>
                         </div>
                         <div className="col-6">
-                           <Link to="#" data-bs-dismiss="modal" className="btn btn-primary cancel-btn">Cancel</Link>
+                           <Link to="#" data-bs-dismiss="modal" className="btn btn-primary cancel-btn">{props.cancel}</Link>
                         </div>
                     </div>
                 </div>

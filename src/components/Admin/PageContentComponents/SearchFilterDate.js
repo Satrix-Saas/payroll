@@ -2,7 +2,7 @@ import React from 'react'
 import { dropDownArray } from '../../utility/Dropdownutill';
 import options from '../../utility/Options';
 
-export default function SearchFilter() {
+export default function SearchFilterDate() {
     const optionArrayMonth = dropDownArray(options, "Month");
     const optionArrayYear = dropDownArray(options, "Year");
 

@@ -61,7 +61,7 @@ export default function AllEmployees() {
                         <AddEditEmployee action="Edit Employee" Fname="First Name" Lname="Last Name" username="Username" email="Email" password="Password" confirm="Confirm Password" empID="Employee Id" joiningDate="Joining Date" number="Phone" submit="Save" />
                     </div>
                     <div className="modal custom-modal fade" id="delete_employee" role="dialog">
-                        <DeleteEmp/>
+                        <DeleteEmp delete="Delete"  cancel="Cancel"/>
                     </div>
                 </div>
 

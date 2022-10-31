@@ -135,7 +135,7 @@ const options = {
         {
             'name': 'leaves',
             'option': 'Casual Leave 12 Days',
-            'optionvalue': 'Casual Leave 12 Days'
+            'optionvalue': 'Casual Leave'
         },
         {
             'name': 'leaves',
@@ -147,6 +147,22 @@ const options = {
             'option': 'Loss of Pay',
             'optionvalue': 'Loss of Pay'
         },],
+        'Leaves-status': [
+            {
+                'name': 'status',
+                'option': 'Pending',
+                'optionvalue': 'Pending'
+            },
+            {
+                'name': 'status',
+                'option': 'Approved',
+                'optionvalue': 'Approved'
+            },
+            {
+                'name': 'status',
+                'option': 'Rejected',
+                'optionvalue': 'Rejected'
+            },],
     'Designation': [
         {
             'name': 'designation',

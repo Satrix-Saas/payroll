@@ -22,9 +22,9 @@ export default function Departments() {
 			<div className="page-wrapper">
 
 				<div className="content container-fluid">
-					<div ClassName="page-header">
-						<div ClassName="row align-items-center">
-							<div ClassName="col">
+					<div className="page-header">
+						<div className="row align-items-center">
+							<div className="col">
 								<DashboardPageHeading pageheading="Department" pageworking="Department" />
 							</div>
 						</div>

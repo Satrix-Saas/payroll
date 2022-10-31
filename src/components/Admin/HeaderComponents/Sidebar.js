@@ -1,12 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import UlLi from '../../common_component/UlLi'
 
 export default function Sidebar() {
-  const styling = { display: 'none' }
-
+  const style = {display: "none" };
   return (
-
     <>
       <nav className="greedys sidebar-horizantal">
         <ul className="list-inline-item list-unstyled links">
@@ -15,18 +12,18 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="/admindashboard">Admin Dashboard</Link></li>
               <li><Link to="/basicdetails">Employee Dashboard</Link></li>
             </ul>
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-cube"></i> <span> Apps</span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="chat.html">Chat</Link></li>
               <li className="submenu">
                 <Link to="#"><span> Calls</span> <span className="menu-arrow"></span></Link>
-                <ul style={styling}>
+                <ul style={style}>
                   <li><Link to="voice-call.html">Voice Call</Link></li>
                   <li><Link to="video-call.html">Video Call</Link></li>
                   <li><Link to="outgoing-call.html">Outgoing Call</Link></li>
@@ -43,22 +40,20 @@ export default function Sidebar() {
             <span>Employees</span>
           </li>
           <li className="submenu">
-
             <Link to="#" className="noti-dot"><i className="la la-user"></i> <span> Employees</span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
-              <UlLi navigationLink="/all-employees" navigatedpagename="All Employees" />
-              <UlLi navigationLink="holidays.html" navigatedpagename="Holidays" />
-              <UlLi navigationLink="leaves.html" navigatedpagename="Leaves (Admin)" /><span className="badge rounded-pill bg-primary float-end">1</span>
-              <UlLi navigationLink="/leaves-employee" navigatedpagename="Leaves (Employee)" />
-              <UlLi navigationLink="leave-settings.html" navigatedpagename="Leave Settings" />
-              <UlLi navigationLink="attendance.html" navigatedpagename="Attendance (Admin)" />
-              <UlLi navigationLink="/attendance-employee" navigatedpagename="Attendance (Employee)" />
-              <UlLi navigationLink="/department" navigatedpagename="Departments" />
-              <UlLi navigationLink="designations.htm" navigatedpagename="Designations" />
-              <UlLi navigationLink="timesheet.html" navigatedpagename="Timesheet" />
-              <UlLi navigationLink="shift-scheduling.html" navigatedpagename="Shift & Schedule" />
-              <UlLi navigationLink="overtime.html" navigatedpagename="Overtime" />
-
+            <ul style={style}>
+              <li><Link to="/all-employees">All Employees</Link></li>
+              <li><Link to="holidays.html">Holidays</Link></li>
+              <li><Link to="/leaves-admin">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link></li>
+              <li><Link to="/leaves-employee">Leaves (Employee)</Link></li>
+              <li><Link to="/leave-setting">Leave Settings</Link></li>
+              <li><Link to="/attendance-admin">Attendance (Admin)</Link></li>
+              <li><Link to="/attendance-employee">Attendance (Employee)</Link></li>
+              <li><Link to="departments.html">Departments</Link></li>
+              <li><Link to="designations.html">Designations</Link></li>
+              <li><Link to="timesheet.html">Timesheet</Link></li>
+              <li><Link to="shift-scheduling.html">Shift & Schedule</Link></li>
+              <li><Link to="overtime.html">Overtime</Link></li>
             </ul>
           </li>
           <li>
@@ -66,7 +61,7 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-rocket"></i> <span> Projects</span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="projects.html">Projects</Link></li>
               <li><Link to="tasks.html">Tasks</Link></li>
               <li><Link to="task-board.html">Task Board</Link></li>
@@ -75,17 +70,15 @@ export default function Sidebar() {
           <li>
             <Link to="leads.html"><i className="la la-user-secret"></i> <span>Leads</span></Link>
           </li>
-
-          <li> sidebar-vertical
+          <li>
             <Link to="tickets.html"><i className="la la-ticket"></i> <span>Tickets</span></Link>
-
           </li>
           <li className="menu-title">
             <span>HR</span>
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-files-o"></i> <span> Sales </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="estimates.html">Estimates</Link></li>
               <li><Link to="invoices.html">Invoices</Link></li>
               <li><Link to="payments.html">Payments</Link></li>
@@ -99,7 +92,7 @@ export default function Sidebar() {
         <ul className="hidden-links hidden">
           <li className="submenu">
             <Link to="#"><i className="la la-files-o"></i> <span> Accounting </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="categories.html">Categories</Link></li>
               <li><Link to="budgets.html">Budgets</Link></li>
               <li><Link to="budget-expenses.html">Budget Expenses</Link></li>
@@ -108,7 +101,7 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-money"></i> <span> Payroll </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="salary.html"> Employee Salary </Link></li>
               <li><Link to="salary-view.html"> Payslip </Link></li>
               <li><Link to="payroll-items.html"> Payroll Items </Link></li>
@@ -119,7 +112,7 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-pie-chart"></i> <span> Reports </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="expense-reports.html"> Expense Report </Link></li>
               <li><Link to="invoice-reports.html"> Invoice Report </Link></li>
               <li><Link to="payments-reports.html"> Payments Report </Link></li>
@@ -138,7 +131,7 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-graduation-cap"></i> <span> Performance </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="performance-indicator.html"> Performance Indicator </Link></li>
               <li><Link to="performance.html"> Performance Review </Link></li>
               <li><Link to="performance-appraisal.html"> Performance Appraisal </Link></li>
@@ -146,14 +139,14 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-crosshairs"></i> <span> Goals </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="goal-tracking.html"> Goal List </Link></li>
               <li><Link to="goal-type.html"> Goal Type </Link></li>
             </ul>
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-edit"></i> <span> Training </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="training.html"> Training List </Link></li>
               <li><Link to="trainers.html"> Trainers</Link></li>
               <li><Link to="training-type.html"> Training Type </Link></li>
@@ -170,7 +163,7 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-briefcase"></i> <span> Jobs </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="user-dashboard.html"> User Dasboard </Link></li>
               <li><Link to="jobs-dashboard.html"> Jobs Dasboard </Link></li>
               <li><Link to="jobs.html"> Manage Jobs </Link></li>
@@ -201,14 +194,14 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-user"></i> <span> Profile </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="profile.html"> Employee Profile </Link></li>
               <li><Link to="client-profile.html"> Client Profile </Link></li>
             </ul>
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-key"></i> <span> Authentication </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="index.html"> Login </Link></li>
               <li><Link to="register.html"> Register </Link></li>
               <li><Link to="forgot-password.html"> Forgot Password </Link></li>
@@ -218,14 +211,14 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-exclamation-triangle"></i> <span> Error Pages </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="error-404.html">404 Error </Link></li>
               <li><Link to="error-500.html">500 Error </Link></li>
             </ul>
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-hand-o-up"></i> <span> Subscriptions </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="subscriptions.html"> Subscriptions (Admin) </Link></li>
               <li><Link to="subscriptions-company.html"> Subscriptions (Company) </Link></li>
               <li><Link to="subscribed-companies.html"> Subscribed Companies</Link></li>
@@ -233,7 +226,7 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-columns"></i> <span> Pages </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="search.html"> Search </Link></li>
               <li><Link to="faq.html"> FAQ </Link></li>
               <li><Link to="terms.html"> Terms </Link></li>
@@ -249,7 +242,7 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-object-group"></i> <span> Forms </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="form-basic-inputs.html">Basic Inputs </Link></li>
               <li><Link to="form-input-groups.html">Input Groups </Link></li>
               <li><Link to="form-horizontal.html">Horizontal Form </Link></li>
@@ -260,7 +253,7 @@ export default function Sidebar() {
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-table"></i> <span> Tables </span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li><Link to="tables-basic.html">Basic Tables </Link></li>
               <li><Link to="data-tables.html">Data Table </Link></li>
             </ul>
@@ -272,29 +265,27 @@ export default function Sidebar() {
             <Link to="#"><i className="la la-file-text"></i> <span>Documentation</span></Link>
           </li>
           <li>
-
             <Link to="#"><i className="la la-info"></i> <span>Change Log</span> <span className="badge badge-primary ms-auto">v3.4</span></Link>
           </li>
           <li className="submenu">
             <Link to="#"><i className="la la-share-alt"></i> <span>Multi Level</span> <span className="menu-arrow"></span></Link>
-            <ul style={styling}>
+            <ul style={style}>
               <li className="submenu">
                 <Link to="#"> <span>Level 1</span> <span className="menu-arrow"></span></Link>
-                <ul style={styling}>
-                  <li><Link to="#"><span>Level 2</span></Link> </li>
+                <ul style={style}>
+                  <li><Link to="#"><span>Level 2</span></Link></li>
                   <li className="submenu">
                     <Link to="#"> <span> Level 2</span> <span className="menu-arrow"></span></Link>
-                    <ul style={styling}>
-                      <UlLi navigationLink="#" navigatedpagename="Level 3" />
-                      <UlLi navigationLink="#" navigatedpagename="Level 3" />
+                    <ul style={style}>
+                      <li><Link to="#">Level 3</Link></li>
+                      <li><Link to="#">Level 3</Link></li>
                     </ul>
                   </li>
-                  <li><Link to="#"> <span>Level 2</span></Link> </li>
+                  <li><Link to="#"> <span>Level 2</span></Link></li>
                 </ul>
               </li>
               <li>
                 <Link to="#"> <span>Level 1</span></Link>
-
               </li>
             </ul>
           </li>
@@ -306,18 +297,18 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
-            <li><Link className="active" to="/admindashboard">Admin Dashboard</Link></li>
+          <ul style={style}>
+            <li><Link to="/admindashboard">Admin Dashboard</Link></li>
             <li><Link to="/basicdetails">Employee Dashboard</Link></li>
           </ul>
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-cube"></i> <span> Apps</span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="chat.html">Chat</Link></li>
             <li className="submenu">
               <Link to="#"><span> Calls</span> <span className="menu-arrow"></span></Link>
-              <ul style={styling}>
+              <ul style={style}>
                 <li><Link to="voice-call.html">Voice Call</Link></li>
                 <li><Link to="video-call.html">Video Call</Link></li>
                 <li><Link to="outgoing-call.html">Outgoing Call</Link></li>
@@ -334,22 +325,20 @@ export default function Sidebar() {
           <span>Employees</span>
         </li>
         <li className="submenu">
-
           <Link to="#" className="noti-dot"><i className="la la-user"></i> <span> Employees</span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
-            <li><Link to="/all-employees">All Employees</Link> </li>
-            <li><Link to="holidays.html">Holidays</Link> </li>
-            <li><Link to="leaves.html">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link> </li>
-            <li><Link to="/leaves-employee">Leaves (Employee)</Link> </li>
-            <li><Link to="leave-settings.html">Leave Settings</Link> </li>
-            <li><Link to="attendance.html">Attendance (Admin)</Link> </li>
-            <li><Link to="/attendance-employee">Attendance (Employee)</Link> </li>
-            <li> <Link to="/department">Departments</Link></li>
-            <li><Link to="designations.html">Designations</Link> </li>
-            <li><Link to="timesheet.html">Timesheet</Link> </li>
-            <li><Link to="shift-scheduling.html">Shift & Schedule</Link> </li>
-            <li><Link to="overtime.html">Overtime</Link> </li>
-
+          <ul style={style}>
+            <li><Link to="/all-employees">All Employees</Link></li>
+            <li><Link to="holidays.html">Holidays</Link></li>
+            <li><Link to="/leaves-admin">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link></li>
+            <li><Link to="/leaves-employee">Leaves (Employee)</Link></li>
+            <li><Link to="/leave-setting">Leave Settings</Link></li>
+            <li><Link to="/attendance-admin">Attendance (Admin)</Link></li>
+            <li><Link to="/attendance-employee">Attendance (Employee)</Link></li>
+            <li><Link to="departments.html">Departments</Link></li>
+            <li><Link to="designations.html">Designations</Link></li>
+            <li><Link to="timesheet.html">Timesheet</Link></li>
+            <li><Link to="shift-scheduling.html">Shift & Schedule</Link></li>
+            <li><Link to="overtime.html">Overtime</Link></li>
           </ul>
         </li>
         <li>
@@ -357,7 +346,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-rocket"></i> <span> Projects</span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="projects.html">Projects</Link></li>
             <li><Link to="tasks.html">Tasks</Link></li>
             <li><Link to="task-board.html">Task Board</Link></li>
@@ -374,7 +363,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-files-o"></i> <span> Sales </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="estimates.html">Estimates</Link></li>
             <li><Link to="invoices.html">Invoices</Link></li>
             <li><Link to="payments.html">Payments</Link></li>
@@ -385,7 +374,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-files-o"></i> <span> Accounting </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="categories.html">Categories</Link></li>
             <li><Link to="budgets.html">Budgets</Link></li>
             <li><Link to="budget-expenses.html">Budget Expenses</Link></li>
@@ -394,7 +383,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-money"></i> <span> Payroll </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="salary.html"> Employee Salary </Link></li>
             <li><Link to="salary-view.html"> Payslip </Link></li>
             <li><Link to="payroll-items.html"> Payroll Items </Link></li>
@@ -405,7 +394,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-pie-chart"></i> <span> Reports </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="expense-reports.html"> Expense Report </Link></li>
             <li><Link to="invoice-reports.html"> Invoice Report </Link></li>
             <li><Link to="payments-reports.html"> Payments Report </Link></li>
@@ -424,7 +413,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-graduation-cap"></i> <span> Performance </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="performance-indicator.html"> Performance Indicator </Link></li>
             <li><Link to="performance.html"> Performance Review </Link></li>
             <li><Link to="performance-appraisal.html"> Performance Appraisal </Link></li>
@@ -432,14 +421,14 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-crosshairs"></i> <span> Goals </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="goal-tracking.html"> Goal List </Link></li>
             <li><Link to="goal-type.html"> Goal Type </Link></li>
           </ul>
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-edit"></i> <span> Training </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="training.html"> Training List </Link></li>
             <li><Link to="trainers.html"> Trainers</Link></li>
             <li><Link to="training-type.html"> Training Type </Link></li>
@@ -456,7 +445,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-briefcase"></i> <span> Jobs </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="user-dashboard.html"> User Dasboard </Link></li>
             <li><Link to="jobs-dashboard.html"> Jobs Dasboard </Link></li>
             <li><Link to="jobs.html"> Manage Jobs </Link></li>
@@ -487,14 +476,14 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-user"></i> <span> Profile </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="profile.html"> Employee Profile </Link></li>
             <li><Link to="client-profile.html"> Client Profile </Link></li>
           </ul>
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-key"></i> <span> Authentication </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="index.html"> Login </Link></li>
             <li><Link to="register.html"> Register </Link></li>
             <li><Link to="forgot-password.html"> Forgot Password </Link></li>
@@ -504,14 +493,14 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-exclamation-triangle"></i> <span> Error Pages </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="error-404.html">404 Error </Link></li>
             <li><Link to="error-500.html">500 Error </Link></li>
           </ul>
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-hand-o-up"></i> <span> Subscriptions </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="subscriptions.html"> Subscriptions (Admin) </Link></li>
             <li><Link to="subscriptions-company.html"> Subscriptions (Company) </Link></li>
             <li><Link to="subscribed-companies.html"> Subscribed Companies</Link></li>
@@ -519,7 +508,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-columns"></i> <span> Pages </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="search.html"> Search </Link></li>
             <li><Link to="faq.html"> FAQ </Link></li>
             <li><Link to="terms.html"> Terms </Link></li>
@@ -535,7 +524,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-object-group"></i> <span> Forms </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="form-basic-inputs.html">Basic Inputs </Link></li>
             <li><Link to="form-input-groups.html">Input Groups </Link></li>
             <li><Link to="form-horizontal.html">Horizontal Form </Link></li>
@@ -546,7 +535,7 @@ export default function Sidebar() {
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-table"></i> <span> Tables </span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li><Link to="tables-basic.html">Basic Tables </Link></li>
             <li><Link to="data-tables.html">Data Table </Link></li>
           </ul>
@@ -558,37 +547,33 @@ export default function Sidebar() {
           <Link to="#"><i className="la la-file-text"></i> <span>Documentation</span></Link>
         </li>
         <li>
-
           <Link to="#"><i className="la la-info"></i> <span>Change Log</span> <span className="badge badge-primary ms-auto">v3.4</span></Link>
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-share-alt"></i> <span>Multi Level</span> <span className="menu-arrow"></span></Link>
-          <ul style={styling}>
+          <ul style={style}>
             <li className="submenu">
               <Link to="#"> <span>Level 1</span> <span className="menu-arrow"></span></Link>
-              <ul style={styling}>
-                <li><Link to="#"><span>Level 2</span></Link> </li>
+              <ul style={style}>
+                <li><Link to="#"><span>Level 2</span></Link></li>
                 <li className="submenu">
                   <Link to="#"> <span> Level 2</span> <span className="menu-arrow"></span></Link>
-                  <ul style={styling}>
-                    <li><Link to="#">Level 3</Link> </li>
-                    <li><Link to="#">Level 3</Link> </li>
+                  <ul style={style}>
+                    <li><Link to="#">Level 3</Link></li>
+                    <li><Link to="#">Level 3</Link></li>
                   </ul>
                 </li>
-                <li><Link to="#"> <span>Level 2</span></Link> </li>
+                <li><Link to="#"> <span>Level 2</span></Link></li>
               </ul>
             </li>
             <li>
               <Link to="#"> <span>Level 1</span></Link>
-
             </li>
           </ul>
         </li>
       </ul>
 
-
     </>
-
 
   )
 }
