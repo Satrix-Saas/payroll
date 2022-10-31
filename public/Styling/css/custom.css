@@ -95,6 +95,12 @@
   #toggle_btn{
      border-radius:10px ;  
   }
+  #toggle_btn:hover{
+    background-color: #ced4da;
+  }
+  #toggle_btn:focus{
+    background-color: #ced4da;
+  }
 
   .header .top-nav-search form .form-control {
     background-color:#eaf1fb;
@@ -110,6 +116,18 @@
   }
   #faitem{
     color: #5f6368;
+    border-radius: 50%;
+  }
+  .header .user-menu.nav > li > a i {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  #faitem:hover{
+    background-color: #ced4da;
+  }
+  #faitem :focus{
+    background-color: #ced4da;
+  
   }
   #flagname{
     color:#001d35;
@@ -127,7 +145,7 @@
     color:#fff;
 }
 .dropdown-item.active, .dropdown-item:active {
-    background-color: #FF7849;
+    background-color: red;
   }
   .dropdown-menu.show {
     position: absolute;
@@ -135,10 +153,7 @@
     margin: 0px;
    transform: translate3d(0px, 42px, 0px);
     display: block;
-
-
-    background-color: #fff;
-
+  background-color: #fff;
 }
 .header .header-new-menu li a.dropdown-item {
     line-height: 30px;
@@ -266,4 +281,24 @@
   top: 0;
   right: 0;
   left: 0;
+}
+
+.add-btn:focus{
+  background-color: #d0d3d7;
+}
+.add-btn:hover{
+  background-color:#dee2e6;
+  color: #292a2d;
+}
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #c2e7ff;
+}
+.page-item.active .page-link {
+  background-color: #adb5bd;
+  border-color: #c6c6c6;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+  background-color: #adb5bd;
+  border-color: #c6c6c6;
+  color: black;
 }
