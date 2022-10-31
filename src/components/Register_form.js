@@ -35,7 +35,7 @@ export default function Register_form() {
     <div className="account-page">
       <div className="main-wrapper">
         <div className="account-content">
-          <div className="container">
+          <div className="container"> 
           
 
             <div className="account-box">
