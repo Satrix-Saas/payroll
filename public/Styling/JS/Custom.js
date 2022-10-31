@@ -1,5 +1,6 @@
 $(document).ready(function () {
         // Registeration validation
+        
         $(document).on('click', "#register", function (e) {
               
                 e.preventDefault();
@@ -232,11 +233,13 @@ $(document).ready(function () {
                         }
                 }
                 
-  
         });
 
-
-    
-      
-})
+        window.addEventListener('popstate', (event) => {
+                if (event.state) {
+                       // window.location.reload(true);
+                }
+               }, false);
+            
+});
 
