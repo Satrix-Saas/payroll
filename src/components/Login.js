@@ -42,7 +42,7 @@ export default function Login() {
 										<span className="fa fa-eye-slash" id="toggle-password"></span>
                                         </div>
                                     </div>
-                                    <SubmitButton submitvalue="Login" btn_id="login"/>
+                                    <button type="button" className="btn btn-primary account-btn" id="login" onClick >Login</button>
                                     <div className="account-footer">
                                         <p>Don't have an account yet? <Link to="/register">Register</Link></p>
                                     </div>
