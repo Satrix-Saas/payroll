@@ -22,7 +22,7 @@ export default function Carryforward() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div className="leave-right">
                     <button className="leave-edit-btn">
                         Edit

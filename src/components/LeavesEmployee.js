@@ -22,7 +22,7 @@ export default function LeavesEmployee() {
                             <Sidebar />
                         </div></div></div>
                 <div className="two-col-bar" id="two-col-bar">
-                    <TwoColSideBar />
+                    <TwoColSideBar /> 
                 </div>
                 <div className="page-wrapper">
                     <div className="content container-fluid">

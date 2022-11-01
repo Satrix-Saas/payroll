@@ -18,4 +18,4 @@ export default function LeaveSettingInput(props) {
             </div>
         </>
     )
-}
+} 

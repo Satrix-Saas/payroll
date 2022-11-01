@@ -14,7 +14,7 @@ export default function LeavesAdmin() {
         <>
             <div className="main-wrapper">
 
-                <AdminHeader />
+                <AdminHeader /> 
                 <div className="sidebar" id="sidebar">
                     <div className="sidebar-inner slimscroll">
                         <div id="sidebar-menu" className="sidebar-menu">

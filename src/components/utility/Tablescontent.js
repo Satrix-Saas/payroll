@@ -25,7 +25,7 @@ export default function Tablescontent() {
 											<td>Casual Leave</td>
 											<td>8 Mar 2019</td>
 											<td>9 Mar 2019</td>
-											<td>2 days</td>
+											<td>2 days</td> 
 											<td>Going to Hospital</td>
 											<td className="text-center">
 												<div className="action-label">

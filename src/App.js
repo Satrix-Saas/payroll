@@ -35,7 +35,7 @@ function App() {
             <Route exact path="/admindashboard" element={<AdminDashboard />} />
            </Routes>
          <Routes>
-             <Route exact path="/basicdetails" element={<BasicDetails />} />
+             <Route exact path="/basicdetails" element={<BasicDetails />} /> 
             <Route exact path="/employeeonboarding" element={<EmployeeOnboarding />} />
             <Route exact path="/companydetails" element={<CompanyDetails/>} />
          </Routes>

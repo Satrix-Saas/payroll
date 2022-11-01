@@ -58,6 +58,6 @@ export default function Departments() {
 			</div>
 
 		</div>
-
+ 
 	)
 }
