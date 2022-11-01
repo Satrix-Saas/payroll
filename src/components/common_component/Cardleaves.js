@@ -8,5 +8,5 @@ export default function Cardleaves(props) {
                 <h4>{props.numbers}<span>{props.Outof}</span></h4>
             </div>
         </div>
-    )
+    ) 
 }

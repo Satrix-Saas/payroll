@@ -15,7 +15,7 @@ export default function CustomPolicy(props) {
                     <table className="table table-hover table-nowrap leave-table mb-0">
                         <thead>
                             <tr>
-                                <th className="l-name">Name</th>
+                                <th className="l-name">Name</th> 
                                 <th className="l-days">Days</th>
                                 <th className="l-assignee">Assignee</th>
                                 <th></th>

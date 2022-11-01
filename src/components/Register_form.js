@@ -106,3 +106,4 @@ export default function Register_form() {
     </div>
   );
 }
+ 

@@ -23,7 +23,7 @@ export default function DeleteEmp(props) {
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
   )
 }

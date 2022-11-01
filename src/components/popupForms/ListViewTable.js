@@ -14,7 +14,7 @@ export default function ListViewTable(props) {
             <td>{props.email}</td>
             <td>{props.number}</td>
             <td>{props.joinDate}</td>
-            <td>
+            <td> 
                 <div className="dropdown">
                     <Link href="" className="btn btn-white btn-sm btn-rounded dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Web Developer </Link>
                     <div className="dropdown-menu">

@@ -19,7 +19,7 @@ export default function EarnedLeaves(props) {
                         </div>
                     </div>
                 </div>
-                <div className="leave-right">
+                <div className="leave-right"> 
                     <button className="leave-edit-btn">
                         {props.edit}
                     </button>

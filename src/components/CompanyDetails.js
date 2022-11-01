@@ -106,7 +106,7 @@ export default function CompanyDetails() {
                 </div>
             </div>
         </>
-    )
+    ) 
 }
 {/* <div> <h4>Tax Setup</h4></div>
 <LeaveSettingInput label="PAN" type="text" editbtn="Edit" />
