@@ -147,22 +147,22 @@ const options = {
             'option': 'Loss of Pay',
             'optionvalue': 'Loss of Pay'
         },],
-        'Leaves-status': [
-            {
-                'name': 'status',
-                'option': 'Pending',
-                'optionvalue': 'Pending'
-            },
-            {
-                'name': 'status',
-                'option': 'Approved',
-                'optionvalue': 'Approved'
-            },
-            {
-                'name': 'status ',
-                'option': 'Rejected',
-                'optionvalue': 'Rejected'
-            },],
+    'Leaves-status': [
+        {
+            'name': 'status',
+            'option': 'Pending',
+            'optionvalue': 'Pending'
+        },
+        {
+            'name': 'status',
+            'option': 'Approved',
+            'optionvalue': 'Approved'
+        },
+        {
+            'name': 'status ',
+            'option': 'Rejected',
+            'optionvalue': 'Rejected'
+        },],
     'Designation': [
         {
             'name': 'designation',
@@ -200,22 +200,61 @@ const options = {
             'option': 'International Software Inc',
             'optionvalue': 'International Software Inc'
         },],
-        'Department': [
+    'Department': [
+        {
+            'name': 'department',
+            'option': 'Web Development',
+            'optionvalue': 'Web Development'
+        },
+        {
+            'name': 'department',
+            'option': 'IT Management',
+            'optionvalue': 'IT Management'
+        },
+        {
+            'name': 'department',
+            'option': 'Marketing',
+            'optionvalue': 'Marketing'
+        },],
+
+        'pay_slip' : [
             {
-                'name': 'department',
-                'option': 'Web Development',
-                'optionvalue': 'Web Development'
+                'name' : 'payslip',
+                'option' :'2023-2024',
+                'optionvalue': '2023-2024',
             },
             {
-                'name': 'department',
-                'option': 'IT Management',
-                'optionvalue': 'IT Management'
+                'name' : 'payslip',
+                'option' :'2022-2023',
+                'optionvalue': '2022-2023',
             },
             {
-                'name': 'department',
-                'option': 'Marketing',
-                'optionvalue': 'Marketing'
-            },],
+                'name' : 'payslip',
+                'option' :'2021-2022',
+                'optionvalue': '2021-2022',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2020-2021',
+                'optionvalue': '2020-2021',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2019-2020',
+                'optionvalue': '2019-2020',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2018-2019',
+                'optionvalue': '2018-2019',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2017-2018',
+                'optionvalue': '2017-2018',
+            },
+
+        ]
 }
 
 
