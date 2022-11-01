@@ -216,6 +216,7 @@ const options = {
             'option': 'Marketing',
             'optionvalue': 'Marketing'
         },],
+
         'Documents': [
             {
                 'name': 'documents',
@@ -252,6 +253,45 @@ const options = {
                 'option': 'Other',
                 'optionvalue': 'Other'
             },],
+
+        'pay_slip' : [
+            {
+                'name' : 'payslip',
+                'option' :'2023-2024',
+                'optionvalue': '2023-2024',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2022-2023',
+                'optionvalue': '2022-2023',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2021-2022',
+                'optionvalue': '2021-2022',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2020-2021',
+                'optionvalue': '2020-2021',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2019-2020',
+                'optionvalue': '2019-2020',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2018-2019',
+                'optionvalue': '2018-2019',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2017-2018',
+                'optionvalue': '2017-2018',
+            },
+
+        ]
 }
 
 
