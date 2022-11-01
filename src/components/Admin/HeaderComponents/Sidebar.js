@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Sidebar() {
-  const style = {display: "none" };
-  return ( 
+  const style = { display: "none" };
+  return (
     <>
+
       <nav className="greedys sidebar-horizantal">
         <ul className="list-inline-item list-unstyled links">
           <li className="menu-title">

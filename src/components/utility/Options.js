@@ -147,22 +147,22 @@ const options = {
             'option': 'Loss of Pay',
             'optionvalue': 'Loss of Pay'
         },],
-        'Leaves-status': [
-            {
-                'name': 'status',
-                'option': 'Pending',
-                'optionvalue': 'Pending'
-            },
-            {
-                'name': 'status',
-                'option': 'Approved',
-                'optionvalue': 'Approved'
-            },
-            {
-                'name': 'status ',
-                'option': 'Rejected',
-                'optionvalue': 'Rejected'
-            },],
+    'Leaves-status': [
+        {
+            'name': 'status',
+            'option': 'Pending',
+            'optionvalue': 'Pending'
+        },
+        {
+            'name': 'status',
+            'option': 'Approved',
+            'optionvalue': 'Approved'
+        },
+        {
+            'name': 'status ',
+            'option': 'Rejected',
+            'optionvalue': 'Rejected'
+        },],
     'Designation': [
         {
             'name': 'designation',
@@ -200,21 +200,57 @@ const options = {
             'option': 'International Software Inc',
             'optionvalue': 'International Software Inc'
         },],
-        'Department': [
+    'Department': [
+        {
+            'name': 'department',
+            'option': 'Web Development',
+            'optionvalue': 'Web Development'
+        },
+        {
+            'name': 'department',
+            'option': 'IT Management',
+            'optionvalue': 'IT Management'
+        },
+        {
+            'name': 'department',
+            'option': 'Marketing',
+            'optionvalue': 'Marketing'
+        },],
+        'Documents': [
             {
-                'name': 'department',
-                'option': 'Web Development',
-                'optionvalue': 'Web Development'
+                'name': 'documents',
+                'option': 'prof_doc',
+                'optionvalue': 'Professional Documents'
             },
             {
-                'name': 'department',
-                'option': 'IT Management',
-                'optionvalue': 'IT Management'
+                'name': 'documents',
+                'option': 'degree',
+                'optionvalue': 'Degree'
             },
             {
-                'name': 'department',
-                'option': 'Marketing',
-                'optionvalue': 'Marketing'
+                'name': 'documents',
+                'option': 'aadhar',
+                'optionvalue': 'Aadhar'
+            },
+            {
+                'name': 'documents',
+                'option': 'tds',
+                'optionvalue': 'Tax Deduction Supporting System'
+            },
+            {
+                'name': 'documents',
+                'option': 'emp_con',
+                'optionvalue': 'Employment Contract'
+            },
+            {
+                'name': 'documents',
+                'option': 'bank_details',
+                'optionvalue': 'Bank Account Details'
+            },
+            {
+                'name': 'documents',
+                'option': 'Other',
+                'optionvalue': 'Other'
             },],
 }
 

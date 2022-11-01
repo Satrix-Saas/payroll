@@ -16,6 +16,7 @@ import LeavesSettings from './components/LeavesSettings';
 import AttendanceAdmin from './components/AttendanceAdmin';
 import ResetPassword from './components/ResetPassword';
 import CompanyDetails from './components/CompanyDetails';
+import Documents from './components/Documents';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
             <Route exact path="/department" element={<Departments />} />
             <Route exact path="/attendance-employee" element={<AttendanceEmployee />} />
             <Route exact path="/attendance-admin" element={<AttendanceAdmin />} />
+            <Route exact path="/documents" element={<Documents/>} />
          </Routes>
       </BrowserRouter>
    );
