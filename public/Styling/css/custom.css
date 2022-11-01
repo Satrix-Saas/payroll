@@ -302,3 +302,47 @@
   border-color: #c6c6c6;
   color: black;
 }
+#mpslip{
+  background-color: #f6f8fc;
+border: 1px solid #292a2d;
+color: #1f1f1f;
+cursor: pointer;
+display: inline-block;
+font-size: 14px;
+font-weight: 600;
+height: 44px;
+letter-spacing: 1px;
+line-height: 44px;
+margin-right: 10px;
+padding: 0 25px;
+text-decoration: none;
+text-transform: uppercase;
+}
+#mpslip:hover{
+background-color: #c6c6c6;
+}
+#pay_slip{
+  color: #1f1f1f;
+  margin-bottom: 25px;
+  height: 44px;
+padding: 0 12.5px;
+min-width: 300px;
+width: 540px;
+border: 1px solid #292a2d;
+
+display: block;
+margin-bottom: 6.25px;
+}
+
+#slip_p{
+  margin-top: 15px;
+}
+.add-btn{
+background-color: #f6f8fc;
+border: 1px solid #212529;
+color: #292a2d;
+float: right;
+font-weight: 500;
+min-width: 140px;
+border-radius: 50px;
+}

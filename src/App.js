@@ -16,6 +16,8 @@ import LeavesSettings from './components/LeavesSettings';
 import AttendanceAdmin from './components/AttendanceAdmin';
 import ResetPassword from './components/ResetPassword';
 import CompanyDetails from './components/CompanyDetails';
+import MyPaySlip from './components/MyPaySlip';
+import Holiday from './components/Admin/HeaderComponents/HolidaysTable';
 
 function App() {
    return (
@@ -32,6 +34,12 @@ function App() {
          </Routes>
          <Routes>
             <Route exact path="/admindashboard" element={<AdminDashboard />} />
+           </Routes>
+           <Routes>
+            <Route exact path="/mypayslip" element={<MyPaySlip/>} />
+           </Routes>
+           <Routes>
+            <Route exact path="/holidays" element={<Holiday/>} />
            </Routes>
          <Routes>
              <Route exact path="/basicdetails" element={<BasicDetails />} /> 
