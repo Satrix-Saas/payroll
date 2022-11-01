@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Sidebar() {
   const style = {display: "none" };
+  
   return ( 
     <>
       <nav className="greedys sidebar-horizantal">

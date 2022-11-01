@@ -17,7 +17,6 @@ import AttendanceAdmin from './components/AttendanceAdmin';
 import ResetPassword from './components/ResetPassword';
 import CompanyDetails from './components/CompanyDetails';
 
-
 function App() {
    return (
       <BrowserRouter>
