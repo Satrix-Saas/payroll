@@ -159,7 +159,7 @@ const options = {
                 'optionvalue': 'Approved'
             },
             {
-                'name': 'status',
+                'name': 'status ',
                 'option': 'Rejected',
                 'optionvalue': 'Rejected'
             },],
