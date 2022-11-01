@@ -217,6 +217,43 @@ const options = {
             'optionvalue': 'Marketing'
         },],
 
+        'Documents': [
+            {
+                'name': 'documents',
+                'option': 'prof_doc',
+                'optionvalue': 'Professional Documents'
+            },
+            {
+                'name': 'documents',
+                'option': 'degree',
+                'optionvalue': 'Degree'
+            },
+            {
+                'name': 'documents',
+                'option': 'aadhar',
+                'optionvalue': 'Aadhar'
+            },
+            {
+                'name': 'documents',
+                'option': 'tds',
+                'optionvalue': 'Tax Deduction Supporting System'
+            },
+            {
+                'name': 'documents',
+                'option': 'emp_con',
+                'optionvalue': 'Employment Contract'
+            },
+            {
+                'name': 'documents',
+                'option': 'bank_details',
+                'optionvalue': 'Bank Account Details'
+            },
+            {
+                'name': 'documents',
+                'option': 'Other',
+                'optionvalue': 'Other'
+            },],
+
         'pay_slip' : [
             {
                 'name' : 'payslip',
