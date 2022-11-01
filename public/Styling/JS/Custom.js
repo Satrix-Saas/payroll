@@ -227,7 +227,11 @@ $(document).ready(function () {
                 console.log(arr)
                 for(i=0;i<arr.length;i++){
                         if(arr[i]==field_id){
-                                $('#'+field_id).focus().css({'border':'2px solid #a8c0e2','border-color':'#a8c0e2'});
+                                $('#'+field_id).focus(function(){
+                                        alert("focus");
+                                }
+                                )
+                                // $('#'+field_id).focus().css({'border':'2px solid #a8c0e2','border-color':'#a8c0e2'});
                         }else{
                                 $('#'+arr[i]).focus().css({'border':'','border-color':''});              
                         }
