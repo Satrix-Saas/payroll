@@ -199,7 +199,6 @@ $(document).ready(function () {
 
         $(document).on('click','.submenu',function(){
             var classname = $(this).find('a').attr('class');
-            var index = classname.indexOf('active');
             if (typeof classname == 'undefined'){
                 $(this).find('a').toggleClass('subdrop');
                 $(this).find('ul').css('display','block');
@@ -207,11 +206,8 @@ $(document).ready(function () {
                 $(this).find('a').toggleClass('active');
                 $('.submenu').find('ul').css('display','none');
                 $(this).find('ul').css('display','block');
+
             }
-        //     if(index > -1){
-        //         $(this).find('a').toggleClass('subdrop active');
-        //         $(this).find('ul').css('display','block');
-        //     }
                        
         });
             
