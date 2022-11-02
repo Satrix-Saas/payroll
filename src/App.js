@@ -38,7 +38,7 @@ function App() {
            </Routes>
            <Routes>
             <Route exact path="/mypayslip" element={<MyPaySlip/>} />
-           </Routes>
+           </Routes> 
            <Routes>
             <Route exact path="/holidays" element={<Holiday/>} />
            </Routes>
