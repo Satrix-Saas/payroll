@@ -2031,7 +2031,7 @@ input[type=file].form-control {
 .header .top-nav-search form .form-control {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+  color: black;
   height: 40px;
   padding: 10px 50px 10px 15px;
   border-radius: 50px;
@@ -6508,7 +6508,7 @@ textarea.form-control {
   width: 100%;
 }
 .account-page .main-wrapper .account-content {
-  padding: 20px 0;
+  padding: 56px 0;
 }
 .account-page .main-wrapper .account-content .account-logo {
   /* margin-bottom: 30px; */
@@ -6543,7 +6543,6 @@ textarea.form-control {
 }
 .account-page .main-wrapper .account-content .account-box .form-control {
   background-color: #fbfbfb;
-  border: 1px solid #e3e3e3;
   height: 46px;
   border-radius: 4px;
 }

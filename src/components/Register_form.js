@@ -33,14 +33,13 @@ export default function Register_form() {
   const optionArray2 = dropDownArray(options, "Title");
   return (
     <div className="account-page">
-      <div className="main-wrapper">
+          <div className="main-wrapper">
         <div className="account-content">
           <div className="container"> 
-          
-
+      
             <div className="account-box">
-            <Logo dashboard="/register" />
               <div className="account-wrapper">
+            <Logo dashboard="/register" />
 
                 <Heading title="Register" subtitle="Access to Our Dashboard" />
 
