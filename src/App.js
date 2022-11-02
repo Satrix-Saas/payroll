@@ -1,4 +1,5 @@
 import './App.css';
+
 import RegisterForm from './components/Register_form';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './components/Login';
@@ -16,48 +17,46 @@ import LeavesSettings from './components/LeavesSettings';
 import AttendanceAdmin from './components/AttendanceAdmin';
 import ResetPassword from './components/ResetPassword';
 import CompanyDetails from './components/CompanyDetails';
-import Documents from './components/Documents';
 import MyPaySlip from './components/MyPaySlip';
 import Holiday from './components/Admin/HeaderComponents/HolidaysTable';
+import apiurl from './ApiUrl';
 
 function App() {
    return (
       <BrowserRouter>
          <Routes>
-            <Route exact path="/register" element={<RegisterForm />} />
+            <Route exact path={apiurl('registration')} element={<RegisterForm />} />
          </Routes>
          <Routes>
-            <Route exact path="/login" element={<Login />} />
+            <Route exact path={apiurl('Login')}  element={<Login />} />
          </Routes>
          <Routes>
-            <Route exact path="/forgotpassword" element={<ForgotPassword />} />
-            <Route exact path="/resetpassword" element={<ResetPassword/>} />
+            <Route exact path={apiurl('forgotThepassword')} element={<ForgotPassword />} />
+            <Route exact path={apiurl('resetThepassword')} element={<ResetPassword/>} />
          </Routes>
          <Routes>
-            <Route exact path="/admindashboard" element={<AdminDashboard />} />
+            <Route exact path={apiurl('Theadmindashboard')} element={<AdminDashboard />} />
            </Routes>
            <Routes>
-            <Route exact path="/mypayslip" element={<MyPaySlip/>} />
+            <Route exact path={apiurl('payMyslip')} element={<MyPaySlip/>} />
            </Routes>
            <Routes>
-            <Route exact path="/holidays" element={<Holiday/>} />
+            <Route exact path={apiurl('Theholidays')} element={<Holiday/>} />
            </Routes>
          <Routes>
-             <Route exact path="/basicdetails" element={<BasicDetails />} /> 
-            <Route exact path="/employeeonboarding" element={<EmployeeOnboarding />} />
-            <Route exact path="/companydetails" element={<CompanyDetails/>} />
+             <Route exact path={apiurl('Thebasicdetails')} element={<BasicDetails />} /> 
+            <Route exact path={apiurl('Theemployeeonboarding')} element={<EmployeeOnboarding />} />
+            <Route exact path={apiurl('Thecompanydetails')} element={<CompanyDetails/>} />
          </Routes>
          <Routes>
-            <Route exact path="/all-employees" element={<AllEmployees />} />
-            <Route exact path="/employees-list" element={<AllemployeeListView />} />
-            <Route exact path="/leaves-employee" element={<LeavesEmployee />} />
-            <Route exact path="/leaves-admin" element={<LeavesAdmin />} />
-            <Route exact path='/leave-setting' element={<LeavesSettings/>}/>
-            <Route exact path="/department" element={<Departments />} />
-            <Route exact path="/attendance-employee" element={<AttendanceEmployee />} />
-            <Route exact path="/attendance-admin" element={<AttendanceAdmin />} />
-            <Route exact path="/documents" element={<Documents/>} />
-            
+            <Route exact path={apiurl('all-employees')} element={<AllEmployees />} />
+            <Route exact path={apiurl('Theemployees-list')} element={<AllemployeeListView />} />
+            <Route exact path={apiurl('Theleaves-employee')} element={<LeavesEmployee />} />
+            <Route exact path={apiurl('Theleaves-admin')} element={<LeavesAdmin />} />
+            <Route exact path={apiurl('Theleave-setting')} element={<LeavesSettings/>}/>
+            <Route exact path={apiurl('Thedepartment')} element={<Departments />} />
+            <Route exact path={apiurl('Theattendance-employee')} element={<AttendanceEmployee />} />
+            <Route exact path={apiurl('Theattendance-admin')} element={<AttendanceAdmin />} />
          </Routes>
       </BrowserRouter>
    );
