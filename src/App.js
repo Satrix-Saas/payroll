@@ -57,7 +57,6 @@ function App() {
             <Route exact path="/attendance-employee" element={<AttendanceEmployee />} />
             <Route exact path="/attendance-admin" element={<AttendanceAdmin />} />
             <Route exact path="/documents" element={<Documents/>} />
-            <Route exact path="/documents" element={<Documents/>} />
          </Routes>
       </BrowserRouter>
    );
