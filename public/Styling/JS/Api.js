@@ -27,6 +27,7 @@ function ApiCall(arr,url){
         alert("error");
         console.log(result);
       }
-
   });
+  return 1;
+ 
 }
