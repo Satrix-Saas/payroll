@@ -13,15 +13,11 @@ export default function Login() {
             <div className="main-wrapper">
                 <div className="account-content">
                     <div className="container">
-
-
                         <div className="account-box">
-                            {/* <!-- Account Logo --> */}
-                            <Logo dashboard="/login" />
-                            {/* <!-- /Account Logo --> */}
                             <div className="account-wrapper">
+                                <Logo dashboard="/login" />
                                 <Heading title="Login" subtitle="Access to Our Dashboard" />
-                                {/* <!-- Account Form --> */}
+
                                 <form action="/login">
                                     <Textfields type="text" label="Email" id="login_email" name="login_id" />
                                     <div className="form-group">
@@ -58,4 +54,3 @@ export default function Login() {
         </div>
     )
 }
- 
