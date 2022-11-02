@@ -1,29 +1,50 @@
-.validation-wrong{
-    color: red;
-    margin: 5px;
-    padding: 0.5rem;
-    font-size: 12px;
+.validation-wrong {
+  color: red;
+  margin: 5px;
+  padding: 0.5rem;
+  font-size: 12px;
 }
-.fa-exclamation-triangle , .fa-check{
-    padding-right: 5px;
-}
-.validation-check{
-    color: green;
-    margin: 5px;
-    padding: 0.5rem;
-    font-size: 12px;
-}
- .input_focus{
-        outline: none;
-     box-shadow: 0px 0px 8px 2px  #BE1D15;
- }
 
+.fa-exclamation-triangle,
+.fa-check {
+  padding-right: 5px;
+}
+
+.validation-check {
+  color: green;
+  margin: 5px;
+  padding: 0.5rem;
+  font-size: 12px;
+}
+
+.input_focus {
+
+  border: 1px solid red;
+}
+
+.focus {
+  border: 1px solid #1a73e8;
+}
+
+.account-page .main-wrapper .account-content .account-logo img {
+  width: 168px;
+  margin-bottom: 22px;
+}
+
+.account-page .main-wrapper .account-content .account-box .account-btn {
+  background-image: linear-gradient(to bottom right, #37D5D6, #36096D);
+
+}
+.add-btn:focus{
+  background-color: #d0d3d7;
+}
+.add-btn:hover{
+  background-color:#dee2e6;
+  color: #292a2d;
+}
  .header .header-new-menu {
     float: left;
     list-style: none;
-
-    /* margin: 0 0 0 30px; */
-
     padding: 0;
     line-height: 60px;
     display: flex;
@@ -38,33 +59,32 @@
     padding: 0 20px;
 }
 .dropdown-menu{
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: inherit;
-    font-size: 14px;
-    border-radius: 3px;
-    transform-origin: left top 0;
-    -webkit-transform-origin: left top 0;
-    -ms-transform-origin: left top 0;
-}
-.dropdown-menu{
-    position: absolute;
-    z-index: 1000;
-    display: none;
-    min-width: 10rem;
-    padding: 0.5rem 0;
-    margin: 0;
-    font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inherit;
+  font-size: 14px;
+  border-radius: 3px;
+  transform-origin: left top 0;
+  -webkit-transform-origin: left top 0;
+  -ms-transform-origin: left top 0;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
 
-    color: black;
+  color: black;
 
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 0.25rem;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0.25rem;
 }
+
 
 .header .header-new-menu li #dropmain::after {
 
@@ -105,10 +125,6 @@
   .header .top-nav-search form .form-control {
     background-color:#eaf1fb;
     border: 1px solid rgba(255, 255, 255, 0.15);
-    color: #ffffff;
-    height: 40px;
-    padding: 10px 50px 10px 15px;
-    border-radius: 50px;
   }
   .fa, .fas {
     font-weight: 900;
@@ -226,8 +242,8 @@
   }
   .sidebar .sidebar-menu ul ul a.active, .two-col-bar .sidebar-menu ul ul a.active {
     color: #001d35;
-    /* text-decoration: underline; */
-  }
+    text-decoration: underline;
+ }
   .sidebar .sidebar-menu ul li.submenu .noti-dot::before, .two-col-bar .sidebar-menu ul li.submenu .noti-dot::before {
 
     border: 5px solid #001d35;
@@ -236,8 +252,7 @@
 
   }
   .sidebar .sidebar-menu ul li a:focus, .two-col-bar .sidebar-menu ul li a:focus {
- 
-    background-color: #d3e3fd;
+     background-color: #d3e3fd;
   }
   .sidebar .sidebar-menu ul li a:hover, .two-col-bar .sidebar-menu ul li a:hover {
    background-color:#dee2e6;
@@ -249,39 +264,11 @@
     letter-spacing: normal;
     color: #202124;
     text-shadow: none;
-  }
-  /* Register_form */
-  .account-page .main-wrapper .account-content .account-logo img {
-    width: 150px;
-    margin-top: 30px;
-  } 
-  .account-page .main-wrapper .account-content .account-box {
-    background-color:#ffffff;
-    border: 1px solid #ededed;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-    overflow: hidden;
-    width: 480px;
-  }
-  .account-page .main-wrapper .account-content .account-box {
- 
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-  }
- 
+  } */
 
-.account-page .main-wrapper .account-content .account-box .account-btn {
-        border: 0;
-        background-image: linear-gradient(to bottom right, #37D5D6, #36096D);     
-
-}
-.header{
-  height: 60px;
-  z-index: 1002;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-}
+/* Register_form */
+/*
+  
 
 .add-btn:focus{
   background-color: #d0d3d7;
