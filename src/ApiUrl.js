@@ -9,7 +9,7 @@ export default function apiurl(argument){
     api_array['resetThepassword'] = '/resetpassword'; 
     api_array['Theadmindashboard'] = '/admindashboard'; 
     api_array['payMyslip'] = '/mypayslip'; 
-    api_array['Theholidays'] = '/holidays';
+    api_array['Theholidays'] = '/holidayTable';
     api_array['Thebasicdetails'] = '/basicdetails';
     api_array['Theemployeeonboarding'] = '/employeeonboarding'; 
     api_array['Thecompanydetails'] = '/companydetails/index';  
