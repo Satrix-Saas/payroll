@@ -40,7 +40,7 @@ export default function Register_form() {
               <div className="account-wrapper">
                 <Logo dashboard="/register" />
                 <Heading title="Register" subtitle="Access to Our Dashboard" />
-
+ 
                 <form id="register_form">
 
                   <Textfields

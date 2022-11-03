@@ -16,7 +16,7 @@ export default function BasicDetails() {
     document.title = "Basic details";
 
     const optionArray2 = dropDownArray(options, "State");
-    return (
+    return ( 
         <>
             <div className="main-wrapper">
 
