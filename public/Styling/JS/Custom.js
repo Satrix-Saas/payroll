@@ -226,18 +226,19 @@ $(document).ready(function () {
 
         });
 
-        $(document).on('click','.submenu',function(){
-            var classname = $(this).find('a').attr('class');
-            if (typeof classname == 'undefined'){
-                $(this).find('a').toggleClass('subdrop');
-                $(this).find('ul').css('display','block');
-            }else{
-                $(this).find('a').toggleClass('active');
-                $('.submenu').find('ul').css('display','none');
-                $(this).find('ul').css('display','block');
+        $(document).on('click', '.submenu', function () {
+                var classname = $(this).find('a').attr('class');
+                if (typeof classname == 'undefined') {
+                        $(this).find('a').toggleClass('subdrop');
+                        $(this).find('ul').css('display', 'block');
+                } else {
+                        $(this).find('a').toggleClass('active');
+                        $('.submenu').find('ul').css('display', 'none');
+                        $(this).find('ul').css('display', 'block');
 
-            }
-                       
+                }
+ 
+
         });
             
 });
