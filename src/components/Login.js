@@ -12,11 +12,11 @@ export default function Login() {
         <div className="account-page">
             <div className="main-wrapper">
                 <div className="account-content">
-                    <div className="container">
+                    <div className="container col-xs">
                         <div className="account-box">
                             <div className="account-wrapper">
                                 <Logo dashboard="/login" />
-                                <Heading title="Login" subtitle="Access to Our Dashboard" />
+                                <Heading title="Login" subtitle="to continue Our Dashboard" />
 
                                 <form action="/login">
                                     <Textfields type="text" label="Email" id="login_email" name="login_id" />

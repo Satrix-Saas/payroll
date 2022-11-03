@@ -2835,6 +2835,8 @@ input[type=file].form-control {
     color: #999;
     float: left;
     text-align: left;
+    height: 45px;
+    width: 48px;
     font-size: 32px;
     /* line-height: 70px; */
     margin-top: 10px;
@@ -8177,7 +8179,7 @@ textarea.form-control {
 }
 
 .account-page .main-wrapper .account-content {
-  padding: 56px 0;
+  padding: 20px 0;
 }
 
 .account-page .main-wrapper .account-content .account-logo {
@@ -8191,8 +8193,8 @@ textarea.form-control {
 
 .account-page .main-wrapper .account-content .account-box {
   background-color: #ffffff;
-  border: 1px solid #ededed;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+border: 1px solid #dcdcdc;;
+
   margin: 0 auto;
   overflow: hidden;
   width: 480px;
@@ -8200,10 +8202,22 @@ textarea.form-control {
 }
 
 @media (max-width: 991px) {
-  .account-page .main-wrapper .account-content .account-box {
+  .account-page .main-wrapper .account-content {
     width: 100%;
     margin: 0 0 20px;
+}
+}
+@media (max-width: 531px) {
+  .account-page .main-wrapper .account-content .account-box{
+    width: 100%;
+    margin: 0 0 20px;
+    border: none;
   }
+}
+@media (max-width: 600px ) {
+  .account-page .main-wrapper .account-content .account-box{
+border: none;
+}
 }
 
 .account-page .main-wrapper .account-content .account-box .form-group {

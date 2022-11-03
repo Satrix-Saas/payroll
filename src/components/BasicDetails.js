@@ -41,8 +41,9 @@ export default function BasicDetails() {
 
 
                                         <div className="account-box">
-                                            <Logo dashboard="/basicdetails" />
+                                           
                                             <div className="account-wrapper">
+                                            <Logo dashboard="/basicdetails" />
                                                 <Heading title="Address & Tax Setup" subtitle="Enter Basic Details" />
 
                                                 {/* FORM START */}

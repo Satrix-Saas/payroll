@@ -58,7 +58,7 @@
   padding: 5px 15px;
   line-height: 1.5;
 }
-.rounded-circle:focus {
+.rounded-circle:active {
   background-color: #ced4da;
   text-align: center;
   height: 45px;
@@ -108,9 +108,42 @@
   font-weight: bold;
 }
 .sidebar{
-  background-color: transparent;
+  background-color: #f6f8fc;
   color: black;
 }
+.sidebar .sidebar-menu ul ul a.active,
+.two-col-bar .sidebar-menu ul ul a.active{
+ color: #38414A;
+}
+.sidebar .sidebar-menu ul li a:hover, .two-col-bar .sidebar-menu ul li a:hover{
+  background-color: rgba(32,33,36,0.059);;
+}
+.sidebar .sidebar-menu ul li a:focus, .two-col-bar .sidebar-menu ul li a:focus{
+  background-color: #D3E3FD;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 950px) and (min-width: 600px) {
+  
+  .account-page .main-wrapper .account-content .col-xs{
+    padding: 8rem 0;
+  }
+}
+
+@media (min-width: 950px){
+  
+  .account-page .main-wrapper .account-content .col-xs{
+    padding: 3rem 0;
+  }
+}
+
 @media (max-width: 991px) {
   
    #headerNewMenu{
