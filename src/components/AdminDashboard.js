@@ -23,7 +23,7 @@ export default function AdminDashboard() {
 </div>
       <div className="page-wrapper">
         <div className="content container-fluid">
-          <AdminHeading admin=" Admin!" dashboard="Dashboard " />
+          <AdminHeading dashboard="Dashboard " />
           <div className="twocolslidebar">
             <TotalRevenue />
             <PageStatistics />

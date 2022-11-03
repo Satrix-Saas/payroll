@@ -7,7 +7,7 @@ export default function apiurl(argument){
     api_array['Login'] = '/login'; 
     api_array['forgotThepassword'] = '/forgotpassword'; 
     api_array['resetThepassword'] = '/resetpassword'; 
-    api_array['Theadmindashboard'] = '/admindashboard'; 
+    api_array['Thedashboard'] = '/dashboard'; 
     api_array['payMyslip'] = '/mypayslip'; 
     api_array['Theholidays'] = '/holidayTable';
     api_array['Thebasicdetails'] = '/basicdetails';
@@ -21,6 +21,8 @@ export default function apiurl(argument){
     api_array['Thedepartment'] = '/department'; 
     api_array['Theattendance-employee'] = '/attendance-employee'; 
     api_array['Theattendance-admin'] = '/attendance-admin';
+    api_array['Therunpayroll'] = '/runpayroll';
+
 
 
     // api_array['register_url'] = custom+'/register/index/index';
