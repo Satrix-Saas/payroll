@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function ToggleButton(props) {
-    const [checked, setChecked] = React.useState(true);
+    const [checked, setChecked] = React.useState();
     
     return (
         <>

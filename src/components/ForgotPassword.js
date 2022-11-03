@@ -5,7 +5,7 @@ import Logo from './common_component/Logo'
 import Textfields from './common_component/Textfields'
 
 export default function ForgotPassword() {
-    document.title = "Forgot Password";
+    document.title = "Forgot Password"; 
     return (
         <div className="account-page">
             <div className="main-wrapper">

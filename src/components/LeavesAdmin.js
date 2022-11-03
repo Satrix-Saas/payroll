@@ -9,9 +9,7 @@ import Cardleaves from './common_component/Cardleaves'
 import AddEditLeave from './popupForms/AddEditLeave'
 import DeleteEmp from './popupForms/DeleteEmp'
 import Tablescontent from './utility/Tablescontent'
-
 export default function LeavesAdmin() {
-    //window. location. reload(false); 
     return (
         <>
             <div className="main-wrapper">

@@ -31,22 +31,22 @@ export default function AddEditLeave(props) {
                             <div className="form-group">
                                 <label>From <span className="text-danger">*</span></label>
                                 <div className="cal-icon">
-                                    <input className="form-control datetimepicker" type="text"/>
+                                    <input className="form-control datetimepicker" type="date"/>
                                 </div>
                             </div>
                             <div className="form-group">
                                 <label>To <span className="text-danger">*</span></label>
                                 <div className="cal-icon">
-                                    <input className="form-control datetimepicker" type="text"/>
+                                    <input className="form-control datetimepicker" type="date"/>
                                 </div>
                             </div>
                             <div className="form-group">
                                 <label>Number of days <span className="text-danger">*</span></label>
-                                <input className="form-control" readOnly type="text"/>
+                                <input className="form-control" type="text"/>
                             </div>
                             <div className="form-group">
                                 <label>Remaining Leaves <span className="text-danger">*</span></label>
-                                <input className="form-control" readOnly  type="text"/>
+                                <input className="form-control"  type="text"/>
                             </div>
                             <div className="form-group">
                                 <label>Leave Reason <span className="text-danger">*</span></label>

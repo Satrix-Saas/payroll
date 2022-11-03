@@ -231,7 +231,7 @@ export default function TwoColSideBar() {
 								<ul>
 
 									<li><Link to="employees.html">All Employees</Link></li>
-									<li><Link to="/holidays">Holidays</Link></li>
+									<li><Link to="holidays.html">Holidays</Link></li>
 									<li><Link to="leaves.html">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link></li>
 									<li><Link to="leaves-employee.html">Leaves (Employee)</Link></li>
 									<li><Link to="leave-settings.html">Leave Settings</Link></li>
@@ -249,12 +249,6 @@ export default function TwoColSideBar() {
 								<p>Clients</p>
 								<ul>
 									<li><Link href="clients.html">Clients</Link></li>
-								</ul>
-							</div>
-							<div className="tab-pane fade" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-clients-tab">
-								<p>My Pay Slip</p>
-								<ul>
-									<li><Link href="mypayslip">My Pay Slip</Link></li>
 								</ul>
 							</div>
 							<div className="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">

@@ -15,8 +15,8 @@ import AdminHeading from './Admin/HeaderComponents/AdminHeading';
 export default function BasicDetails() {
     document.title = "Basic details";
 
-    const optionArray2 = dropDownArray(options, "State");
-    return ( 
+    const optionArray2 = dropDownArray(options, "State"); 
+    return (
         <>
             <div className="main-wrapper">
 

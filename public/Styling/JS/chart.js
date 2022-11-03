@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-// Bar Chart
-if($('#bar-charts').length > 0) {
+	// Bar Chart
+	
 	Morris.Bar({
 		element: 'bar-charts',
 		redrawOnParentResize: true,
@@ -24,10 +24,9 @@ if($('#bar-charts').length > 0) {
 		
 		redraw: true
 	});
-}
 	
 	// Line Chart
-if($('#line-charts').length > 0) {
+	
 	Morris.Line({
 		element: 'line-charts',
 		redrawOnParentResize: true,
@@ -49,6 +48,5 @@ if($('#line-charts').length > 0) {
 		
 		redraw: true
 	});
-}
 		
 });

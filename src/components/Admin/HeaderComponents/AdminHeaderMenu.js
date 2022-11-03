@@ -4,31 +4,31 @@ import { Link } from 'react-router-dom'
 export default function AdminHeaderMenu() {
   return (
     <ul className="header-new-menu " id="headerNewMenu">
-					<li >
-						<Link to="/" data-bs-toggle="dropdown"  id="clients" role="button" aria-haspopup="true" aria-expanded="false">Clients<i className='fa fa-angle-down'></i></Link>
-						<ul className="dropdown-menu" >
-							<li><Link className="dropdown-item" id="clients" to="clients.html">Clients</Link></li>
-						</ul>
+					<li className='headerli'>
+						<Link to="/" data-bs-toggle="dropdown" id="dropmain" role="button" aria-haspopup="true" aria-expanded="false">Clients</Link>
+						<div className="dropdown-menu" >
+							<Link className="dropdown-item" id="dropitem" to="clients.html">Clients</Link>
+						</div>
 					</li>
-					<li >
-						<Link to="/" data-bs-toggle="dropdown" id="projects" role="button" aria-haspopup="true" aria-expanded="false">Projects<i className='fa fa-angle-down'></i></Link>
-						<ul className="dropdown-menu">
-							<li><Link className="dropdown-item" id="projects" to="projects.html">Projects</Link></li>
-							<li><Link className="dropdown-item" id="projects" to="tasks.html">Tasks</Link></li>
-							<li><Link className="dropdown-item" id="projects" to="task-board.html">Task Board</Link></li>
-						</ul>
+					<li className='headerli'>
+						<Link to="/" data-bs-toggle="dropdown" id="dropmain" role="button" aria-haspopup="true" aria-expanded="false">Projects</Link>
+						<div className="dropdown-menu">
+							<Link className="dropdown-item" id="dropitem" to="projects.html">Projects</Link>
+							<Link className="dropdown-item" id="dropitem" to="tasks.html">Tasks</Link>
+							<Link className="dropdown-item" id="dropitem" to="task-board.html">Task Board</Link>
+						</div>
 					</li>
-					<li >
-						<Link to="/" data-bs-toggle="dropdown" id="leads" role="button" aria-haspopup="true" aria-expanded="false">Leads<i className='fa fa-angle-down'></i></Link>
-						<ul className="dropdown-menu">
-						<li><Link className="dropdown-item" id="leads" to="leads.html">Leads</Link></li>
-						</ul>
+					<li className='headerli'>
+						<Link to="/" data-bs-toggle="dropdown" id="dropmain" role="button" aria-haspopup="true" aria-expanded="false">Leads</Link>
+						<div className="dropdown-menu">
+							<Link className="dropdown-item" id="dropitem" to="leads.html">Leads</Link>
+						</div>
 					</li>
-					<li >
-						<Link to="/" data-bs-toggle="dropdown" id="tickets" role="button" aria-haspopup="true" aria-expanded="false">Tickets<i className='fa fa-angle-down'></i> </Link>
-						<ul className="dropdown-menu" >
-						<li><Link className="dropdown-item" id="tickets" to="tickets.html">Tickets</Link></li>
-						</ul>
+					<li className='headerli'>
+						<Link to="/" data-bs-toggle="dropdown" id="dropmain" role="button" aria-haspopup="true" aria-expanded="false">Tickets</Link>
+						<div className="dropdown-menu" >
+							<Link className="dropdown-item" id="dropitem" to="tickets.html">Tickets</Link>
+						</div>
 					</li>
 				</ul>
 

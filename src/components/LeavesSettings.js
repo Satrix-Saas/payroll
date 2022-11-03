@@ -43,7 +43,7 @@ export default function LeavesSettings() {
                                     <div className="card-body">
                                         <ToggleButton cardTitle="Annual" id="switch_annual" for="switch_annual" checked="checked" />
                                         <div className="leave-item">
-                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" />
+                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" disabled="disabled"/>
                                             <Carryforward />
                                             <EarnedLeaves heading="Earned Leaves" Option1="No" Option2="Yes" edit="Edit" />
                                         </div>
@@ -55,7 +55,7 @@ export default function LeavesSettings() {
                                     <div className="card-body">
                                         <ToggleButton cardTitle="Sick" id="switch_sick" for="switch_sick" checked="checked" />
                                         <div className="leave-item">
-                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" />
+                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit"  disabled="disabled" />
                                         </div>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@ export default function LeavesSettings() {
                                     <div className="card-body">
                                         <ToggleButton cardTitle="Hospitalisation" id="switch_hospitalisation" for="switch_hospitalisation" />
                                         <div className="leave-item">
-                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" />
+                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" disabled="disabled" />
                                         </div>
                                         <CustomPolicy name="5 years of service" days="5" assignee="Name" />
                                     </div>
@@ -74,7 +74,7 @@ export default function LeavesSettings() {
                                     <div className="card-body">
                                         <ToggleButton cardTitle="Maternity Assigned to female only" id="switch_maternity" for="switch_maternity" checked="checked" />
                                         <div className="leave-item">
-                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" />
+                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" disabled="disabled" />
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@ export default function LeavesSettings() {
                                     <div className="card-body">
                                         <ToggleButton cardTitle="Paternity Assigned to male only" id="switch_paternity" for="switch_paternity"/>
                                         <div className="leave-item">
-                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" />
+                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit"  disabled="disabled"/>
                                         </div>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@ export default function LeavesSettings() {
                                         <ToggleButton cardTitle="Custom Leave" id="switch_custom01" for="switch_custom01"/>
                                        
                                         <div className="leave-item">
-                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" />
+                                            <LeaveSettingInput label="Days" type="text" editbtn="Edit" disabled="disabled"/>
                                             <Carryforward />
                                             <EarnedLeaves heading="Earned Leaves" Option1="No" Option2="Yes" edit="Edit" />
                                         </div>
@@ -105,13 +105,13 @@ export default function LeavesSettings() {
                         </div>
                     </div>
                 </div>
-                <div id="add_custom_policy" class="modal custom-modal fade" role="dialog">
+                <div id="add_custom_policy" className="modal custom-modal fade" role="dialog">
                     <AddEditCustomPolicy heading="Add Custom Policy"/>
                 </div>
-                <div id="edit_custom_policy" class="modal custom-modal fade" role="dialog">
+                <div id="edit_custom_policy" className="modal custom-modal fade" role="dialog">
                     <AddEditCustomPolicy heading="Edit Custom Policy"/>
                 </div>
-                <div class="modal custom-modal fade" id="delete_custom_policy" role="dialog">
+                <div className="modal custom-modal fade" id="delete_custom_policy" role="dialog">
                     <DeleteEmp delete="Delete" cancel="Cancel"/>
                 </div>
             </div>

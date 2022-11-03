@@ -66,7 +66,7 @@ export default function AddEditEmployee(props) {
                                 <div className="col-sm-6">
                                     <div className="form-group">
                                         <label className="col-form-label">{props.joiningDate} <span className="text-danger">*</span></label>
-                                        <div className="cal-icon"><input className="form-control datetimepicker" type="text" /></div>
+                                        <div className="cal-icon"><input className="form-control datetimepicker" type="date" /></div>
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
