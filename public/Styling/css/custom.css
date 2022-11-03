@@ -250,6 +250,7 @@
 }
 
 #rPr1 {
+
   max-width: none;
   padding: 12.5px;
   width: 100%;
@@ -257,23 +258,25 @@
   border-left: 5px solid #f36969;
   border-radius: 2px;
   margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 17px;
   letter-spacing: .2px;
+  color: #252424;
 }
+
+
 
 #rPr2 {
   text-align: left;
   background: #caccd5;
-  display: block;
   margin-bottom: 25px;
   padding: 25px;
   position: relative;
   max-width: 640px;
   color: #252424;
-  font-size: 18px;
- 
+  font-size: 17px;
+  letter-spacing: .2px;
 }
+
 
 /*
   .header .user-menu.nav > li > a i {

@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import AdminHeader from '../Admin/AdminHeader'
 import Sidebar from '../Admin/HeaderComponents/Sidebar'
 import DashboardPageHeading from '../Admin/PageContentComponents/DashboardPageHeading'
 import TwoColSideBar from '../Admin/TwoColSideBar'
+
 
 export default function RunPayRoll() {
   return (
@@ -27,8 +29,8 @@ export default function RunPayRoll() {
                 </div>
               </div>
             </div>
-            <div id="rPr1"> <p>Please complete your organization's KYC. Payroll execution is disabled</p></div>
-            <div id="rPr2"> <p>Please complete your organization's KYC. Payroll execution is disabled</p></div>
+            <div id="rPr1"> <p>Please complete your organization's <Link to="https://payroll.razorpay.com/companyOnboarding?step=5&amp;redirect=%2FrunPayroll">KYC</Link>. Payroll execution is disabled</p></div>
+            <div id="rPr2"> <p>We do not have any payroll data for you. Perhaps you need to <Link to="https://payroll.razorpay.com/employeeOnboarding?add=1&amp;type=employee">add</Link> some employees, or <Link to="https://payroll.razorpay.com/people">set</Link> set their salaries?</p></div>
        
           </div>
         </div>
