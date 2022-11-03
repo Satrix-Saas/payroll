@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from "react";
+import React, { useState } from "react";
 import Logo from "./common_component/Logo";
 import Textfields from "./common_component/Textfields";
 import { Link } from "react-router-dom";
@@ -27,7 +27,7 @@ export default function Register_form() {
   }
   const employee_value = (e) => {
     setValue(e.target.value);
-  }
+  } 
 
   const optionArray = dropDownArray(options, "No_of_employees");
   const optionArray2 = dropDownArray(options, "Title");
@@ -35,36 +35,28 @@ export default function Register_form() {
     <div className="account-page">
       <div className="main-wrapper">
         <div className="account-content">
-          <div className="container"> 
-          
-
+          <div className="container col-xs">
             <div className="account-box">
-            <Logo dashboard="/register" />
               <div className="account-wrapper">
-
+                <Logo dashboard="/register" />
                 <Heading title="Register" subtitle="Access to Our Dashboard" />
-
-                {/* FORM START */}
+ 
                 <form id="register_form">
-                  {/* TEXT FIELDS */}
+
                   <Textfields
                     label="Full Name" type="text" mandatory="*" name="name" id="full_name" />
 
                   <Textfields
-                    label="Organization Name" type="text" mandatory="*" name="org_name" id="org_name"
-                  />
+                    label="Organization Name" type="text" mandatory="*" name="org_name" id="org_name" />
 
                   <Textfields
-                    label="Work Email Address" type="text" mandatory="*" name="email" id="email"
-                  />
+                    label="Work Email Address" type="text" mandatory="*" name="email" id="email" />
 
                   <Textfields
-                    label="Phone Number" type="tel" mandatory="*" name="cont_no." id="phn_num"
-                  />
+                    label="Phone Number" type="tel" mandatory="*" name="cont_no." id="phn_num" />
 
                   <Textfields
-                    label="Password" type="password" mandatory="*" name="password" id="password"
-                  />
+                    label="Password" type="password" mandatory="*" name="password" id="password" />
 
                   <SelectInputFields
                     label="Number Of Employees" mandatory="*" type="text" select_id="no_of_employees" name="org_size">
@@ -87,17 +79,16 @@ export default function Register_form() {
                       );
                     })}
                   </SelectInputFields>
-            
+
                   <div className="form-group text-center">
-                  <button type="button" className="btn btn-primary account-btn" id="register" onClick >Register</button>
+                    <button type="button" className="btn btn-primary account-btn" id="register" onClick >Register</button>
                   </div>
                   <div className="account-footer">
                     <p>
-                      Already have an account? <Link to="/login">Login</Link>
-                    </p>
+                      Already have an account? <Link to="/login">Login</Link></p>
                   </div>
                 </form>
-                {/* FORM CLOSED */}
+
               </div>
             </div>
           </div>
@@ -106,4 +97,3 @@ export default function Register_form() {
     </div>
   );
 }
- 

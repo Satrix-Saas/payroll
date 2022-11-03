@@ -8,20 +8,16 @@ export default function Login() {
     document.title = "Login - HRMS admin template";
 
     return (
-
+ 
         <div className="account-page">
             <div className="main-wrapper">
                 <div className="account-content">
-                    <div className="container">
-
-
+                    <div className="container col-xs">
                         <div className="account-box">
-                            {/* <!-- Account Logo --> */}
-                            <Logo dashboard="/login" />
-                            {/* <!-- /Account Logo --> */}
                             <div className="account-wrapper">
-                                <Heading title="Login" subtitle="Access to Our Dashboard" />
-                                {/* <!-- Account Form --> */}
+                                <Logo dashboard="/login" />
+                                 <Heading title="Login" subtitle="to continue Our Dashboard" />
+
                                 <form action="/login">
                                     <Textfields type="text" label="Email" id="login_email" name="login_id" />
                                     <div className="form-group">
@@ -44,6 +40,7 @@ export default function Login() {
                                     <div className="form-group text-center">
                                         <button type="button" className="btn btn-primary account-btn" id="login" >Login</button>
                                     </div>
+
                                     <div className="account-footer">
                                         <p>Don't have an account yet? <Link to="/register">Register</Link></p>
                                     </div>
@@ -57,4 +54,3 @@ export default function Login() {
         </div>
     )
 }
- 
