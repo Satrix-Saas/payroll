@@ -5,19 +5,18 @@ import Logo from './common_component/Logo'
 import Textfields from './common_component/Textfields'
 
 export default function ForgotPassword() {
-    document.title = "Forgot Password";
+    document.title = "Forgot Password"; 
     return (
         <div className="account-page">
 
             <div className="main-wrapper">
-                <div className="account-content">
-                    <div className="container">
+                <div className="account-content col-md-6">
+                    <div className="container col-xs">
                         <div className="account-box">
-                           <div className="account-wrapper">
+                            <div className="account-wrapper">
                                 <Logo />
 
                                 <Heading title="Forgot Password?" subtitle="Enter your email to get a password reset link" />
-
                                 <form>
                                     <Textfields type="text" label="Email Address" id="forgotpswd_email" name="email_address" />
 
@@ -30,9 +29,6 @@ export default function ForgotPassword() {
                                     </div>
                                 </form>
                             </div>
-
-                        </div>
-                        <div>
                         </div>
                     </div>
                 </div>
