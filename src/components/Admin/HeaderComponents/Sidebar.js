@@ -2,9 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Sidebar() {
-  const style = {display: "none" };
-  return ( 
+  const style = { display: "none" };
+  return (
+
     <>
+
       <nav className="greedys sidebar-horizantal">
         <ul className="list-inline-item list-unstyled links">
           <li className="menu-title">
@@ -43,7 +45,7 @@ export default function Sidebar() {
             <Link to="#" className="noti-dot"><i className="la la-user"></i> <span> Employees</span> <span className="menu-arrow"></span></Link>
             <ul style={style}>
               <li><Link to="/all-employees">All Employees</Link></li>
-              <li><Link to="holidays.html">Holidays</Link></li>
+              <li><Link to="/holidays">Holidays</Link></li>
               <li><Link to="/leaves-admin">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link></li>
               <li><Link to="/leaves-employee">Leaves (Employee)</Link></li>
               <li><Link to="/leave-setting">Leave Settings</Link></li>
@@ -59,6 +61,12 @@ export default function Sidebar() {
           <li>
             <Link to="clients.html"><i className="la la-users"></i> <span>Clients</span></Link>
           </li>
+          <li className="submenu">
+          <Link to="#"><i className="la la-telegram"></i> <span> My Pay Slip</span> <span className="menu-arrow"></span></Link>
+          <ul style={style}>
+            <li><Link to="/mypayslip">My Pay Slip</Link></li>
+          </ul>
+        </li>
           <li className="submenu">
             <Link to="#"><i className="la la-rocket"></i> <span> Projects</span> <span className="menu-arrow"></span></Link>
             <ul style={style}>
@@ -328,7 +336,7 @@ export default function Sidebar() {
           <Link to="#" className="noti-dot"><i className="la la-user"></i> <span> Employees</span> <span className="menu-arrow"></span></Link>
           <ul style={style}>
             <li><Link to="/all-employees">All Employees</Link></li>
-            <li><Link to="holidays.html">Holidays</Link></li>
+            <li><Link to="/holidays">Holidays</Link></li>
             <li><Link to="/leaves-admin">Leaves (Admin) <span className="badge rounded-pill bg-primary float-end">1</span></Link></li>
             <li><Link to="/leaves-employee">Leaves (Employee)</Link></li>
             <li><Link to="/leave-setting">Leave Settings</Link></li>
@@ -343,6 +351,12 @@ export default function Sidebar() {
         </li>
         <li>
           <Link to="clients.html"><i className="la la-users"></i> <span>Clients</span></Link>
+        </li>
+        <li className="submenu">
+          <Link to="#"><i className="la la-telegram"></i> <span> My Pay Slip</span> <span className="menu-arrow"></span></Link>
+          <ul style={style}>
+            <li><Link to="/mypayslip">My Pay Slip</Link></li>
+          </ul>
         </li>
         <li className="submenu">
           <Link to="#"><i className="la la-rocket"></i> <span> Projects</span> <span className="menu-arrow"></span></Link>

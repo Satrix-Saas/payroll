@@ -1,12 +1,12 @@
 
-function ApiCall(arr,name){
+function ApiCall(arr,url){
     alert("called");
     var data = Object.assign({}, arr)
     console.log(data);
     $.ajax({
       type:'POST',
       dataType: 'json',
-      url:'http://192.168.0.100:8074/Satrix_Saas/pub/register/index/index',
+      url:url,
       headers : {
           'Access-Control-Allow-Origin':'*',
           'Access-Control-Allow-Headers':'Content-Type, X-Auth-Token, Authorization, Origin',
@@ -25,7 +25,9 @@ function ApiCall(arr,name){
       },
       error: function(result) {
         alert("error");
+        console.log(result);
       }
-
   });
+  return 1;
+ 
 }

@@ -18,6 +18,7 @@ export default function Login() {
                                 <Logo dashboard="/login" />
                                  <Heading title="Login" subtitle="to continue Our Dashboard" />
 
+
                                 <form action="/login">
                                     <Textfields type="text" label="Email" id="login_email" name="login_id" />
                                     <div className="form-group">

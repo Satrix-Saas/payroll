@@ -147,22 +147,22 @@ const options = {
             'option': 'Loss of Pay',
             'optionvalue': 'Loss of Pay'
         },],
-        'Leaves-status': [
-            {
-                'name': 'status',
-                'option': 'Pending',
-                'optionvalue': 'Pending'
-            },
-            {
-                'name': 'status',
-                'option': 'Approved',
-                'optionvalue': 'Approved'
-            },
-            {
-                'name': 'status ',
-                'option': 'Rejected',
-                'optionvalue': 'Rejected'
-            },],
+    'Leaves-status': [
+        {
+            'name': 'status',
+            'option': 'Pending',
+            'optionvalue': 'Pending'
+        },
+        {
+            'name': 'status',
+            'option': 'Approved',
+            'optionvalue': 'Approved'
+        },
+        {
+            'name': 'status ',
+            'option': 'Rejected',
+            'optionvalue': 'Rejected'
+        },],
     'Designation': [
         {
             'name': 'designation',
@@ -200,22 +200,98 @@ const options = {
             'option': 'International Software Inc',
             'optionvalue': 'International Software Inc'
         },],
-        'Department': [
+    'Department': [
+        {
+            'name': 'department',
+            'option': 'Web Development',
+            'optionvalue': 'Web Development'
+        },
+        {
+            'name': 'department',
+            'option': 'IT Management',
+            'optionvalue': 'IT Management'
+        },
+        {
+            'name': 'department',
+            'option': 'Marketing',
+            'optionvalue': 'Marketing'
+        },],
+
+        'Documents': [
             {
-                'name': 'department',
-                'option': 'Web Development',
-                'optionvalue': 'Web Development'
+                'name': 'documents',
+                'option': 'prof_doc',
+                'optionvalue': 'Professional Documents'
             },
             {
-                'name': 'department',
-                'option': 'IT Management',
-                'optionvalue': 'IT Management'
+                'name': 'documents',
+                'option': 'degree',
+                'optionvalue': 'Degree'
             },
             {
-                'name': 'department',
-                'option': 'Marketing',
-                'optionvalue': 'Marketing'
+                'name': 'documents',
+                'option': 'aadhar',
+                'optionvalue': 'Aadhar'
+            },
+            {
+                'name': 'documents',
+                'option': 'tds',
+                'optionvalue': 'Tax Deduction Supporting System'
+            },
+            {
+                'name': 'documents',
+                'option': 'emp_con',
+                'optionvalue': 'Employment Contract'
+            },
+            {
+                'name': 'documents',
+                'option': 'bank_details',
+                'optionvalue': 'Bank Account Details'
+            },
+            {
+                'name': 'documents',
+                'option': 'Other',
+                'optionvalue': 'Other'
             },],
+
+        'pay_slip' : [
+            {
+                'name' : 'payslip',
+                'option' :'2023-2024',
+                'optionvalue': '2023-2024',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2022-2023',
+                'optionvalue': '2022-2023',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2021-2022',
+                'optionvalue': '2021-2022',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2020-2021',
+                'optionvalue': '2020-2021',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2019-2020',
+                'optionvalue': '2019-2020',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2018-2019',
+                'optionvalue': '2018-2019',
+            },
+            {
+                'name' : 'payslip',
+                'option' :'2017-2018',
+                'optionvalue': '2017-2018',
+            },
+
+        ]
 }
 
 

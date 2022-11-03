@@ -8168,7 +8168,7 @@ textarea.form-control {
   background-color: transparent;
   padding: 10px 0 0;
 }
- 
+
 .file-content .file-body .file-scroll .file-content-inner .card-footer span {
   font-size: 12px;
   color: #888888;
@@ -8179,7 +8179,7 @@ textarea.form-control {
 }
 
 .account-page .main-wrapper .account-content {
-  padding: 20px 0;
+  padding: 56px 0;
 }
 
 .account-page .main-wrapper .account-content .account-logo {
@@ -8214,11 +8214,16 @@ border: 1px solid #dcdcdc;;
     border: none;
   }
 }
+
+
 @media (max-width: 600px ) {
   .account-page .main-wrapper .account-content .account-box{
 border: none;
 }
 }
+
+
+
 
 .account-page .main-wrapper .account-content .account-box .form-group {
   margin-bottom: 25px;
