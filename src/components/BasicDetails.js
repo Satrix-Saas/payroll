@@ -42,7 +42,7 @@ export default function BasicDetails() {
 
                                         <div className="account-box">
                                            
-                                             <div className="account-wrapper">
+                                              <div className="account-wrapper">
                                             <Logo dashboard="/basicdetails" />
                                                 <Heading title="Address & Tax Setup" subtitle="Enter Basic Details" />
 

@@ -9,7 +9,7 @@ export default function Login() {
 
     return (
  
-        <div className="account-page">
+        <div className="account-page"> 
             <div className="main-wrapper">
                 <div className="account-content">
                     <div className="container col-xs">

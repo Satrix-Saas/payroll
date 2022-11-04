@@ -18,7 +18,7 @@ export default function AdminDashboard() {
         <div id="sidebar-menu" className="sidebar-menu">
             <Sidebar />
         </div></div></div>
-<div className="two-col-bar" id="two-col-bar">
+<div className="two-col-bar" id="two-col-bar"> 
     <TwoColSideBar />
 </div>
       <div className="page-wrapper">

@@ -43,7 +43,7 @@ export default function Register_form() {
  
                 <form id="register_form">
 
-                  <Textfields
+                  <Textfields 
                     label="Full Name" type="text" mandatory="*" name="name" id="full_name" onClick={onChange_value}/>
 
                   <Textfields
@@ -52,7 +52,7 @@ export default function Register_form() {
                   <Textfields
                      label="Work Email Address" type="text" mandatory="*" name="email" id="email"  onClick={onChange_value} />
 
-                  <Textfields
+                  <Textfields 
                     label="Phone Number" type="tel" mandatory="*" name="cont_no." id="phn_num"  onClick={onChange_value}/>
 
                   <Textfields

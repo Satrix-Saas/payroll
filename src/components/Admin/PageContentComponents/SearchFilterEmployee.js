@@ -22,7 +22,7 @@ export default function SearchFilterEmployee() {
                 </div>
                 <div className="col-sm-6 col-md-3">
                     <div className="form-group form-focus select-focus">
-                        <select className="select floating">
+                         <select className="select floating">
                             <option>--</option>
                             {optionArrayDesignation.map((e) => {
                                 return (

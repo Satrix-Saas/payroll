@@ -241,7 +241,7 @@ $(document).ready(function () {
 
         });
 
-        $(document).on('click', '.fa-bars', function () {
+        $(document).on('click', '.fa-bars', function () { 
                 alert("hit");
                 $(".main-wrapper").addClass("slide-nav");
         })
