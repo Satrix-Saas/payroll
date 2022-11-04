@@ -23,6 +23,7 @@
 
 .focus {
   border: 1px solid #1a73e8;
+
 }
 
 .account-page .main-wrapper .account-content .account-logo img {
@@ -30,13 +31,10 @@
   margin-bottom: 22px;
 }
 
+
 .account-page .main-wrapper .account-content .account-box .account-btn {
   background-image: linear-gradient(to bottom right, #37D5D6, #36096D);
 
-}
-
-body {
-  color: #202124;
 }
 
 .header {
@@ -50,6 +48,7 @@ body {
 #toggle_btn {
   border-radius: 10px;
 }
+
 
 .rounded-circle:hover {
   background-color: #ced4da;
@@ -103,10 +102,6 @@ body {
   z-index: 2;
 }
 
-a:hover {
-  color: #0047b9;
-}
-
 .header-new-menu .dropdown-menu {
   line-height: 2.5;
 }
@@ -142,20 +137,7 @@ a:hover {
   background-color: #D3E3FD;
 }
 
-.select2-container .select2-selection--single {
-  height: 50px;
-  border-radius: 4px;
-}
 
-.header .top-nav-search form .form-control:placeholder {
-  color: #7f8185;
-}
-
-.header .top-nav-search form .form-control:focus-visible {
-  background-color: #ced9df;
-  box-shadow: inset 0 1px 1px 0 rgba(65, 69, 73, .3), 0 1px 3px 1px, rgba(65, 69, 73, .15);
-  border: 1px solid transparent;
-}
 
 .floating {
   height: 50px;
@@ -181,6 +163,9 @@ a:hover {
 
 
 
+
+
+
 @media (max-width: 950px) and (min-width: 600px) {
 
   .account-page .main-wrapper .account-content .col-xs {
@@ -194,6 +179,7 @@ a:hover {
     padding: 3rem 0;
   }
 }
+
 
 @media (max-width: 991px) {
 
@@ -220,7 +206,73 @@ a:hover {
 
   .fa-bars {
     color: #38414A;
+
   }
+}
+
+
+#mpslip {
+  background-color: #f6f8fc;
+  border: 1px solid #292a2d;
+  color: #1f1f1f;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  margin-right: 10px;
+  padding: 0 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#mpslip:hover {
+  background-color: #c6c6c6;
+}
+
+#pay_slip {
+  color: #1f1f1f;
+  margin-bottom: 25px;
+  height: 44px;
+  padding: 0 12.5px;
+  min-width: 300px;
+  width: 540px;
+  border: 1px solid #292a2d;
+
+  display: block;
+  margin-bottom: 6.25px;
+}
+
+#slip_p {
+  margin-top: 15px;
+}
+
+#rPr1 {
+  max-width: none;
+  padding: 12.5px;
+  width: 100%;
+  background-color: rgba(214, 157, 157, 0.2);
+  border-left: 5px solid #f36969;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+
+#rPr2 {
+  text-align: left;
+  background: #caccd5;
+  display: block;
+  margin-bottom: 25px;
+  padding: 25px;
+  position: relative;
+  max-width: 640px;
+  color: #252424;
+  font-size: 18px;
+ 
 }
 
 /*
@@ -231,6 +283,7 @@ a:hover {
   #faitem:hover{
     background-color: #ced4da;
   }
+
   #faitem :focus{
     background-color: #ced4da;
   
@@ -395,25 +448,10 @@ padding: 0 25px;
 text-decoration: none;
 text-transform: uppercase;
 }
-#mpslip:hover{
+ #mpslip:hover{
 background-color: #c6c6c6;
-}
-#pay_slip{
-  color: #1f1f1f;
-  margin-bottom: 25px;
-  height: 44px;
-padding: 0 12.5px;
-min-width: 300px;
-width: 540px;
-border: 1px solid #292a2d;
+ }
 
-display: block;
-margin-bottom: 6.25px;
-}
-
-#slip_p{
-  margin-top: 15px;
-}
 .add-btn{
 background-color: #f6f8fc;
 border: 1px solid #212529;

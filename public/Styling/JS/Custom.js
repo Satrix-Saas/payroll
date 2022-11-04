@@ -247,7 +247,7 @@ $(document).ready(function () {
         })
         
         $(document).on('click', '.datetimepicker', function () {
-                $(".label").remove();
+                $(".label").remove(); 
         })
         // $(document).on('click', '.selection', function () {
         //         alert("click");
