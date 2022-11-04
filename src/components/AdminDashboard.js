@@ -10,28 +10,28 @@ export default function AdminDashboard() {
   return (
     // <!-- Main Wrapper -->
     <>
-         <div className="main-wrapper">
+      <div className="main-wrapper">
 
-<AdminHeader />
-<div className="sidebar" id="sidebar">
-    <div className="sidebar-inner slimscroll">
-        <div id="sidebar-menu" className="sidebar-menu">
-            <Sidebar />
-        </div></div></div>
-<div className="two-col-bar" id="two-col-bar">
-    <TwoColSideBar />
-</div>
-      <div className="page-wrapper">
-        <div className="content container-fluid">
-          <AdminHeading dashboard="Dashboard " />
-          <div className="twocolslidebar">
-            <TotalRevenue />
-            <PageStatistics />
+        <AdminHeader />
+        <div className="sidebar" id="sidebar">
+          <div className="sidebar-inner slimscroll">
+            <div id="sidebar-menu" className="sidebar-menu">
+              <Sidebar />
+            </div></div></div>
+        <div className="two-col-bar" id="two-col-bar">
+          <TwoColSideBar />
+        </div>
+        <div className="page-wrapper">
+          <div className="content container-fluid">
+            <AdminHeading dashboard="Dashboard " />
+            <div className="twocolslidebar">
+              <TotalRevenue />
+              <PageStatistics />
+            </div>
+
           </div>
-
         </div>
       </div>
-    </div>
     </>
   )
 }

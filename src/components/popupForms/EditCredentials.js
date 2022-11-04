@@ -4,7 +4,7 @@ import ProfTaxEditCred from './ProfTaxEditCred'
 
 export default function EditCredentials(props) {
     return (
-        <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div className="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div className="modal-content">
                 <div className="modal-header">
                     <h5 className="modal-title">{props.heading}</h5>
@@ -33,7 +33,7 @@ export default function EditCredentials(props) {
                         </div>
                     </form>
                     <div className="submit-section">
-                        <button className="btn btn-primary submit-btn">Submit</button>
+                        <button className="btn btn-primary submit-btn" id="submit_editcred">Submit</button>
                     </div>
                 </div>
             </div>

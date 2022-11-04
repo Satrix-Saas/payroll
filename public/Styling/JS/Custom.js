@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
         // Registeration validation
@@ -107,11 +108,15 @@ $(document).ready(function () {
                         $("#title").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Must Choose An Option</span>");
                         error = true;
                 }
-
+                // var url = 'http://192.168.0.100:8074/Satrix_Saas/pub/register/index/index';
                 if (error) {
                         return false;
                 } else {
-                        ApiCall(arr, 'register');
+                        // var response = ApiCall(arr, apiurl());
+                        // if (response) {
+                        //         window.location.href = "http://localhost:3000/basicdetails";
+                        // }
+                        window.location.href = "/basicdetails";
                 }
 
         }),
@@ -123,7 +128,7 @@ $(document).ready(function () {
                         var login_email = $("#login_email").val();
                         var login_password = $("#password").val();
                         var error = false;
-                        var arr=[];
+                        var arr = [];
 
                         $(".valid").remove();
                         $("input").keydown(function () {
@@ -158,14 +163,14 @@ $(document).ready(function () {
                         }
                         var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/login/index/index';
 
-                        if(error){
+                        if (error) {
                                 return false;
-                        }else{
-                               
-                               var response = ApiCall(arr,url);
-                               if(response){
-                                   window.location.href = "http://localhost:3000/admindashboard";
-                               }
+                        } else {
+
+                                var response = ApiCall(arr, url);
+                                if (response) {
+                                        window.location.href = "http://localhost:3000/admindashboard";
+                                }
                         }
                 }),
 
@@ -269,10 +274,61 @@ $(document).ready(function () {
                         $(this).find('ul').css('display', 'block');
 
                 }
- 
 
         });
-            
+        // var count = 0;
+        // $(document).on('click', '#mobile_btn', function () {
+        //         // alert("hit");
+        //         count++;
+        //         if ($("html").hasClass("menu-opened") && count == 1) {
+        //                 alert(count);
+        //                 // $("html").addClass('menu-opened');
+        //                 $(".main-wrapper").addClass('slide-nav');
+        //                 $("#sidebar").show();
+        //         }
+        //         else {
+        //                 alert(count);
+        //                 $(".main-wrapper").toggleClass('slide-nav');
+        //                 count = 0;
+        //         }
+        // })
+
+        // $(document).on('click', '.submenu li a', function () {
+        //         //        alert("submenu li a");
+        //         if (count > 0) {
+        //                 // alert(count);
+        //                 $(".main-wrapper").removeClass("slide-nav");
+        //         }
+        //         count = 0;
+        // })
+
+
+        $('#editcred').on('show.bs.modal', function (e) {
+                $("#add_employee").removeClass("show");
+        })
+        $('#editcred').on('hide.bs.modal', function (e) {
+                $("#add_employee").addClass("show");
+        })
+        $(document).on('click', '#submit_editcred', function () {
+                $('#editcred').modal('toggle');
+        })
+
+
+
+        $(document).on('click', '.datetimepicker', function () {
+                $(".label").remove();
+        })
+
+        // $(document).on('click', '.selection', function () {
+        //         alert("click");
+        //         $(".select2-results").show();
+        // })
+        // $(document).on('mouseleave', '.selection', function () {
+        //         alert("leave");
+        //         $(".select2-results").hide();
+        // })
+
+
 });
 
 

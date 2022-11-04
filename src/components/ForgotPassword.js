@@ -9,7 +9,7 @@ export default function ForgotPassword() {
     return (
         <div className="account-page">
             <div className="main-wrapper">
-                <div className="account-content col-md-6">
+                <div className="account-content">
                     <div className="container col-xs">
                         <div className="account-box">
                             <div className="account-wrapper">

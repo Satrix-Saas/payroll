@@ -162,7 +162,9 @@
 }
 
 
-
+.collapse{
+  visibility: collapse;
+}
 
 
 
@@ -238,6 +240,7 @@
   height: 44px;
   padding: 0 12.5px;
   min-width: 300px;
+
   border: 1px solid #292a2d;
   display: block;
   margin-bottom: 6.25px;
@@ -264,8 +267,9 @@ p{
     margin-bottom: 0px;
 }
 
-
-
+.account-page .main-wrapper .account-content{
+padding: 20px 0;
+}
 #rPr2 {
   text-align: left;
   background: #caccd5;
