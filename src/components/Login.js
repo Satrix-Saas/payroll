@@ -9,17 +9,16 @@ export default function Login() {
 
     return (
  
-        <div className="account-page">
+        <div className="account-page"> 
             <div className="main-wrapper">
                 <div className="account-content">
                     <div className="container col-xs">
                         <div className="account-box">
                             <div className="account-wrapper">
                                 <Logo dashboard="/login" />
-                                 <Heading title="Login" subtitle="to continue Our Dashboard" />
+                                 <Heading title="Login" subtitle="to continue our Dashboard" />
 
-
-                                <form action="/login">
+                                 <form action="/login">
                                     <Textfields type="text" label="Email" id="login_email" name="login_id" />
                                     <div className="form-group">
                                         <div className="row">

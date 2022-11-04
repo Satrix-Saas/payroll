@@ -10,19 +10,19 @@ export default function SearchFilterEmployee() {
             <div className="row filter-row">
                 <div className="col-sm-6 col-md-3">
                     <div className="form-group form-focus">
-                        <input type="text" className="form-control floating"/>
-                            <label className="focus-label">Employee ID</label>
+                        <input type="text" className="form-control floating" />
+                        <label className="focus-label">Employee ID</label>
                     </div>
                 </div>
                 <div className="col-sm-6 col-md-3">
                     <div className="form-group form-focus">
-                        <input type="text" className="form-control floating"/>
-                            <label className="focus-label">Employee Name</label>
+                        <input type="text" className="form-control floating" />
+                        <label className="focus-label">Employee Name</label>
                     </div>
                 </div>
                 <div className="col-sm-6 col-md-3">
                     <div className="form-group form-focus select-focus">
-                        <select className="select floating">
+                         <select className="select floating">
                             <option>--</option>
                             {optionArrayDesignation.map((e) => {
                                 return (
@@ -44,4 +44,4 @@ export default function SearchFilterEmployee() {
         </>
     )
 }
- 
+

@@ -12,7 +12,7 @@ export default function SearchFilterDate() {
             <div className="col-sm-3">
                 <div className="form-group form-focus">
                     <div className="cal-icon">
-                        <input type="text" className="form-control floating datetimepicker" />
+                        <input type="date" className="form-control floating datetimepicker" />
                     </div>
                     <label className="focus-label">Date</label>
                 </div>
