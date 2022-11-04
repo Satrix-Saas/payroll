@@ -240,6 +240,12 @@ $(document).ready(function () {
                 }
 
         });
+
+        $(document).on('click', '.fa-bars', function () {
+                alert("hit");
+                $(".main-wrapper").addClass("slide-nav");
+        })
+        
         $(document).on('click', '.datetimepicker', function () {
                 $(".label").remove();
         })
@@ -251,8 +257,9 @@ $(document).ready(function () {
         //         alert("leave");
         //         $(".select2-results").hide();
         // })
-      
+
 
 });
 
 
+ 

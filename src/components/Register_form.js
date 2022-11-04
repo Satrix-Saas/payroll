@@ -50,7 +50,7 @@ export default function Register_form() {
                     label="Organization Name" type="text" mandatory="*" name="org_name" id="org_name" onClick={onChange_value} />
 
                   <Textfields
-                    label="Work Email Address" type="text" mandatory="*" name="email" id="email"  onClick={onChange_value} />
+                     label="Work Email Address" type="text" mandatory="*" name="email" id="email"  onClick={onChange_value} />
 
                   <Textfields
                     label="Phone Number" type="tel" mandatory="*" name="cont_no." id="phn_num"  onClick={onChange_value}/>

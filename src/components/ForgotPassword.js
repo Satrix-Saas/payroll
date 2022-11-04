@@ -17,7 +17,7 @@ export default function ForgotPassword() {
                                 <Heading title="Forgot Password?" subtitle="Enter your email to get a password reset link" />
                                 <form>
                                     <Textfields type="text" label="Email Address" id="forgotpswd_email" name="email_address" />
-                                    <div className="form-group text-center">
+                                     <div className="form-group text-center">
                                         <button type="button" className="btn btn-primary account-btn" id="reset" >Reset Password</button>
                                     </div>
 

@@ -45,7 +45,7 @@ export default function CompanyDetails() {
 
                                     </div>
                                 </div>
-
+ 
                                 <div className="card leave-box" id="tax_setup">
                                     <div className="card-body">
                                         <div className="h3 card-title">Tax Setup</div>

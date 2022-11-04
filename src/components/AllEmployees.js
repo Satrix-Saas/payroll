@@ -63,7 +63,7 @@ export default function AllEmployees() {
                     <div className="modal custom-modal fade" id="delete_employee" role="dialog">
                         <DeleteEmp delete="Delete"  cancel="Cancel"/>
                     </div>
-                </div> 
+                </div>  
 
             </div>
 
