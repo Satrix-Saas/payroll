@@ -13,9 +13,9 @@ export default function Sidebar() {
             <span>Main</span>
           </li>
           <li className="submenu">
-            <Link to="#"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
+            <Link to="/dashbord"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
             <ul style={style}>
-              <li><Link to="/admindashboard"> Dashboard</Link></li>
+              {/* <li><Link to="/admindashboard"> Dashboard</Link></li> */}
               {/* <li><Link to="/basicdetails">Employee Dashboard</Link></li> */}
             </ul>
           </li>
@@ -304,14 +304,14 @@ export default function Sidebar() {
           <span>Main</span>
         </li>
         <li className="submenu">
-          <Link to="#"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
+          <Link to="/dashboard"><i className="la la-dashboard"></i><span>Dashboard</span></Link>
           <ul style={style}>
-            <li><Link to="/dashboard"> Dashboard</Link></li>
+            {/* <li><Link to="/dashboard"> Dashboard</Link></li> */}
             {/* <li><Link to="/basicdetails">Employee Dashboard</Link></li> */}
           </ul>
         </li>
         <li className="submenu">
-          <Link to="#"><i className="la la-cube"></i> <span> Apps</span> <span className="menu-arrow"></span></Link>
+          {/* <Link to="#"><i className="la la-cube"></i> <span> Apps</span> <span className="menu-arrow"></span></Link> */}
           {/* <ul style={style}>
             <li><Link to="chat.html">Chat</Link></li>
             <li className="submenu">
