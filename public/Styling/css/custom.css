@@ -276,6 +276,16 @@
   font-size: 17px;
   letter-spacing: .2px;
 }
+#rPr2{
+  margin-top: 30px;
+}
+.sidebar .sidebar-menu ul li.submenu .noti-dot::before, .two-col-bar .sidebar-menu ul li.submenu .noti-dot::before {
+
+  border: 5px solid #001d35;
+  background-color: #001d35;
+  display: none;
+
+}
 
 
 /*
@@ -390,13 +400,7 @@
     color: #001d35;
     text-decoration: underline;
  }
-  .sidebar .sidebar-menu ul li.submenu .noti-dot::before, .two-col-bar .sidebar-menu ul li.submenu .noti-dot::before {
 
-    border: 5px solid #001d35;
-    background-color: #001d35;
-    display: none;
-
-  }
   .sidebar .sidebar-menu ul li a:focus, .two-col-bar .sidebar-menu ul li a:focus {
      background-color: #d3e3fd;
   }
