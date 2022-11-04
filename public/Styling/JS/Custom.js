@@ -1,7 +1,5 @@
+
 $(document).ready(function () {
-
-
-
         // Registeration validation
 
         $(document).on('click', "#register", function (e) {
@@ -109,11 +107,14 @@ $(document).ready(function () {
                         $("#title").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Must Choose An Option</span>");
                         error = true;
                 }
-
+                var url = 'http://192.168.0.100:8074/Satrix_Saas/pub/register/index/index';
                 if (error) {
                         return false;
                 } else {
-                        ApiCall(arr, 'register');
+                        var response = ApiCall(arr, apiurl());
+                        if (response) {
+                                window.location.href = "http://localhost:3000/basicdetails";
+                        }
                 }
 
         }),
@@ -125,7 +126,7 @@ $(document).ready(function () {
                         var login_email = $("#login_email").val();
                         var login_password = $("#password").val();
                         var error = false;
-                        var arr=[];
+                        var arr = [];
 
                         $(".valid").remove();
                         $("input").keydown(function () {
@@ -160,14 +161,14 @@ $(document).ready(function () {
                         }
                         var url = 'http://192.168.0.100:8074/Satrix_Saas/pub/login/index/index';
 
-                        if(error){
+                        if (error) {
                                 return false;
-                        }else{
-                               
-                               var response = ApiCall(arr,url);
-                               if(response){
-                                   window.location.href = "http://localhost:3000/admindashboard";
-                               }
+                        } else {
+
+                                var response = ApiCall(arr, url);
+                                if (response) {
+                                        window.location.href = "http://localhost:3000/admindashboard";
+                                }
                         }
                 }),
 
@@ -237,10 +238,27 @@ $(document).ready(function () {
                         $(this).find('ul').css('display', 'block');
 
                 }
- 
 
         });
-            
+
+        $(document).on('click', '.fa-bars', function () {
+                alert("hit");
+                $(".main-wrapper").addClass("slide-nav");
+        })
+        
+        $(document).on('click', '.datetimepicker', function () {
+                $(".label").remove();
+        })
+        // $(document).on('click', '.selection', function () {
+        //         alert("click");
+        //         $(".select2-results").show();
+        // })
+        // $(document).on('mouseleave', '.selection', function () {
+        //         alert("leave");
+        //         $(".select2-results").hide();
+        // })
+
+
 });
 
 
