@@ -21,6 +21,10 @@ import MyPaySlip from './components/MyPaySlip';
 import HolidayTable from './components/common_component/HolidayTable';
 import apiurl from './ApiUrl';
 import RunPayRoll from './components/utility/RunPayRoll';
+import OneTimePayment from './components/utility/OneTimePayment';
+import People from './components/utility/People';
+
+
 
 
 
@@ -61,6 +65,8 @@ function App() {
             <Route exact path={apiurl('Theattendance-employee')} element={<AttendanceEmployee />} />
             <Route exact path={apiurl('Theattendance-admin')} element={<AttendanceAdmin />} />
             <Route exact path={apiurl('Therunpayroll')} element={<RunPayRoll />} />
+            <Route exact path={apiurl('TheOneTimePayment')} element={<OneTimePayment />} />
+            <Route exact path={apiurl('ThePeople')} element={<People />} />
             
          </Routes>
       </BrowserRouter>

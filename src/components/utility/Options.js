@@ -291,6 +291,18 @@ const options = {
                 'optionvalue': '2017-2018',
             },
 
+        ],
+        'One_time_payment':[
+            {
+               ' name' : 'onetimepayment',
+                'option' :'Deduct TDS from this payment itself',
+                'optionvalue': 'Deduct TDS from this payment itself',
+            },
+            {
+                ' name' : 'onetimepayment',
+                 'option' :'Credit the entire amount, and deduct TDS from future payroll',
+                 'optionvalue': 'Credit the entire amount, and deduct TDS from future payroll',
+             }
         ]
 }
 
