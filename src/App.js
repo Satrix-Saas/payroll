@@ -18,7 +18,7 @@ import AttendanceAdmin from './components/AttendanceAdmin';
 import ResetPassword from './components/ResetPassword';
 import CompanyDetails from './components/CompanyDetails';
 import MyPaySlip from './components/MyPaySlip';
-import Holiday from './components/Admin/HeaderComponents/HolidaysTable';
+import Holiday from './components/common_component/HolidayTable';
 import apiurl from './ApiUrl';
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
             <Route exact path={apiurl('resetThepassword')} element={<ResetPassword/>} />
          </Routes>
          <Routes>
-            <Route exact path={apiurl('Theadmindashboard')} element={<AdminDashboard />} />
+            <Route exact path={apiurl('Thedashboard')} element={<AdminDashboard />} />
            </Routes>
            <Routes>
             <Route exact path={apiurl('payMyslip')} element={<MyPaySlip/>} />

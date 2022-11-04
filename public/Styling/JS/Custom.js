@@ -107,11 +107,11 @@ $(document).ready(function () {
                         $("#title").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Must Choose An Option</span>");
                         error = true;
                 }
-                var url = 'http://192.168.0.100:8074/Satrix_Saas/pub/register/index/index';
+                var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/register/index/index';
                 if (error) {
                         return false;
                 } else {
-                        var response = ApiCall(arr,apiurl());
+                        var response = ApiCall(arr,url);
                                if(response){
                                    window.location.href = "http://localhost:3000/basicdetails";
                                }
@@ -159,7 +159,7 @@ $(document).ready(function () {
                                 $("#password").after("<span class='valid validation-check'><i class='fa fa-check'></i>Looks Good</span>");
                                 error = false;
                         }
-                        var url = 'http://192.168.0.100:8074/Satrix_Saas/pub/login/index/index';
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/login/index/index';
 
                         if(error){
                                 return false;
@@ -176,35 +176,27 @@ $(document).ready(function () {
                 // ForgotPassword validation
                 $(document).on('click', "#reset", function (e) {
                         e.preventDefault();
-                        var forgotpswd_email = $("#forgotpswd_email").val();
-                        var reg_email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                        alert("sdad");
+                        var new_pass = $("#new_pass").val();
+                        var con_pass = $("#con_pass").val();
+                        var arr = [];
+                        arr['email'] = 'satrixsaas@gmail.com';
+                        arr['new_password'] = new_pass;
+                        arr['confirm_password'] = con_pass;
+                        error = false;
 
-                        $(".valid").remove();
-                        $("input").keydown(function () {
-                                $("input").removeClass("input_focus");
-                                $(".valid").remove();
-                        })
-
-                        $("input").click(function () {
-                                $("input").removeClass("input_focus");
-                                $(".valid").remove();
-                        })
-
-                        if (forgotpswd_email != "" && (forgotpswd_email.match(reg_email))) {
-                                $("#forgotpswd_email").after("<span class='valid validation-check'><i class='fa fa-check'></i>Reset Link Is Shared Check Email</span>");
-
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/login/reset/password';
+                        if(error){
+                                return false;
+                        }else{
+                               var response = ApiCall(arr,url);
+                               if(response){
+                                   window.location.href = "http://localhost:3000/admindashboard";
+                               }
                         }
-                        else {
-                                $("#forgotpswd_email").addClass("input_focus");
-                                $("#forgotpswd_email").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Enter Valid Email</span>");
-                        }
-                })
+                });
 
-        // $(document).on('click', ".dropdown-item", function (e) {
-
-        //         alert("123");
-
-        // })
+       
 
         $(".header-new-menu").on('click', 'li', function () {
                 $('li div').removeClass('show');
@@ -227,19 +219,27 @@ $(document).ready(function () {
 
         });
 
-        $(document).on('click','.submenu',function(){
-            var classname = $(this).find('a').attr('class');
-            if (typeof classname == 'undefined'){
-                $(this).find('a').toggleClass('subdrop');
-                $(this).find('ul').css('display','block');
-            }else{
-                $(this).find('a').toggleClass('active');
-                $('.submenu').find('ul').css('display','none');
-                $(this).find('ul').css('display','block');
+        $(document).on('click', '.submenu', function () {
+                var classname = $(this).find('a').attr('class');
+                if (typeof classname == 'undefined') {
+                        $(this).find('a').toggleClass('subdrop');
+                        $(this).find('ul').css('display', 'block');
+                } else {
+                        $(this).find('a').toggleClass('active');
+                        $('.submenu').find('ul').css('display', 'none');
+                        $(this).find('ul').css('display', 'block');
 
-            }
-                       
+                }
         });
+
+        $(document).on('mouseenter','#dashboard',function(){
+                $('.submenu_dashboard').css('background-color','rgba(32, 33, 36, 0.059');
+        });
+        $(document).on('mouseleave','#dashboard',function(){
+                $('.submenu_dashboard').css('background-color','');
+        });
+
+        
             
 });
 

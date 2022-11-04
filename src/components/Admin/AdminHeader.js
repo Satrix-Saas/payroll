@@ -21,7 +21,7 @@ export default function AdminHeader() {
       <AdminLogo dashboard="/admindashboard" />
 
       <AdminHeaderMenu />
-      <Link id="mobile_btn" className="mobile_btn" to="#sidebar"><i className="fa fa-bars"></i></Link>
+      <Link id="mobile_btn" className="mobile_btn" to="#sidebar"><i className="fa fa-bars" to="#sidebar"></i></Link>
 
       <ul className="nav user-menu">
         <SearchBar placeholder="Search Here" />

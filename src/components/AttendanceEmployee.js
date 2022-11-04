@@ -28,7 +28,7 @@ export default function AttendanceEmployee() {
                         <div className="page-header">
                             <div className="row align-items-center">
                                 <div className="col">
-                                    <DashboardPageHeading pageheading="Attendance" pageworking="Attendance" />
+                                    <DashboardPageHeading pageheading="Attendance (Employee)" pageworking="Attendance" />
                                 </div>
                             </div>
                         </div>

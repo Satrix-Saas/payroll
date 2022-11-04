@@ -1,31 +1,9 @@
 import React from 'react'
-import AdminHeader from '../AdminHeader'
-import Sidebar from './Sidebar'
-import TwoColSideBar from '../TwoColSideBar'
-import SecondPageHeader from '../PageContentComponents/SecondPageHeader'
 
-
-
-export default function HolydayTable() {
-  return (
- 
- <div className="main-wrapper">
-            <AdminHeader />
-            <div className="sidebar" id="sidebar">
-              
-                <div className="sidebar-inner slimscroll">
-                    <div id="sidebar-menu" className="sidebar-menu">
-                        <Sidebar />
-                    </div>
-                </div>
-            </div>
-            <div className="two-col-bar" id="two-col-bar">
-                <TwoColSideBar />
-            </div>
-            <div className="page-wrapper">
-            <div className="content container-fluid">  
-            <SecondPageHeader PageTitle="Holydays 2022" activePagetitle="Holidays" btnItem="Add-Holidays"/>
-            <div className="row">
+export default function HolidayContent() {
+	return (
+		<>
+				<div className="row">
 						<div className="col-md-12">
 							<div className="table-responsive">
 								<table className="table table-striped custom-table mb-0">
@@ -44,21 +22,43 @@ export default function HolydayTable() {
 											<td>New Year</td>
 											<td>1 Jan 2019</td>
 											<td>Sunday</td>
-											<td></td>
+											<td className="text-end">
+												<div className="dropdown dropdown-action">
+													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<div className="dropdown-menu dropdown-menu-right">
+														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+													</div>
+												</div>
+											</td>
 										</tr>
 										<tr className="holiday-completed">
 											<td>2</td>
 											<td>Good Friday</td>
 											<td>14 Apr 2019</td>
 											<td>Friday</td>
-											<td></td>
+											<td className="text-end">
+												<div className="dropdown dropdown-action">
+													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<div className="dropdown-menu dropdown-menu-right">
+														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+													</div>
+												</div>
+											</td>
 										</tr>
 										<tr className="holiday-completed">
 											<td>3</td>
 											<td>May Day</td>
 											<td>1 May 2019</td>
 											<td>Monday</td>
-											<td className="text-center">
+											{/* <td className="text-center">
+											</td> */}
+											<td className="text-end">
+												<div className="dropdown dropdown-action">
+													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<div className="dropdown-menu dropdown-menu-right">
+														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+													</div>
+												</div>
 											</td>
 										</tr>
 										<tr className="holiday-completed">
@@ -66,7 +66,15 @@ export default function HolydayTable() {
 											<td>Memorial Day</td>
 											<td>28 May 2019</td>
 											<td>Monday</td>
-											<td className="text-center">
+											{/* <td className="text-center">
+											</td> */}
+											<td className="text-end">
+												<div className="dropdown dropdown-action">
+													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<div className="dropdown-menu dropdown-menu-right">
+														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+													</div>
+												</div>
 											</td>
 										</tr>
 										<tr className="holiday-completed">
@@ -74,7 +82,14 @@ export default function HolydayTable() {
 											<td>Ramzon</td>
 											<td>26 Jun 2019</td>
 											<td>Monday</td>
-											<td></td>
+											<td className="text-end">
+												<div className="dropdown dropdown-action">
+													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<div className="dropdown-menu dropdown-menu-right">
+														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+													</div>
+												</div>
+											</td>
 										</tr>
 										<tr className="holiday-upcoming">
 											<td>6</td>
@@ -126,9 +141,7 @@ export default function HolydayTable() {
 							</div>
 						</div>
 					</div>
-         
-   </div>
-   </div>
-   </div>
-  )
+					</>
+
+	)
 }

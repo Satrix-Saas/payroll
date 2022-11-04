@@ -17,10 +17,10 @@ function ApiCall(arr,url){
       data:{'data':JSON.stringify(data)},                                                  
       success: function(result) {
          var response = result.response;
-         if(response.success === 'true'){
-            alert(response.message);
+         if(response.ResponseCode){
+            alert(response.ResponseMessage);
          }else{
-           alert(response.message);
+           alert(response.ResponseMessage);
          }
       },
       error: function(result) {
@@ -28,6 +28,6 @@ function ApiCall(arr,url){
         console.log(result);
       }
   });
-  return 1;
+  // return 1;
  
 }

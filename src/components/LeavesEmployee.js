@@ -29,10 +29,10 @@ export default function LeavesEmployee() {
                         <div className="page-header">
                             <div className="row align-items-center">
                                 <div className="col">
-                                    <DashboardPageHeading pageheading="Leaves" pageworking="Leaves" />
+                                    <DashboardPageHeading pageheading="Leaves (Employee)" pageworking="Leaves" />
                                 </div>
                                 <div className="col-auto float-end ms-auto">
-                                    <Link to="\addleave" className="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_leave"><i className="fa fa-plus"></i> Add Leave</Link>
+                                    <Link to="#" className="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_leave"><i className="fa fa-plus"></i> Add Leave</Link>
                                 </div>
                             </div>
                         </div>

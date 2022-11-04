@@ -46,17 +46,17 @@ export default function SearchFilterAdminLeave() {
             <div className="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-12">
                 <div className="form-group form-focus">
                     <div className="cal-icon">
-                        <input className="form-control floating datetimepicker" type="text" />
+                        <input className="form-control floating datetimepicker" type="date" />
                     </div>
-                    <label className="focus-label">From</label>
+                    <label className="focus-label label">From</label>
                 </div>
             </div>
             <div className="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-12">
                 <div className="form-group form-focus">
                     <div className="cal-icon">
-                        <input className="form-control floating datetimepicker" type="text" />
+                        <input className="form-control floating datetimepicker" type="date" />
                     </div>
-                    <label className="focus-label">To</label>
+                    <label className="focus-label label">To</label>
                 </div>
             </div>
             <div className="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-12">
@@ -65,4 +65,4 @@ export default function SearchFilterAdminLeave() {
         </div>
     )
 }
- 
+  

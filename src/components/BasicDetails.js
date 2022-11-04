@@ -15,7 +15,7 @@ import AdminHeading from './Admin/HeaderComponents/AdminHeading';
 export default function BasicDetails() {
     document.title = "Basic details";
 
-    const optionArray2 = dropDownArray(options, "State");
+    const optionArray2 = dropDownArray(options, "State"); 
     return (
         <>
             <div className="main-wrapper">
@@ -41,8 +41,9 @@ export default function BasicDetails() {
 
 
                                         <div className="account-box">
+                                           
+                                              <div className="account-wrapper">
                                             <Logo dashboard="/basicdetails" />
-                                            <div className="account-wrapper">
                                                 <Heading title="Address & Tax Setup" subtitle="Enter Basic Details" />
 
                                                 {/* FORM START */}

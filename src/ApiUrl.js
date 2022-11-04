@@ -1,13 +1,15 @@
+
 export default function apiurl(argument){
+  
     var api_array = [];
     var custom='http://192.168.0.100:8074/Satrix_Saas/pub/';
     api_array['registration'] = "/register"; 
     api_array['Login'] = '/login'; 
     api_array['forgotThepassword'] = '/forgotpassword'; 
     api_array['resetThepassword'] = '/resetpassword'; 
-    api_array['Theadmindashboard'] = '/admindashboard'; 
+    api_array['Thedashboard'] = '/dashboard'; 
     api_array['payMyslip'] = '/mypayslip'; 
-    api_array['Theholidays'] = '/holidays';
+    api_array['Theholidays'] = '/holidayTable';
     api_array['Thebasicdetails'] = '/basicdetails';
     api_array['Theemployeeonboarding'] = '/employeeonboarding'; 
     api_array['Thecompanydetails'] = '/companydetails/index';  
@@ -19,7 +21,12 @@ export default function apiurl(argument){
     api_array['Thedepartment'] = '/department'; 
     api_array['Theattendance-employee'] = '/attendance-employee'; 
     api_array['Theattendance-admin'] = '/attendance-admin';
+    api_array['Therunpayroll'] = '/runpayroll';
 
+
+
+    // api_array['register_url'] = custom+'/register/index/index';
+    // api_array['Login_url'] = custom+'/login/index/index';
 
     api_array['register_url'] = custom+'/register/index/index';
 
