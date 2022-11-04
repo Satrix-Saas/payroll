@@ -26,6 +26,7 @@ import Profile from './components/Profile';
 
 
 
+
 function App() {
    return (
       <BrowserRouter>
@@ -51,6 +52,7 @@ function App() {
             <Route exact path={apiurl('Therunpayroll')} element={<RunPayRoll />} />
             <Route exact path={apiurl('Thedocumentation')} element={<Documents/>} />
             <Route exact path={apiurl('TheAccount')} element={<Profile/>} />
+
          </Routes>
       </BrowserRouter>
    );

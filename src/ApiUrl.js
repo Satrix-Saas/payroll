@@ -26,6 +26,7 @@ export default function apiurl(argument){
     api_array['TheAccount'] = '/myaccount';
 
 
+
     // api_array['register_url'] = custom+'/register/index/index';
     // api_array['Login_url'] = custom+'/login/index/index';
 
