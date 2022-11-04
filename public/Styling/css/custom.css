@@ -162,7 +162,9 @@
 }
 
 
-
+.collapse{
+  visibility: collapse;
+}
 
 
 
@@ -237,8 +239,6 @@
   margin-bottom: 25px;
   height: 44px;
   padding: 0 12.5px;
-  min-width: 300px;
-  width: 540px;
   border: 1px solid #292a2d;
 
   display: block;
@@ -263,8 +263,9 @@
   color: #252424;
 }
 
-
-
+.account-page .main-wrapper .account-content{
+padding: 20px 0;
+}
 #rPr2 {
   text-align: left;
   background: #caccd5;

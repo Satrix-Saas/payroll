@@ -107,14 +107,15 @@ $(document).ready(function () {
                         $("#title").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Must Choose An Option</span>");
                         error = true;
                 }
-                var url = 'http://192.168.0.100:8074/Satrix_Saas/pub/register/index/index';
+                // var url = 'http://192.168.0.100:8074/Satrix_Saas/pub/register/index/index';
                 if (error) {
                         return false;
                 } else {
-                        var response = ApiCall(arr, apiurl());
-                        if (response) {
-                                window.location.href = "http://localhost:3000/basicdetails";
-                        }
+                        // var response = ApiCall(arr, apiurl());
+                        // if (response) {
+                        //         window.location.href = "http://localhost:3000/basicdetails";
+                        // }
+                        window.location.href = "/basicdetails";
                 }
 
         }),
@@ -240,15 +241,49 @@ $(document).ready(function () {
                 }
 
         });
+        // var count = 0;
+        // $(document).on('click', '#mobile_btn', function () {
+        //         // alert("hit");
+        //         count++;
+        //         if ($("html").hasClass("menu-opened") && count == 1) {
+        //                 alert(count);
+        //                 // $("html").addClass('menu-opened');
+        //                 $(".main-wrapper").addClass('slide-nav');
+        //                 $("#sidebar").show();
+        //         }
+        //         else {
+        //                 alert(count);
+        //                 $(".main-wrapper").toggleClass('slide-nav');
+        //                 count = 0;
+        //         }
+        // })
 
-        $(document).on('click', '.fa-bars', function () {
-                alert("hit");
-                $(".main-wrapper").addClass("slide-nav");
+        // $(document).on('click', '.submenu li a', function () {
+        //         //        alert("submenu li a");
+        //         if (count > 0) {
+        //                 // alert(count);
+        //                 $(".main-wrapper").removeClass("slide-nav");
+        //         }
+        //         count = 0;
+        // })
+
+
+        $('#editcred').on('show.bs.modal', function (e) {
+                $("#add_employee").removeClass("show");
         })
-        
+        $('#editcred').on('hide.bs.modal', function (e) {
+                $("#add_employee").addClass("show");
+        })
+        $(document).on('click', '#submit_editcred', function () {
+                $('#editcred').modal('toggle');
+        })
+
+
+
         $(document).on('click', '.datetimepicker', function () {
-                $(".label").remove(); 
+                $(".label").remove();
         })
+
         // $(document).on('click', '.selection', function () {
         //         alert("click");
         //         $(".select2-results").show();

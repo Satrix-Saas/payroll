@@ -21,6 +21,8 @@ import MyPaySlip from './components/MyPaySlip';
 import HolidayTable from './components/common_component/HolidayTable';
 import apiurl from './ApiUrl';
 import RunPayRoll from './components/utility/RunPayRoll';
+import Documents from './components/Documents';
+import Profile from './components/Profile';
 
 
 
@@ -29,39 +31,26 @@ function App() {
       <BrowserRouter>
          <Routes>
             <Route exact path={apiurl('registration')} element={<RegisterForm />} />
-         </Routes>
-         <Routes>
-            <Route exact path={apiurl('Login')}  element={<Login />} />
-         </Routes>
-         <Routes>
+            <Route exact path={apiurl('Login')} element={<Login />} />
             <Route exact path={apiurl('forgotThepassword')} element={<ForgotPassword />} />
-            <Route exact path={apiurl('resetThepassword')} element={<ResetPassword/>} />
-         </Routes>
-         <Routes>
+            <Route exact path={apiurl('resetThepassword')} element={<ResetPassword />} />
             <Route exact path={apiurl('Thedashboard')} element={<AdminDashboard />} />
-           </Routes>
-           <Routes>
-            <Route exact path={apiurl('payMyslip')} element={<MyPaySlip/>} />
-           </Routes>
-           <Routes>
-            <Route exact path={apiurl('Theholidays')} element={<HolidayTable/>} />
-           </Routes>
-         <Routes>
-             <Route exact path={apiurl('Thebasicdetails')} element={<BasicDetails />} /> 
+            <Route exact path={apiurl('payMyslip')} element={<MyPaySlip />} />
+            <Route exact path={apiurl('Theholidays')} element={<HolidayTable />} />
+            <Route exact path={apiurl('Thebasicdetails')} element={<BasicDetails />} />
             <Route exact path={apiurl('Theemployeeonboarding')} element={<EmployeeOnboarding />} />
-            <Route exact path={apiurl('Thecompanydetails')} element={<CompanyDetails/>} />
-         </Routes>
-         <Routes>
+            <Route exact path={apiurl('Thecompanydetails')} element={<CompanyDetails />} />
             <Route exact path={apiurl('all-employees')} element={<AllEmployees />} />
             <Route exact path={apiurl('Theemployees-list')} element={<AllemployeeListView />} />
             <Route exact path={apiurl('Theleaves-employee')} element={<LeavesEmployee />} />
             <Route exact path={apiurl('Theleaves-admin')} element={<LeavesAdmin />} />
-            <Route exact path={apiurl('Theleave-setting')} element={<LeavesSettings/>}/>
+            <Route exact path={apiurl('Theleave-setting')} element={<LeavesSettings />} />
             <Route exact path={apiurl('Thedepartment')} element={<Departments />} />
             <Route exact path={apiurl('Theattendance-employee')} element={<AttendanceEmployee />} />
             <Route exact path={apiurl('Theattendance-admin')} element={<AttendanceAdmin />} />
             <Route exact path={apiurl('Therunpayroll')} element={<RunPayRoll />} />
-            
+            <Route exact path={apiurl('Thedocumentation')} element={<Documents/>} />
+            <Route exact path={apiurl('TheAccount')} element={<Profile/>} />
          </Routes>
       </BrowserRouter>
    );

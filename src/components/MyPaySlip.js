@@ -37,7 +37,7 @@ export default function MyPaySlip() {
                                     <DashboardPageHeading pageheading="My Pay Slip" pageworking="My Pay Slip" />
                                 </div>
                             </div>
-                            <div className='model-body' id="slipform"><form>
+                            <form>
                                 <SelectInputFields
                                     label="Select financial year" mandatory="*" type="text" select_id="pay_slip" name="payslip">
                                     {optionArraypay.map((e) => {
@@ -48,10 +48,10 @@ export default function MyPaySlip() {
                                         );
                                     })}
                                 </SelectInputFields>
-                            </form></div>
+                            </form>
 
                             <p id="slip_p">Ops, looks like we have not processed a payroll for you.</p>
-                            <Link className='btn-secondary' to="#" id="mpslip">Return to dashboard</Link>
+                            <Link className='btn-secondary' to="/dashboard" id="mpslip">Return to dashboard</Link>
                         </div>
                     </div>
                 </div>
