@@ -14,7 +14,7 @@ function ApiCall(arr,url){
           "Access-Control-Allow-Methods": [ "POST", "GET", "OPTIONS","DELETE","PUT"],
           "X-Requested-With": "XMLHttpRequest"
       },
-      data:{'data':JSON.stringify(data)},
+      data:{'data':JSON.stringify(data)},                                                  
       success: function(result) {
          var response = result.response;
          if(response.success === 'true'){

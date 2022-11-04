@@ -1,7 +1,5 @@
+
 $(document).ready(function () {
-
-
-
         // Registeration validation
 
         $(document).on('click', "#register", function (e) {
@@ -109,11 +107,14 @@ $(document).ready(function () {
                         $("#title").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Must Choose An Option</span>");
                         error = true;
                 }
-
+                var url = 'http://192.168.0.100:8074/Satrix_Saas/pub/register/index/index';
                 if (error) {
                         return false;
                 } else {
-                        ApiCall(arr, 'register');
+                        var response = ApiCall(arr,apiurl());
+                               if(response){
+                                   window.location.href = "http://localhost:3000/basicdetails";
+                               }
                 }
 
         }),

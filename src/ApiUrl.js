@@ -21,5 +21,7 @@ export default function apiurl(argument){
     api_array['Theattendance-admin'] = '/attendance-admin';
 
 
+    api_array['register_url'] = custom+'/register/index/index';
+
     return api_array[argument];
 }
