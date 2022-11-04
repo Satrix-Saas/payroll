@@ -3,13 +3,13 @@ import AdminHeader from './Admin/AdminHeader'
 import Sidebar from './Admin/HeaderComponents/Sidebar'
 import DashboardPageHeading from './Admin/PageContentComponents/DashboardPageHeading'
 import TwoColSideBar from './Admin/TwoColSideBar'
-import ExternalCredentials from './common_component/ExternalCredentials'
+import CustomPolicy from './common_component/CustomPolicy'
+import Carryforward from './common_component/LeaveSettingCarryforward'
 import LeaveSettingInput from './common_component/LeaveSettingInput'
+import ToggleButton from './common_component/ToggleButton'
 import EarnedLeaves from './EarnedLeaves'
-import EditCredentials from './popupForms/EditCredentials'
 
 export default function CompanyDetails() {
-    document.title = "Company Details";
     return (
         <>
             <div className="main-wrapper">
@@ -45,7 +45,7 @@ export default function CompanyDetails() {
 
                                     </div>
                                 </div>
-
+  
                                 <div className="card leave-box" id="tax_setup">
                                     <div className="card-body">
                                         <div className="h3 card-title">Tax Setup</div>
@@ -84,26 +84,31 @@ export default function CompanyDetails() {
                                         <div className="leave-header">
                                             <div className="h3 card-title">External Credentials</div>
                                             <div className="leave-action">
-                                                <button className="btn btn-sm btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#edit_cred"><i className="fa fa-pencil m-r-5"></i> Edit</button>
+                                                <button className="btn btn-sm btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#add_custom_policy"><i className="fa fa-plus"></i> Add custom policy</button>
                                             </div>
                                         </div>
                                         <div className="leave-item">
-                                            <ExternalCredentials label="TRACES" placeholder="Not Set" disabled="disabled"/>
-                                            <ExternalCredentials label="PF" placeholder="Not Set" disabled="disabled"/>
-                                            <ExternalCredentials label="ESIC" placeholder="Not Set" disabled="disabled" />
-                                            <ExternalCredentials label="PT" placeholder="Not Set" disabled="disabled"/>
+
+
                                         </div>
+
+
+
+
+
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="edit_cred" className="modal custom-modal fade" role="dialog">
-                    <EditCredentials heading="Edit External Credentials Details"/>
-                </div>
                 </div>
             </div>
         </>
-    )
+    ) 
 }
-
+{/* <div> <h4>Tax Setup</h4></div>
+<LeaveSettingInput label="PAN" type="text" editbtn="Edit" />
+<LeaveSettingInput label="TAN" type="text" editbtn="Edit" />
+<LeaveSettingInput label="GSTIN" type="text" editbtn="Edit" /> */}
