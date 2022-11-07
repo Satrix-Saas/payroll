@@ -303,13 +303,11 @@ export default function Sidebar() {
         <li className="menu-title">
           <span>Main</span>
         </li>
-        <li className="submenu">
-          <Link to="/dashboard"><i className="la la-dashboard"></i><span>Dashboard</span></Link>
-          <ul style={style}>
-            {/* <li><Link to="/dashboard"> Dashboard</Link></li> */}
-            {/* <li><Link to="/basicdetails">Employee Dashboard</Link></li> */}
-          </ul>
-        </li>
+          <Link  id="dashboard" to="/dashboard">
+            <li className="submenu_dashboard">
+               <i className="la la-dashboard"></i><span>Dashboard</span>
+            </li>
+          </Link>
         <li className="submenu">
           {/* <Link to="#"><i className="la la-cube"></i> <span> Apps</span> <span className="menu-arrow"></span></Link> */}
           {/* <ul style={style}>

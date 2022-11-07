@@ -4,7 +4,7 @@ function ApiCall(arr,url){
     var data = Object.assign({}, arr)
     console.log(data);
     $.ajax({
-      type:'POST',
+      type:'POST', 
       dataType: 'json',
       url:url,
       headers : {
@@ -14,8 +14,10 @@ function ApiCall(arr,url){
           "Access-Control-Allow-Methods": [ "POST", "GET", "OPTIONS","DELETE","PUT"],
           "X-Requested-With": "XMLHttpRequest"
       },
-      data:{'data':JSON.stringify(data)},
-      ResponseCode: function(result) {
+
+      data:{'data':JSON.stringify(data)},                                                  
+      success: function(result) {
+
          var response = result.response;
          if(response.ResponseCode){
             alert(response.ResponseMessage);
