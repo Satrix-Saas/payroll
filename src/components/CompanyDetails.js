@@ -1,18 +1,12 @@
 import React from 'react'
-import AdminHeader from './Admin/AdminHeader'
-import Sidebar from './Admin/HeaderComponents/Sidebar'
-import DashboardPageHeading from './Admin/PageContentComponents/DashboardPageHeading'
-import TwoColSideBar from './Admin/TwoColSideBar'
-import CustomPolicy from './common_component/CustomPolicy'
-import Carryforward from './common_component/LeaveSettingCarryforward'
 import LeaveSettingInput from './common_component/LeaveSettingInput'
-import ToggleButton from './common_component/ToggleButton'
 import EarnedLeaves from './EarnedLeaves'
+import EditCredentials from './popupForms/EditCredentials'
 
-export default function CompanyDetails() {
+export default function CompanyDetails(props) {
     return (
         <>
-            <div className="main-wrapper">
+            {/* <div className="main-wrapper">
 
                 <AdminHeader />
                 <div className="sidebar" id="sidebar">
@@ -32,83 +26,90 @@ export default function CompanyDetails() {
                                     <DashboardPageHeading pageheading="Company Details" pageworking="Company Details" />
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
+            <div className="modal-dialog modal-dialog-centered modal-lg">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <h5 className="modal-title">{props.action}</h5>
+                        <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div className="modal-body">
+                        <form>
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <div className="card leave-box" id="comp_logo">
+                                        <div className="card-body">
+                                            <div className="h3 card-title">Company Logo</div>
+                                            <div className="leave-item">
+                                                <LeaveSettingInput label="Company Logo" type="file" />
+                                            </div>
 
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="card leave-box" id="comp_logo">
-                                    <div className="card-body">
-                                        <div className="h3 card-title">Company Logo</div>
-                                        <div className="leave-item">
-                                            <LeaveSettingInput label="Company Logo" type="file" editbtn="Edit" />
-                                        </div>
-
-                                    </div>
-                                </div>
-  
-                                <div className="card leave-box" id="tax_setup">
-                                    <div className="card-body">
-                                        <div className="h3 card-title">Tax Setup</div>
-                                        <div className="leave-item">
-                                            <LeaveSettingInput label="PAN" type="text" editbtn="Edit" placeholder="--NA--" />
-                                            <LeaveSettingInput label="TAN" type="text" editbtn="Edit" placeholder="--NA--" />
-                                            <LeaveSettingInput label="GSTIN" type="text" editbtn="Edit" placeholder="--NA--" />
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className="card leave-box" id="kyc">
-                                    <div className="card-body">
-                                        <div className="h3 card-title">KYC</div>
-                                        <div className="leave-item">
-                                            <LeaveSettingInput label="KYC Status" type="text" editbtn="Edit" placeholder="Verification not initiated" />
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div className="card leave-box" id="pf_status">
-                                    <div className="card-body">
-                                        <div className="h3 card-title">Provident Fund / ESIC / Professional Tax / LWF</div>
-                                        <div className="leave-item">
-                                            <EarnedLeaves heading="PF Status" Option1="Enabled" Option2="Disabled" edit="Edit" />
-                                            <EarnedLeaves heading="ESIC Status Status" Option1="Enabled" Option2="Disabled" edit="Edit" />
-                                            <EarnedLeaves heading="PT Status" Option1="Enabled" Option2="Disabled" edit="Edit" />
-                                            <EarnedLeaves heading="PF Status" Option1="Enabled" Option2="Disabled" edit="Edit" />
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className="card leave-box" id="leave_annual">
-                                    <div className="card-body">
-                                        <div className="leave-header">
-                                            <div className="h3 card-title">External Credentials</div>
-                                            <div className="leave-action">
-                                                <button className="btn btn-sm btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#add_custom_policy"><i className="fa fa-plus"></i> Add custom policy</button>
+                                    <div className="card leave-box" id="tax_setup">
+                                        <div className="card-body">
+                                            <div className="h3 card-title">Tax Setup</div>
+                                            <div className="leave-item">
+                                                <LeaveSettingInput label="PAN" type="text" placeholder="--NA--" />
+                                                <LeaveSettingInput label="TAN" type="text" placeholder="--NA--" />
+                                                <LeaveSettingInput label="GSTIN" type="text" placeholder="--NA--" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div className="card leave-box" id="kyc">
+                                        <div className="card-body">
+                                            <div className="h3 card-title">KYC</div>
+                                            <div className="leave-item">
+                                                <LeaveSettingInput label="KYC Status" type="text" placeholder="Verification not initiated" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div className="card leave-box" id="pf_status">
+                                        <div className="card-body">
+                                            <div className="h3 card-title">Provident Fund / ESIC / Professional Tax / LWF</div>
+                                            <div className="leave-item">
+                                                <EarnedLeaves heading="PF Status" Option1="Enabled" Option2="Disabled" />
+                                                <EarnedLeaves heading="ESIC Status Status" Option1="Enabled" Option2="Disabled" />
+                                                <EarnedLeaves heading="PT Status" Option1="Enabled" Option2="Disabled" />
+                                                <EarnedLeaves heading="PF Status" Option1="Enabled" Option2="Disabled" />
                                             </div>
                                         </div>
-                                        <div className="leave-item">
-
-
-                                        </div>
-
-
-
-
-
-
-
                                     </div>
+
+                                    <div className="card leave-box" id="leave_annual">
+                                        <div className="card-body">
+                                            <div className="leave-header">
+                                                <div className="h3 card-title">External Credentials</div>
+                                                <div className="leave-action">
+                                                    <button className="btn btn-sm btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#editcred"><i className="fa fa-pencil"></i> Edit</button>
+                                                </div>
+                                            </div>
+                                            <div className="leave-item">
+                                                <LeaveSettingInput label="TRACES" type="text" placeholder="Not Set" />
+                                                <LeaveSettingInput label="PF" type="text" placeholder="Not Set" />
+                                                <LeaveSettingInput label="ESIC" type="text" placeholder="Not Set" />
+                                                <LeaveSettingInput label="PT" type="text" placeholder="Not Set" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div className="submit-section">
+                                    <button className="btn btn-primary submit-btn">Submit</button>
+                                </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
+                
             </div>
+
         </>
-    ) 
+    )
 }
-{/* <div> <h4>Tax Setup</h4></div>
-<LeaveSettingInput label="PAN" type="text" editbtn="Edit" />
-<LeaveSettingInput label="TAN" type="text" editbtn="Edit" />
-<LeaveSettingInput label="GSTIN" type="text" editbtn="Edit" /> */}
+

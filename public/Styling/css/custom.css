@@ -162,7 +162,9 @@
 }
 
 
-
+.collapse{
+  visibility: collapse;
+}
 
 
 
@@ -188,7 +190,7 @@
   }
 }
 
-@media (min-width: 992px) and (max-width : 1191px) {
+@media (min-width: 992px) and (max-width : 1207px) {
 
   #searchbar {
     display: none;
@@ -238,9 +240,8 @@
   height: 44px;
   padding: 0 12.5px;
   min-width: 300px;
-  width: 540px;
-  border: 1px solid #292a2d;
 
+  border: 1px solid #292a2d;
   display: block;
   margin-bottom: 6.25px;
 }
@@ -262,9 +263,13 @@
   letter-spacing: .2px;
   color: #252424;
 }
+p{
+    margin-bottom: 0px;
+}
 
-
-
+.account-page .main-wrapper .account-content{
+padding: 20px 0;
+}
 #rPr2 {
   text-align: left;
   background: #caccd5;
@@ -278,6 +283,10 @@
 }
 #rPr2{
   margin-top: 30px;
+  margin-bottom: 50px;
+padding: 25px;
+width: 100%;
+max-width: none
 }
 .sidebar .sidebar-menu ul li.submenu .noti-dot::before, .two-col-bar .sidebar-menu ul li.submenu .noti-dot::before {
 
@@ -299,11 +308,144 @@
 #dashboard span {
   margin-left: 13px;
 }
+
 .submenu_dashboard{
   padding: 4px;
 }  
 
+.OnetimeP{
+  margin-bottom: 25px
+}
+#totalamnt{
+  margin-bottom: 0%;
+}
+.smallone{
+  background: #aeb7e2;
+  border-radius: 0 0 4px 4px;
+border-top-width: 0;
+color: black;
+display: block;
+padding: 12.5px;
+position: relative;
+top: -1px;
+}
 
+
+#oneTimeCbox{
+  height: 15px;
+  margin: 0 12px 0 0;
+  *overflow: hidden;
+  padding: 0;
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+  width: 15px;
+}
+.checkboxvalue{
+  margin-bottom: 25px;
+}
+.note{
+  background: #a0aef5;
+display: block;
+margin-bottom: 25px;
+padding: 25px;
+position: relative;
+}
+
+#ContentId{
+  background-color: rgb(180, 152, 152);
+  padding: 12px;
+}
+.OnetmForm{
+  max-width: 700px;
+}
+.onetpDrop{
+  margin-bottom: 50px;
+}
+
+#psubh1{
+  padding-right: 40px;
+  
+}
+.peoplmain{
+  margin-bottom: 40px;
+padding: 24px;
+background-color: #dcdcdc;
+text-align: center;
+}
+#ph3{
+  font-size: 2rem;
+font-weight: 700;
+margin-bottom: 2.8rem;
+max-width: unset;
+text-align: center;
+}
+.PeopleSbtn{
+  text-align: center;
+  
+}
+#peopleIbtn{
+  background-color: #282f51;
+display: inline-block;
+height: 50px;
+line-height: 44px;
+color: #dcdcdc;
+text-align: left;
+}
+
+ #psearchbtn{
+  letter-spacing: 1px;
+  background: #5a99e8;
+ border: 1px solid #caccd5;
+  color: #fff;
+  height: 50px;
+  float: right;
+} 
+#tabbtns{
+  border-bottom: 1px solid #393f5c;
+  justify-content: flex-start;
+  margin: 25px 0 37.5px;
+  margin-left: 30px;
+}
+.intputtab{
+  background: #b5e797;
+  border-radius: 2px 2px 0 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+}
+#tabbtns{
+ display: flex;
+ padding: 2px;
+ float:left;
+}
+.intputtab{
+  height: 50px;
+  line-height: 44px;
+  margin: 2px;
+  padding: 5px ;
+  text-align: center;
+}
+.intputtab:hover{
+background-color: gray;  
+}
+.tabclass{
+  width: 100%;
+}
+.Searchinput{
+
+}
+#tabid2{
+  margin: 2px;
+  padding: 5px;
+  background-color: #38414A;
+  color: #9a9ea4;
+  height: 50px;
+}
+#peopleLast{
+  background: #2d3354
+}
 /*
   .header .user-menu.nav > li > a i {
     font-size: 20px;

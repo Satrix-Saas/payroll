@@ -13,13 +13,13 @@ export default function Sidebar() {
             <span>Main</span>
           </li>
           <li className="submenu">
-            <Link to="/dashbord"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
-            <ul style={style}>
-              {/* <li><Link to="/admindashboard"> Dashboard</Link></li> */}
-              {/* <li><Link to="/basicdetails">Employee Dashboard</Link></li> */}
-            </ul>
+            <Link to="/dashboard"><i className="la la-dashboard"></i> <span> Dashboard</span> <span className="menu-arrow"></span></Link>
+            {/* <ul style={style}> *
+              <li><Link to="/admindashboard"> Dashboard</Link></li>
+              <li><Link to="/basicdetails">Employee Dashboard</Link></li>
+            </ul> */}
           </li>
-          <li className="submenu">
+          {/* <li className="submenu">
             <Link to="#"><i className="la la-cube"></i> <span> Apps</span> <span className="menu-arrow"></span></Link>
             <ul style={style}>
               <li><Link to="chat.html">Chat</Link></li>
@@ -37,7 +37,7 @@ export default function Sidebar() {
               <li><Link to="inbox.html">Email</Link></li>
               <li><Link to="file-manager.html">File Manager</Link></li>
             </ul>
-          </li>
+          </li> */}
           <li className="menu-title">
             <span>Employees</span>
           </li>
@@ -62,10 +62,10 @@ export default function Sidebar() {
             <Link to="clients.html"><i className="la la-users"></i> <span>Clients</span></Link>
           </li> */}
           <li className="submenu">
-          <Link to="#"><i className="la la-telegram"></i> <span> My Pay Slip</span> <span className="menu-arrow"></span></Link>
-          <ul style={style}>
+          <Link to="/mypayslip"><i className="la la-telegram"></i> <span> My Pay Slip</span> <span className="menu-arrow"></span></Link>
+          {/* <ul style={style}>
             <li><Link to="/mypayslip">My Pay Slip</Link></li>
-          </ul>
+          </ul> */}
         </li>
           <li className="submenu">
             {/* <Link to="#"><i className="la la-rocket"></i> <span> Projects</span> <span className="menu-arrow"></span></Link>
@@ -327,9 +327,9 @@ export default function Sidebar() {
             <li><Link to="file-manager.html">File Manager</Link></li>
           </ul> */}
         </li>
-        <li className="menu-title">
+        {/* <li className="menu-title">
           <span>Employees</span>
-        </li>
+        </li> */}
         <li className="submenu">
           <Link to="#" className="noti-dot"><i className="la la-user"></i> <span> Employees</span> <span className="menu-arrow"></span></Link>
           <ul style={style}>
@@ -351,18 +351,13 @@ export default function Sidebar() {
           {/* <Link to="clients.html"><i className="la la-users"></i> <span>Clients</span></Link>
         </li> */}
         <li className="submenu">
-          <Link to="#"><i className="la la-telegram"></i> <span> My Pay Slip</span> <span className="menu-arrow"></span></Link>
-          <ul style={style}>
+          <Link to="/mypayslip"><i className="la la-telegram"></i> <span> My Pay Slip</span></Link>
+          {/* <ul style={style}>
             <li><Link to="/mypayslip">My Pay Slip</Link></li>
-          </ul>
+          </ul> */}
         </li>
         <li className="submenu">
-          <Link to="#"><i className="la la-rocket"></i> <span> Projects</span> <span className="menu-arrow"></span></Link>
-          <ul style={style}>
-            {/* <li><Link to="projects.html">Projects</Link></li>
-            <li><Link to="tasks.html">Tasks</Link></li>
-            <li><Link to="task-board.html">Task Board</Link></li> */}
-          </ul>
+          <Link to="/documents"><i className="la la-file-text-o"></i> <span> Documents</span></Link>
         </li>
         <li>
           {/* <Link to="leads.html"><i className="la la-user-secret"></i> <span>Leads</span></Link> */}

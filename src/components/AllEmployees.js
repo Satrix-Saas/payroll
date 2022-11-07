@@ -9,6 +9,8 @@ import profile from '../images/Avatars/avatar-03.jpg'
 import AddEditEmployee from './popupForms/AddEditEmployee'
 import { Link } from 'react-router-dom'
 import DeleteEmp from './popupForms/DeleteEmp'
+import CompanyDetails from './CompanyDetails'
+import EditCredentials from './popupForms/EditCredentials'
 
 export default function AllEmployees() {
     return (
@@ -55,15 +57,18 @@ export default function AllEmployees() {
                         </div>
                     </div>
                     <div id="add_employee" className="modal custom-modal fade" role="dialog">
-                        <AddEditEmployee action="Add Employee" Fname="First Name" Lname="Last Name" username="Username" email="Email" password="Password" confirm="Confirm Password" empID="Employee Id" joiningDate="Joining Date" number="Phone" submit="Submit" />
+                        <CompanyDetails action="Add Employee" />
+                    </div>
+                    <div id="editcred" className="modal custom-modal fade" role="dialog">
+                        <EditCredentials heading="Edit Credentials" />
                     </div>
                     <div id="edit_employee" className="modal custom-modal fade" role="dialog">
                         <AddEditEmployee action="Edit Employee" Fname="First Name" Lname="Last Name" username="Username" email="Email" password="Password" confirm="Confirm Password" empID="Employee Id" joiningDate="Joining Date" number="Phone" submit="Save" />
                     </div>
                     <div className="modal custom-modal fade" id="delete_employee" role="dialog">
-                        <DeleteEmp delete="Delete"  cancel="Cancel"/>
+                        <DeleteEmp delete="Delete" cancel="Cancel" />
                     </div>
-                </div>   
+                </div>
 
             </div>
 

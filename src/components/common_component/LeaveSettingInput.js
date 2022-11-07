@@ -8,7 +8,7 @@ export default function LeaveSettingInput(props) {
                     <div className="input-box">
                         <div className="form-group">
                             <label>{props.label}</label>
-                            <input type={props.type} className="form-control" placeholder={props.placeholder} disabled/>
+                            <input type={props.type} className="form-control" placeholder={props.placeholder} disabled={props.disabled}/>
                         </div>
                     </div>
                 </div>

@@ -2381,11 +2381,11 @@ button.bg-danger:hover {
 }
 
 .card {
-  border: 1px solid #ededed;
+  border: 1px solid #e8e8e8;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  /* -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); */
 }
 
 .card .leave-inline-form {
@@ -8506,16 +8506,16 @@ border: none;
 
 .profile-widget {
   background-color: #ffffff;
-  border: 1px solid #ededed;
+  border: 1px solid #e7e7e7;
   margin-bottom: 30px;
   padding: 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  /* -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .profile-widget .profile-img {

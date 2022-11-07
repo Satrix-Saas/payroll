@@ -18,7 +18,7 @@ export default function AdminHeader() {
           <i className="fas fa-bars" id="hambtn"></i>
         </span>
       </Link>
-      <AdminLogo dashboard="/admindashboard" />
+      <AdminLogo dashboard="/dashboard" />
 
       <AdminHeaderMenu />
       <Link id="mobile_btn" className="mobile_btn" to="#sidebar"><i className="fa fa-bars" to="#sidebar"></i></Link>

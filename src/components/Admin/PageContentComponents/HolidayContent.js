@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function HolidayContent() {
 	return (
@@ -24,9 +25,9 @@ export default function HolidayContent() {
 											<td>Sunday</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -38,9 +39,9 @@ export default function HolidayContent() {
 											<td>Friday</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -54,9 +55,9 @@ export default function HolidayContent() {
 											</td> */}
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -70,9 +71,9 @@ export default function HolidayContent() {
 											</td> */}
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -84,9 +85,9 @@ export default function HolidayContent() {
 											<td>Monday</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -98,10 +99,10 @@ export default function HolidayContent() {
 											<td>Saturday</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_holiday"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_holiday"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -113,10 +114,10 @@ export default function HolidayContent() {
 											<td>Wednesday</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_holiday"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_holiday"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>
@@ -128,10 +129,10 @@ export default function HolidayContent() {
 											<td>Monday</td>
 											<td className="text-end">
 												<div className="dropdown dropdown-action">
-													<a href="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></a>
+													<Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="material-icons">more_vert</i></Link>
 													<div className="dropdown-menu dropdown-menu-right">
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_holiday"><i className="fa fa-pencil m-r-5"></i> Edit</a>
-														<a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</a>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_holiday"><i className="fa fa-pencil m-r-5"></i> Edit</Link>
+														<Link className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_holiday"><i className="fa fa-trash-o m-r-5"></i> Delete</Link>
 													</div>
 												</div>
 											</td>

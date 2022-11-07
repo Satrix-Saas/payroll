@@ -9,11 +9,11 @@ export default function EarnedLeaves(props) {
                         <label className="d-block">{props.heading}</label>
                         <div className="leave-inline-form">
                             <div className="form-check form-check-inline">
-                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="earned_no" value="option1" disabled/>
+                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="earned_no" value="option1" disabled={props.disabled1}/>
                                     <label className="form-check-label" htmlFor="earned_no">{props.Option1}</label>
                             </div>
                             <div className="form-check form-check-inline">
-                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="earned_yes" value="option2" disabled/>
+                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="earned_yes" value="option2" disabled={props.disabled2}/>
                                     <label className="form-check-label" htmlFor="earned_yes">{props.Option2}</label>
                             </div>
                         </div>

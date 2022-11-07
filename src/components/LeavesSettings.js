@@ -105,13 +105,13 @@ export default function LeavesSettings() {
                         </div>
                     </div>
                 </div>
-                <div id="add_custom_policy" class="modal custom-modal fade" role="dialog">
+                <div id="add_custom_policy" className="modal custom-modal fade" role="dialog">
                     <AddEditCustomPolicy heading="Add Custom Policy"/>
                 </div>
-                <div id="edit_custom_policy" class="modal custom-modal fade" role="dialog">
+                <div id="edit_custom_policy" className="modal custom-modal fade" role="dialog">
                     <AddEditCustomPolicy heading="Edit Custom Policy"/>
                 </div>
-                <div class="modal custom-modal fade" id="delete_custom_policy" role="dialog">
+                <div className="modal custom-modal fade" id="delete_custom_policy" role="dialog">
                     <DeleteEmp delete="Delete" cancel="Cancel"/>
                 </div>
             </div>

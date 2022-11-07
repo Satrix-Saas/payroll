@@ -46,7 +46,7 @@ export default function EmployeeOnboarding() {
                                                 <form id="employee_onboarding">
                                                     <p>Is this an employee or a contractor?</p>
 
-                                                    <Radiofield id="employee" name="emp_cont" value="Employee" />
+                                                    <Radiofield id="employee"  name="emp_cont" value="Employee" />
                                                     <Radiofield id="contractor" name="emp_cont" value="Contractor" />
 
                                                     <Textfields label="Name" mandatory="*" type="text" name="name" id="name" />
@@ -83,6 +83,7 @@ export default function EmployeeOnboarding() {
                                                     </SelectInputFields>
                                                     <div className="form-group text-center">
                                                         <Link to="/admindashboard">  <button type="button" className="btn btn-primary account-btn" id="basic_detail">Continue</button></Link>
+
                                                     </div>
                                                 </form>
                                             </div>
