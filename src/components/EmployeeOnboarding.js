@@ -82,7 +82,7 @@ export default function EmployeeOnboarding() {
                                                         })}
                                                     </SelectInputFields>
                                                     <div className="form-group text-center">
-                                                        <Link to="/admindashboard">  <button type="button" className="btn btn-primary account-btn" id="continue">Continue</button></Link>
+                                                        <Link to="/admindashboard">  <button type="button" className="btn btn-primary account-btn" id="basic_detail">Continue</button></Link>
                                                     </div>
                                                 </form>
                                             </div>

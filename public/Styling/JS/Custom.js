@@ -195,7 +195,45 @@ $(document).ready(function () {
                                }
                         }
                 });
+                $(document).on('click', "#basic_detail", function (e) {
 
+                        e.preventDefault();
+                        var card = "employee";
+                        var name = $("#name").val();
+                        var com_email = $("#com_email").val();
+                        var hire_date = $("#hire_date").val();
+                        var title = $("#title").val();
+                        var department = $("#department").val();
+                        var manager = $("#manager").val();
+                        var salary = $("#salary").val();
+                        var location =$("#location").val();
+                        var error = false;
+                        var arr=[];
+                        arr['emp_type'] = card;
+                        arr['emp_name'] = name;
+                        arr['emp_email'] = com_email;
+                        arr['emp_hire_date'] = hire_date;
+                        arr['emp_post'] = title;
+                        arr['emp_dept'] = department;
+                        arr['mng_name'] = manager;
+                        arr['emp_salary'] = salary;
+                        arr['emp_location'] = location;
+        
+        
+                //         alert("123");
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/employee/index/index';
+        
+                // })
+                        if(error){
+                                return false;
+                        }else{
+        
+                               var response = ApiCall(arr,url);
+                               if(response){
+                                   window.location.href = "http://localhost:3000/admindashboard";
+                               }
+                        }
+                });
        
 
         $(".header-new-menu").on('click', 'li', function () {

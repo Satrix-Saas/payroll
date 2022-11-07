@@ -4,7 +4,7 @@ function ApiCall(arr,url){
     var data = Object.assign({}, arr)
     console.log(data);
     $.ajax({
-      type:'POST',
+      type:'POST', 
       dataType: 'json',
       url:url,
       headers : {

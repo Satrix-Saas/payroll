@@ -286,7 +286,7 @@
   display: none;
 }
 
- #dashboard{
+#dashboard{
   justify-content: flex-start;
   position: relative;
   font-size: 15px;
@@ -301,7 +301,7 @@
 }
 .submenu_dashboard{
   padding: 4px;
-} 
+}  
 
 
 /*
