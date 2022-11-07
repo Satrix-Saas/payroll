@@ -27,7 +27,7 @@ export default function ResetPassword() {
                                         <Textfields type="password" label="New Password" id="new_pass" name="new_pass" />
                                         <Textfields type="password" label="Confirm Password" id="con_pass" name="con_pass" />
                                         <div className="form-group text-center">
-                                            <button type="button" className="btn btn-primary account-btn" id="continue" >Continue</button>
+                                            <button type="button" className="btn btn-primary account-btn" id="reset" >Continue</button>
                                         </div>
                                     </form>
                                 </div>

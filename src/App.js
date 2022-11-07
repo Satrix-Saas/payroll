@@ -18,11 +18,14 @@ import AttendanceAdmin from './components/AttendanceAdmin';
 import ResetPassword from './components/ResetPassword';
 import CompanyDetails from './components/CompanyDetails';
 import MyPaySlip from './components/MyPaySlip';
-import HolidayTable from './components/common_component/HolidayTable';
+import Holiday from './components/common_component/HolidayTable';
 import apiurl from './ApiUrl';
+
 import RunPayRoll from './components/utility/RunPayRoll';
 import Documents from './components/Documents';
 import Profile from './components/Profile';
+
+
 
 
 
@@ -35,9 +38,17 @@ function App() {
             <Route exact path={apiurl('forgotThepassword')} element={<ForgotPassword />} />
             <Route exact path={apiurl('resetThepassword')} element={<ResetPassword />} />
             <Route exact path={apiurl('Thedashboard')} element={<AdminDashboard />} />
-            <Route exact path={apiurl('payMyslip')} element={<MyPaySlip />} />
-            <Route exact path={apiurl('Theholidays')} element={<HolidayTable />} />
-            <Route exact path={apiurl('Thebasicdetails')} element={<BasicDetails />} />
+
+           </Routes>
+           <Routes>
+            <Route exact path={apiurl('payMyslip')} element={<MyPaySlip/>} />
+           </Routes>
+           <Routes>
+            <Route exact path={apiurl('Theholidays')} element={<Holiday/>} />
+           </Routes>
+         <Routes>
+             <Route exact path={apiurl('Thebasicdetails')} element={<BasicDetails />} /> 
+
             <Route exact path={apiurl('Theemployeeonboarding')} element={<EmployeeOnboarding />} />
             <Route exact path={apiurl('Thecompanydetails')} element={<CompanyDetails />} />
             <Route exact path={apiurl('all-employees')} element={<AllEmployees />} />
@@ -51,6 +62,7 @@ function App() {
             <Route exact path={apiurl('Therunpayroll')} element={<RunPayRoll />} />
             <Route exact path={apiurl('Thedocumentation')} element={<Documents/>} />
             <Route exact path={apiurl('TheAccount')} element={<Profile/>} />
+
          </Routes>
       </BrowserRouter>
    );

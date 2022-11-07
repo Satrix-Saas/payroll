@@ -51,6 +51,7 @@ export default function EmployeeOnboarding(props) {
                             <Radiofield id="employee" name="emp_cont" value="Employee" />
                             <Radiofield id="contractor" name="emp_cont" value="Contractor" />
 
+
                             <Textfields label="Name" mandatory="*" type="text" name="name" id="name" />
 
                             <Textfields label="Email" mandatory="*" type="email" name="com_email" id="com_email" content="The email they will use to log into XPayroll. If this person does not have an email address.Click" links="here" />
@@ -86,6 +87,7 @@ export default function EmployeeOnboarding(props) {
 
                             <div className="submit-section">
                                 <button className="btn btn-primary submit-btn" id="add_emp">Submit</button>
+
                             </div>
                         </form>
                     </div>

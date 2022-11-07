@@ -4,7 +4,7 @@ function ApiCall(arr,url){
     var data = Object.assign({}, arr)
     console.log(data);
     $.ajax({
-      type:'POST',
+      type:'POST', 
       dataType: 'json',
       url:url,
       headers : {
@@ -14,13 +14,15 @@ function ApiCall(arr,url){
           "Access-Control-Allow-Methods": [ "POST", "GET", "OPTIONS","DELETE","PUT"],
           "X-Requested-With": "XMLHttpRequest"
       },
-      data:{'data':JSON.stringify(data)},
+
+      data:{'data':JSON.stringify(data)},                                                  
       success: function(result) {
+
          var response = result.response;
-         if(response.success === 'true'){
-            alert(response.message);
+         if(response.ResponseCode){
+            alert(response.ResponseMessage);
          }else{
-           alert(response.message);
+           alert(response.ResponseMessage);
          }
       },
       error: function(result) {
@@ -28,6 +30,6 @@ function ApiCall(arr,url){
         console.log(result);
       }
   });
-  return 1;
+  // return 1;
  
 }
