@@ -3,10 +3,16 @@ import LeaveSettingInput from './common_component/LeaveSettingInput'
 import EarnedLeaves from './EarnedLeaves'
 import EditCredentials from './popupForms/EditCredentials'
 
+import AdminHeader from './Admin/AdminHeader'
+
+import Sidebar from './Admin/HeaderComponents/Sidebar'
+import TwoColSideBar from './Admin/TwoColSideBar'
+import DashboardPageHeading from './Admin/PageContentComponents/DashboardPageHeading'
+
 export default function CompanyDetails(props) {
     return (
         <>
-            {/* <div className="main-wrapper">
+            <div className="main-wrapper">
 
                 <AdminHeader />
                 <div className="sidebar" id="sidebar">
@@ -26,16 +32,8 @@ export default function CompanyDetails(props) {
                                     <DashboardPageHeading pageheading="Company Details" pageworking="Company Details" />
                                 </div>
                             </div>
-                        </div> */}
-            <div className="modal-dialog modal-dialog-centered modal-lg">
-                <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title">{props.action}</h5>
-                        <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div className="modal-body">
+                        </div>
+          
                         <form>
                             <div className="row">
                                 <div className="col-md-12">
@@ -104,6 +102,9 @@ export default function CompanyDetails(props) {
                                 </div>
                             </div>
                         </form>
+                    </div>
+                      <div id="editcred" className="modal custom-modal fade" role="dialog">
+                        <EditCredentials heading="Edit Credentials" />
                     </div>
                 </div>
                 

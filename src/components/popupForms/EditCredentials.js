@@ -31,10 +31,11 @@ export default function EditCredentials(props) {
                             <ProfTaxEditCred typeofusername="text" typeofpassword="password" />
                             <ProfTaxEditCred typeofusername="text" typeofpassword="password" />
                         </div>
+                        <div className="submit-section">
+                            <button className="btn btn-primary submit-btn" id="edit_cred">Submit</button>
+                        </div>
                     </form>
-                    <div className="submit-section">
-                        <button className="btn btn-primary submit-btn" id="submit_editcred">Submit</button>
-                    </div>
+
                 </div>
             </div>
         </div>
