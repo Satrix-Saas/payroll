@@ -4,6 +4,11 @@ import Sidebar from './Admin/HeaderComponents/Sidebar'
 import TwoColSideBar from './Admin/TwoColSideBar'
 import DepartmentCom from './Admin/PageContentComponents/DepartmentCom'
 import DashboardPageHeading from './Admin/PageContentComponents/DashboardPageHeading'
+import { Link } from 'react-router-dom'
+import EditDepartment from './popupForms/EditDepartment'
+import DeleteEmp from './popupForms/DeleteEmp'
+
+
 
 export default function Departments() {
 	return (
@@ -26,6 +31,21 @@ export default function Departments() {
 						<div className="row align-items-center">
 							<div className="col">
 								<DashboardPageHeading pageheading="Department" pageworking="Department" />
+							</div>
+							<div className="col-auto float-end ms-auto">
+                                <Link to="#" className="btn add-btn active" data-bs-toggle="modal" data-bs-target="#edit_department"><i className="fa fa-plus"></i> Add Department</Link>
+								<div className="view-icons">
+                                        <Link to="/edit_department" className="grid-view btn btn-link active"><i className="fa fa-th"></i></Link>
+                                        
+                                    </div>
+									<div id="edit_department" className="modal custom-modal fade" role="dialog">
+                                <EditDepartment submit="Submit" action="Add department" />
+                            </div>
+                            <div id="edit_department" className="modal custom-modal fade" role="dialog">
+                                <EditDepartment submit="Submit" action="edit department" />
+                            </div>
+                            <div className="modal custom-modal fade" id="delete_department" role="dialog">
+                                <DeleteEmp delete="Delete" cancel="Cancel" />
 							</div>
 						</div>
 					</div>
@@ -58,6 +78,6 @@ export default function Departments() {
 			</div>
 
 		</div>
- 
+ </div>
 	)
 }

@@ -368,12 +368,20 @@ height: 50px;
 line-height: 44px;
 color: #dcdcdc;
 text-align: left;
+border-radius: 0%;
+}
+#psearchbtn{
+  border-radius: 0;
+  font-size: 14px;
+  padding: 0 25px;
+  text-transform: uppercase;
+  margin: 0%;
 }
 
  #psearchbtn{
   letter-spacing: 1px;
   background: #5a99e8;
- border: 1px solid #caccd5;
+  border: 1px solid #caccd5;
   color: #fff;
   height: 50px;
   float: right;
@@ -382,7 +390,9 @@ text-align: left;
   border-bottom: 1px solid #393f5c;
   justify-content: flex-start;
   margin: 25px 0 37.5px;
-  margin-left: 30px;
+  display: flex;
+  padding: 2px;
+
 }
 .intputtab{
   background: #b5e797;
@@ -390,13 +400,9 @@ text-align: left;
   cursor: pointer;
   text-transform: uppercase;
   display: flex;
-  position: relative;
+
 }
-#tabbtns{
- display: flex;
- padding: 2px;
- float:left;
-}
+
 .intputtab{
   height: 50px;
   line-height: 44px;
@@ -407,22 +413,116 @@ text-align: left;
 .intputtab:hover{
 background-color: gray;  
 }
-.tabclass{
-  width: 100%;
+
+
+#tabid2{
+  text-align: center;
+  margin: 2px;
+  padding: 15px;
+  border: none;
+  border-radius: none;
+  background-color: #3f476d;
+  color: #9a9ea4;
+  height: 55px;
+  text-transform: uppercase;
 }
-.Searchinput{
+#tabid:hover{
+  color: white;
+  background-color: #95afc5;
 
 }
-#tabid2{
-  margin: 2px;
-  padding: 5px;
-  background-color: #38414A;
-  color: #9a9ea4;
-  height: 50px;
+#missingtab{
+  
+  float:right;
+  margin-right: 40px;
+ padding-bottom: 5px;
+ position: relative;
 }
+#missingtab span::before{
+  content: "*";
+  color: #1f1f1f;
+}
+
 #peopleLast{
-  background: #2d3354
+  background: #2d3354;
+  background-color: #282f51;
+display: inline-block;
+height: 50px;
+line-height: 44px;
+color: #dcdcdc;
+text-align: left;
+content: "*";
 }
+
+#peopleLast table tbody tr td a::after{
+  content: " *";
+  color: gray;
+}
+#peopleLast a{
+  color: #5a99e8;
+font-weight: 600;
+letter-spacing: .2px;
+text-decoration: none;
+font-size: 20px;
+}
+
+#psubh1 span{
+  background-color: gray;
+border-radius: 50%;
+border: 1px  solid gray;
+display: inline-block;
+height: 28px;
+margin-right: .8rem;
+font-size: larger;
+
+width: 24px;
+}
+#psubh2 span{
+  background-color: gray;
+  border: 1px  solid gray;
+  border-radius: 50%;
+  display: inline-block;
+  height: 28px;
+  margin-right: .8rem;
+  width: 24px;
+  font-size: larger;
+}
+
+.continue-btn, .cancel-btn {
+  background-color: #ffffff;
+  border: 1px solid #474645;
+  color: #1d1916 !important;
+  display: inline;
+  margin-right: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+#depSbtn{
+  background-color: #ffffff;
+  border: 1px solid #474645;
+  color: #1d1916 !important;
+}
+
+@media  ( max-width :768px ){
+     #tabbtns{
+      display:block;
+      text-align: center;
+      width: 100%;
+      
+     }
+     .tabclass{
+      background-color: #3f476d;
+     }
+     #tabid2:hover{
+      width: 99%;
+      background-color: #282f51;
+      border-radius: 0%;
+     }
+}
+
 /*
   .header .user-menu.nav > li > a i {
     font-size: 20px;
