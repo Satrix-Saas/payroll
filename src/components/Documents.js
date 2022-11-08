@@ -36,7 +36,7 @@ export default function Documents() {
                         </div>
 
                         <div className="row">
-                            <div className="col-md-12">
+                            <div className="col-md-8">
                                 <div className="card leave-box" id="comp_logo">
                                     <div className="card-body">
                                         <div className="leave-item">

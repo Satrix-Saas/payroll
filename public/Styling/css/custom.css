@@ -162,7 +162,9 @@
 }
 
 
-
+.collapse{
+  visibility: collapse;
+}
 
 
 
@@ -238,6 +240,7 @@
   height: 44px;
   padding: 0 12.5px;
   min-width: 300px;
+
   border: 1px solid #292a2d;
   display: block;
   margin-bottom: 6.25px;
@@ -264,8 +267,9 @@ p{
     margin-bottom: 0px;
 }
 
-
-
+.account-page .main-wrapper .account-content{
+padding: 20px 0;
+}
 #rPr2 {
   text-align: left;
   background: #caccd5;
@@ -289,8 +293,26 @@ max-width: none
   border: 5px solid #001d35;
   background-color: #001d35;
   display: none;
-
 }
+
+#dashboard{
+  justify-content: flex-start;
+  position: relative;
+  font-size: 15px;
+  color: #29282d;
+}
+#dashboard i.la.la-dashboard {
+  font-size: 23px;
+  margin-left: 15px;
+}
+#dashboard span {
+  margin-left: 13px;
+}
+
+.submenu_dashboard{
+  padding: 4px;
+}  
+
 .OnetimeP{
   margin-bottom: 25px
 }
@@ -307,6 +329,7 @@ padding: 12.5px;
 position: relative;
 top: -1px;
 }
+
 
 #oneTimeCbox{
   height: 15px;

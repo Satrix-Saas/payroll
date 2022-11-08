@@ -9,14 +9,13 @@ export default function ResetPassword() {
             <div className="account-page">
                 <div className="main-wrapper">
                     <div className="account-content">
-                        <div className="container">
+                        <div className="container col-xs">
 
 
                             <div className="account-box">
-                                {/* <!-- Account Logo --> */}
-                                <Logo dashboard="/login" />
-                                {/* <!-- /Account Logo --> */}
+
                                 <div className="account-wrapper">
+                                    <Logo dashboard="/login" />
                                     <Heading title="Reset Password" />
                                     <div className='text-center'><p>
                                         Password should have at least 8 characters.<br />
@@ -28,7 +27,7 @@ export default function ResetPassword() {
                                         <Textfields type="password" label="New Password" id="new_pass" name="new_pass" />
                                         <Textfields type="password" label="Confirm Password" id="con_pass" name="con_pass" />
                                         <div className="form-group text-center">
-                                            <button type="button" className="btn btn-primary account-btn" id="continue" >Continue</button>
+                                            <button type="button" className="btn btn-primary account-btn" id="reset" >Continue</button>
                                         </div>
                                     </form>
                                 </div>
@@ -41,4 +40,3 @@ export default function ResetPassword() {
         </>
     )
 }
- 

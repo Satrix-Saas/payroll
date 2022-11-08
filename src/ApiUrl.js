@@ -22,13 +22,15 @@ export default function apiurl(argument){
     api_array['Theattendance-employee'] = '/attendance-employee'; 
     api_array['Theattendance-admin'] = '/attendance-admin';
     api_array['Therunpayroll'] = '/runpayroll';
-    api_array['TheOneTimePayment'] = '/OneTimePayment';
-    api_array['ThePeople'] = '/people';
+    api_array['Thedocumentation'] = '/documents';
+    api_array['TheAccount'] = '/myaccount';
 
 
 
     // api_array['register_url'] = custom+'/register/index/index';
     // api_array['Login_url'] = custom+'/login/index/index';
+
+    api_array['register_url'] = custom+'/register/index/index';
 
     return api_array[argument];
 }

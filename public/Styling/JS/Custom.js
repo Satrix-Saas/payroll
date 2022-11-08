@@ -1,5 +1,5 @@
-$(document).ready(function () {
 
+$(document).ready(function () {
         // Registeration validation
 
         $(document).on('click', "#register", function (e) {
@@ -107,11 +107,15 @@ $(document).ready(function () {
                         $("#title").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Must Choose An Option</span>");
                         error = true;
                 }
-
+                var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/register/index/index';
                 if (error) {
                         return false;
                 } else {
-                        ApiCall(arr, 'register');
+                        var response = ApiCall(arr,url);
+                               if(response){
+                                   window.location.href = "http://localhost:3000/basicdetails";
+                               }
+
                 }
 
         }),
@@ -123,7 +127,7 @@ $(document).ready(function () {
                         var login_email = $("#login_email").val();
                         var login_password = $("#password").val();
                         var error = false;
-                        var arr=[];
+                        var arr = [];
 
                         $(".valid").remove();
                         $("input").keydown(function () {
@@ -158,14 +162,14 @@ $(document).ready(function () {
                         }
                         var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/login/index/index';
 
-                        if(error){
+                        if (error) {
                                 return false;
-                        }else{
-                               
-                               var response = ApiCall(arr,url);
-                               if(response){
-                                   window.location.href = "http://localhost:3000/admindashboard";
-                               }
+                        } else {
+
+                                var response = ApiCall(arr, url);
+                                if (response) {
+                                        window.location.href = "http://localhost:3000/admindashboard";
+                                }
                         }
                 }),
 
@@ -173,69 +177,66 @@ $(document).ready(function () {
                 // ForgotPassword validation
                 $(document).on('click', "#reset", function (e) {
                         e.preventDefault();
-                        var forgotpswd_email = $("#forgotpswd_email").val();
-                        var reg_email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                        alert("sdad");
+                        var new_pass = $("#new_pass").val();
+                        var con_pass = $("#con_pass").val();
+                        var arr = [];
+                        arr['email'] = 'satrixsaas@gmail.com';
+                        arr['new_password'] = new_pass;
+                        arr['confirm_password'] = con_pass;
+                        error = false;
 
-                        $(".valid").remove();
-                        $("input").keydown(function () {
-                                $("input").removeClass("input_focus");
-                                $(".valid").remove();
-                        })
-
-                        $("input").click(function () {
-                                $("input").removeClass("input_focus");
-                                $(".valid").remove();
-                        })
-
-                        if (forgotpswd_email != "" && (forgotpswd_email.match(reg_email))) {
-                                $("#forgotpswd_email").after("<span class='valid validation-check'><i class='fa fa-check'></i>Reset Link Is Shared Check Email</span>");
-
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/login/reset/password';
+                        if(error){
+                                return false;
+                        }else{
+                               var response = ApiCall(arr,url);
+                               if(response){
+                                   window.location.href = "http://localhost:3000/admindashboard";
+                               }
                         }
-                        else {
-                                $("#forgotpswd_email").addClass("input_focus");
-                                $("#forgotpswd_email").after("<span class='valid validation-wrong'><i class='fas fa-exclamation-triangle'></i>Enter Valid Email</span>");
+                });
+                $(document).on('click', "#basic_detail", function (e) {
+
+
+                        e.preventDefault();
+                        var card = "employee";
+                        var name = $("#name").val();
+                        var com_email = $("#com_email").val();
+                        var hire_date = $("#hire_date").val();
+                        var title = $("#title").val();
+                        var department = $("#department").val();
+                        var manager = $("#manager").val();
+                        var salary = $("#salary").val();
+                        var location =$("#location").val();
+                        var error = false;
+                        var arr=[];
+                        arr['emp_type'] = card;
+                        arr['emp_name'] = name;
+                        arr['emp_email'] = com_email;
+                        arr['emp_hire_date'] = hire_date;
+                        arr['emp_post'] = title;
+                        arr['emp_dept'] = department;
+                        arr['mng_name'] = manager;
+                        arr['emp_salary'] = salary;
+                        arr['emp_location'] = location;
+        
+        
+                //         alert("123");
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/employee/index/index';
+        
+                // })
+                        if(error){
+                                return false;
+                        }else{
+        
+                               var response = ApiCall(arr,url);
+                               if(response){
+                                   window.location.href = "http://localhost:3000/admindashboard";
+                               }
                         }
-                })
-
-         //Employee Validation
-         
-         $(document).on('click', "#continue", function (e) {
-
-                e.preventDefault();
-                var card = "employee";
-                var name = $("#name").val();
-                var com_email = $("#com_email").val();
-                var hire_date = $("#hire_date").val();
-                var title = $("#title").val();
-                var department = $("#department").val();
-                var manager = $("#manager").val();
-                var salary = $("#salary").val();
-                var location =$("#location").val();
-                var error = false;
-                var arr=[];
-                arr['emp_type'] = card;
-                arr['emp_name'] = name;
-                arr['emp_email'] = com_email;
-                arr['emp_hire_date'] = hire_date;
-                arr['emp_post'] = title;
-                arr['emp_dept'] = department;
-                arr['mng_name'] = manager;
-                arr['emp_salary'] = salary;
-                arr['emp_location'] = location;
-
-
-                var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/employee/index/index';
-
-                if(error){
-                        return false;
-                }else{
-                       
-                       var response = ApiCall(arr,url);
-                       if(response){
-                           window.location.href = "http://localhost:3000/admindashboard";
-                       }
-                }
-        }),
+                });
+       
 
         $(".header-new-menu").on('click', 'li', function () {
                 $('li div').removeClass('show');
@@ -272,8 +273,68 @@ $(document).ready(function () {
 
         });
 
+
+        $(document).on('mouseenter','#dashboard',function(){
+                $('.submenu_dashboard').css('background-color','rgba(32, 33, 36, 0.059');
+        });
+
+        $(document).on('mouseleave','#dashboard',function(){
+                $('.submenu_dashboard').css('background-color','');
+        });
+
         
-            
+        // var count = 0;
+        // $(document).on('click', '#mobile_btn', function () {
+        //         // alert("hit");
+        //         count++;
+        //         if ($("html").hasClass("menu-opened") && count == 1) {
+        //                 alert(count);
+        //                 // $("html").addClass('menu-opened');
+        //                 $(".main-wrapper").addClass('slide-nav');
+        //                 $("#sidebar").show();
+        //         }
+        //         else {
+        //                 alert(count);
+        //                 $(".main-wrapper").toggleClass('slide-nav');
+        //                 count = 0;
+        //         }
+        // })
+
+        // $(document).on('click', '.submenu li a', function () {
+        //         //        alert("submenu li a");
+        //         if (count > 0) {
+        //                 // alert(count);
+        //                 $(".main-wrapper").removeClass("slide-nav");
+        //         }
+        //         count = 0;
+        // })
+
+
+        $('#editcred').on('show.bs.modal', function (e) {
+                $("#add_employee").removeClass("show");
+        })
+        $('#editcred').on('hide.bs.modal', function (e) {
+                $("#add_employee").addClass("show");
+        })
+        $(document).on('click', '#submit_editcred', function () {
+                $('#editcred').modal('toggle');
+        })
+
+
+
+        $(document).on('click', '.datetimepicker', function () {
+                $(".label").remove();
+        })
+
+        // $(document).on('click', '.selection', function () {
+        //         alert("click");
+        //         $(".select2-results").show();
+        // })
+        // $(document).on('mouseleave', '.selection', function () {
+        //         alert("leave");
+        //         $(".select2-results").hide();
+        // })
+
 });
 
 
