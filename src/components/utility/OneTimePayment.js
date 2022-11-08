@@ -13,12 +13,10 @@ import options from './Options'
 
 
 export default function OneTimePayment() {
-
     const optionArray2 = dropDownArray(options, "One_time_payment");
     return (
         <div>
             <div className="main-wrapper">
-
                 <AdminHeader />
                 <div className="sidebar" id="sidebar">
                     <div className="sidebar-inner slimscroll">
