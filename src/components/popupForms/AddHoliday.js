@@ -15,14 +15,14 @@ export default function AddHoliday(props) {
                 <form>
                     <div className="form-group">
                         <label>Holiday Name <span className="text-danger">*</span></label>
-                        <input className="form-control" type="text"/>
+                        <input className="form-control" id="name_holiday" type="text"/>
                     </div>
                     <div className="form-group">
                         <label>Holiday Date <span className="text-danger">*</span></label>
-                        <div className="cal-icon"><input className="form-control datetimepicker" type="text"/></div>
+                        <div className="cal-icon"><input className="form-control datetimepicker" id="holiday_date" type="text"/></div>
                     </div>
                     <div className="submit-section">
-                        <button className="btn btn-primary submit-btn">{props.submit}</button>
+                        <button className="btn btn-primary submit-btn" id={props.id}>{props.submit}</button>
                     </div>
                 </form>
             </div>

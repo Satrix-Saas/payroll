@@ -177,7 +177,6 @@ $(document).ready(function () {
                 // ForgotPassword validation
                 $(document).on('click', "#reset", function (e) {
                         e.preventDefault();
-                        alert("sdad");
                         var new_pass = $("#new_pass").val();
                         var con_pass = $("#con_pass").val();
                         var arr = [];
@@ -196,7 +195,9 @@ $(document).ready(function () {
                                }
                         }
                 });
-                $(document).on('click', "#basic_detail", function (e) {
+
+                // Employeeonboarding
+                $(document).on('click', "#add_emp", function (e) {
 
 
                         e.preventDefault();
@@ -236,7 +237,93 @@ $(document).ready(function () {
                                }
                         }
                 });
-       
+        // Basic details company
+                $(document).on('click', "#sub_btn", function (e) {
+                        e.preventDefault();
+                        var comname = $("#com_name").val();
+                        var brandname = $("#brand_name").val();
+                        var addr = $("#address").val();
+                        var states = $("#state").val();
+                        var pin = $("#pincode").val();
+                        var pannum = $("#pan_num").val();
+                        var tannum = $("#tan_num").val();
+                        var gstins = $("#gstin").val();
+
+                        var arr = [];
+                        arr['cmp_name'] = comname;
+                        arr['cmp_brand_name'] = brandname;
+                        arr['cmp_address'] = addr;
+                        arr['state'] = states;
+                        arr['pincode'] = pin;
+                        arr['pan_num'] = pannum;
+                        arr['tan_num'] = tannum;
+                        arr['gstin'] = gstins;
+                        error = false;
+
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/company/index/index';
+                        if(error){
+                                return false;
+                        }else{
+                                var response = ApiCall(arr,url);
+                                if(response){
+                                        window.location.href = "http://localhost:3000/admindashboard";
+                                }
+                        }
+                });
+       //Add holiday details
+                $(document).on('click', "#holiday_btn", function (e) {
+                        e.preventDefault();
+                        var holi_name = $("#name_holiday").val();
+                        var holi_date = $("#holiday_date").val();
+                        var arr = [];
+                        arr['holiday_name'] = holi_name;
+                        arr['holiday_date'] = holi_date;
+                        error = false;
+
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/employee/holiday/holiday';
+                        if(error){
+                                return false;
+                        }else{
+                        var response = ApiCall(arr,url);
+                        if(response){
+                                window.location.href = "http://localhost:3000/admindashboard";
+                        }
+                        }
+                });
+        // Leaves details
+                $(document).on('click', "#leave_btn", function (e) {
+                        e.preventDefault();
+                        var leavetype = $("#leave_type").val();
+                        var leavefrom = $("#leave_from").val();
+                        var fromto = $("#from_to").val();
+                        var numday = $("#num_day").val();
+                        var leaveremain = $("#leave_remain").val();
+                        var leavereason = $("#leave_reason").val();
+                        var arr = [];
+                        arr['emp_id'] = 10;
+                        arr['leave_name'] = leavetype;
+                        arr['from'] = leavefrom;
+                        arr['to'] = fromto;
+                        arr['no_of_day'] = numday;
+                        arr['reason'] = leaveremain;
+                        arr['status'] = leavereason;
+                        error = false;
+
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/leave/index/index';
+                        if(error){
+                                return false;
+                        }else{
+                        var response = ApiCall(arr,url);
+                        if(response){
+                                window.location.href = "http://localhost:3000/admindashboard";
+                        }
+                        }
+                });
+        
+
+
+
+
 
         $(".header-new-menu").on('click', 'li', function () {
                 $('li div').removeClass('show');

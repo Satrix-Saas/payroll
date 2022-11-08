@@ -31,29 +31,29 @@ export default function AddEditLeave(props) {
                             <div className="form-group">
                                 <label>From <span className="text-danger">*</span></label>
                                 <div className="cal-icon">
-                                    <input className="form-control datetimepicker" type="text"/>
+                                    <input className="form-control datetimepicker" id="leave_from"/>
                                 </div>
                             </div>
                             <div className="form-group">
                                 <label>To <span className="text-danger">*</span></label>
                                 <div className="cal-icon">
-                                    <input className="form-control datetimepicker" type="text"/>
+                                    <input className="form-control datetimepicker" id="from_to" />
                                 </div>
                             </div>
                             <div className="form-group">
                                 <label>Number of days <span className="text-danger">*</span></label>
-                                <input className="form-control" readOnly type="text"/>
+                                <input className="form-control" readOnly id="num_day" type="text"/>
                             </div>
                             <div className="form-group">
                                 <label>Remaining Leaves <span className="text-danger">*</span></label>
-                                <input className="form-control" readOnly  type="text"/>
+                                <input className="form-control" readOnly id="leave_remain" type="text"/>
                             </div>
                             <div className="form-group">
                                 <label>Leave Reason <span className="text-danger">*</span></label>
-                                <textarea rows="4" className="form-control"></textarea>
+                                <textarea rows="4" className="form-control" id="leave_reason"></textarea>
                             </div>
                             <div className="submit-section">
-                                <button className="btn btn-primary submit-btn">{props.submit}</button>
+                                <button className="btn btn-primary submit-btn"id={props.id}>{props.submit}</button>
                             </div>
                         </form>
                     </div>
