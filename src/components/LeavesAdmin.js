@@ -47,7 +47,7 @@ export default function LeavesAdmin() {
                         <Tablescontent />
                     </div>
                     <div id="add_leave" className="modal custom-modal fade" role="dialog">
-                        <AddEditLeave submit="Submit" action="Add Leave" />
+                        <AddEditLeave submit="Submit" id="leave_btn" action="Add Leave" />
                     </div>
                     <div id="edit_leave" className="modal custom-modal fade" role="dialog">
                         <AddEditLeave submit="Save" action="Edit Leave" />

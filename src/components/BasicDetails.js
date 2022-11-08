@@ -69,7 +69,7 @@ export default function BasicDetails() {
                                                     <Textfields label="Company TAN" mandatory="*" type="text" name="tan_num" id="tan_num" content="You can verify your PAN" links=" here." />
                                                     <Textfields label="Company GSTIN" mandatory="*" type="text" name="gstin" id="gstin" content="Enter a valid GSTIN to claim GST credit on our invoices." links=" Details" />
                                                     <div className="form-group text-center">
-                                                        <Link to="/employeeonboarding">  <button type="button" className="btn btn-primary account-btn" id="next">Next</button></Link>
+                                                        <button type="button" className="btn btn-primary account-btn" id="sub_btn">Submit</button>
                                                     </div>
                                                 </form>
                                             </div>

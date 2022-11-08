@@ -37,7 +37,7 @@ export default function HolidayTable() {
                             </div>
 
                             <div id="add_holiday" className="modal custom-modal fade" role="dialog">
-                                <AddHoliday submit="Submit" action="Add holiday" />
+                                <AddHoliday submit="Submit" id="holiday_btn" action="Add holiday" />
                             </div>
                             <div id="edit_holiday" className="modal custom-modal fade" role="dialog">
                                 <AddHoliday submit="Submit" action="Add holiday" />
