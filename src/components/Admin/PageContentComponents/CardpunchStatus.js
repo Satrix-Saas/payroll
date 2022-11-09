@@ -1,14 +1,16 @@
+
 import React from 'react'
 
 export default function CardpunchStatus(props) {
+	
 	return (
 		<div className="col-md-4">
 		<div className="card punch-status">
 			<div className="card-body">
-				<h5 className="card-title">Timesheet <small className="text-muted">{props.date}</small></h5>
+				<h5 className="card-title">Timesheet <small className="text-muted" id="punching_date">{props.date}</small></h5>
 				<div className="punch-det">
 					<h6>Punch In at</h6>
-					<p>{props.PunchinDateTime}</p>
+					<p id="punch_date_time">{props.PunchinDateTime}</p>
 				</div>
 				<div className="punch-info">
 					<div className="punch-hours">
@@ -16,7 +18,11 @@ export default function CardpunchStatus(props) {
 					</div>
 				</div>
 				<div className="punch-btn-section">
-					<button type="button" className="btn btn-primary punch-btn">Punch Out</button>
+				
+					<button type="button" className="btn btn-success bg-success punch-btn" id="punch_btn">Punch In</button>
+					
+				
+					<button type="button" className="btn btn-success bg-warning punch-btn" id="punchout_btn">Punch Out</button>
 				</div>
 				<div className="statistics">
 					<div className="row">

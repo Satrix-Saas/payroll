@@ -290,13 +290,28 @@ $(document).ready(function () {
                         }
                         }
                 });
-        // Leaves details
+                // Leaves details
+                //get number of date
+                $(document).on('mouseout', ".datetimepicker", function (e) {
+                        e.preventDefault();
+                        var leavefrom = $("#leave_from").val();
+                        var fromto = $("#from_to").val();
+                        if(leavefrom!=="" && fromto!==""){
+                                var dateLeaveFrom = moment(leavefrom, 'DD/MM/YYYY').toDate();
+                                var dateFromTo = moment(fromto,'DD/MM/YYYY').toDate();
+                                var diffInDay = Math.abs(Math.round((dateFromTo.getTime() - dateLeaveFrom.getTime())/ (86400000)));
+                                $("#num_day").val(diffInDay);  
+                                $("#leave_remain").val(0);
+                        }
+                });
                 $(document).on('click', "#leave_btn", function (e) {
                         e.preventDefault();
                         var leavetype = $("#leave_type").val();
                         var leavefrom = $("#leave_from").val();
                         var fromto = $("#from_to").val();
-                        var numday = $("#num_day").val();
+                        var leavefrom = leavefrom.split("/").reverse().join("-");
+                        var fromto = fromto.split("/").reverse().join("-");
+                        var numday = parseInt($("#num_day").val());
                         var leaveremain = $("#leave_remain").val();
                         var leavereason = $("#leave_reason").val();
                         var arr = [];
@@ -305,10 +320,11 @@ $(document).ready(function () {
                         arr['from'] = leavefrom;
                         arr['to'] = fromto;
                         arr['no_of_day'] = numday;
-                        arr['reason'] = leaveremain;
-                        arr['status'] = leavereason;
+                        arr['remaining_leave'] = leaveremain;
+                        arr['reason'] = leavereason;
+                        // console.log(moment());
                         error = false;
-
+                        
                         var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/leave/index/index';
                         if(error){
                                 return false;
@@ -319,8 +335,67 @@ $(document).ready(function () {
                         }
                         }
                 });
-        
+        // Department details
+                $(document).on('click', "#depSbtn", function (e) {
+                        e.preventDefault();
+                        var dpt_name = $("#dept_name").val();
+                        var arr = [];
+                        arr['dept_name'] = dpt_name;
+                        error = false;
 
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/company/department/department';
+                        if(error){
+                                return false;
+                        }else{
+                        var response = ApiCall(arr,url);
+                        if(response){
+                                window.location.href = "http://localhost:3000/admindashboard";
+                        }
+                        }
+                });
+        // Attendance details punching 
+                $(document).on('click', "#punch_btn", function (e) {
+                        e.preventDefault();
+                        var pun_date = $("#punching_date").text();
+                         var new_date_time = $("#punch_date_time").text();
+                        var dt = new Date();
+                        var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+
+                        var arr = [];
+                        arr ['punch_date'] = pun_date;
+                        arr ['punch_In'] = time;
+                        error = false;
+
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/attendance/index/index';
+                        if(error){
+                                return false;
+                        }else{
+                        var response = ApiCall(arr,url);
+                        if(response){
+                                window.location.href = "http://localhost:3000/admindashboard";
+                        }
+                        }
+                });
+    //punching out
+    $(document).on('click', "#punchout_btn", function (e) {
+        e.preventDefault();
+        var dt = new Date();
+        var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+
+        var arr = [];
+        arr ['punch_out'] = time;
+        error = false;
+
+        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/attendance/index/index';
+        if(error){
+                return false;
+        }else{
+        var response = ApiCall(arr,url);
+        if(response){
+                window.location.href = "http://localhost:3000/admindashboard";
+        }
+        }
+});
 
 
 

@@ -33,7 +33,7 @@ export default function AttendanceEmployee() {
                             </div>
                         </div>
                         <div className='row'>
-                            <CardpunchStatus date="11 Mar 2019" PunchinDateTime="Wed, 11th Mar 2019 10.00 AM" punchhrs="3.45 hrs" breaktimehrs="1.21 hrs" overtimehrs="3 hrs" />
+                            <CardpunchStatus date={(new Date()).toISOString().split('T')[0].split("-").reverse().join("-")} PunchinDateTime={Date()} punchhrs="3.45 hrs" breaktimehrs="1.21 hrs" overtimehrs="3 hrs" />
                             <CardattStats />
                             <PunchActivity />
                         </div>
