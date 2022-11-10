@@ -195,7 +195,6 @@ $(document).ready(function () {
                                }
                         }
                 });
-
                 // Employeeonboarding
                 $(document).on('click', "#add_emp", function (e) {
 
@@ -357,12 +356,14 @@ $(document).ready(function () {
                 $(document).on('click', "#punch_btn", function (e) {
                         e.preventDefault();
                         var pun_date = $("#punching_date").text();
+                        var leavefrom = pun_date.split("-").reverse().join("-");
                          var new_date_time = $("#punch_date_time").text();
                         var dt = new Date();
                         var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
 
                         var arr = [];
-                        arr ['punch_date'] = pun_date;
+                        arr ['emp_id'] = 10;
+                        arr ['punch_date'] = leavefrom;
                         arr ['punch_In'] = time;
                         error = false;
 
@@ -377,25 +378,28 @@ $(document).ready(function () {
                         }
                 });
     //punching out
-    $(document).on('click', "#punchout_btn", function (e) {
-        e.preventDefault();
-        var dt = new Date();
-        var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+                $(document).on('click', "#punchout_btn", function (e) {
+                        e.preventDefault();
+                        var pun_date = $("#punching_date").text();
+                        var leavefrom = pun_date.split("-").reverse().join("-");
+                        var dt = new Date();
+                        var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
 
-        var arr = [];
-        arr ['punch_out'] = time;
-        error = false;
+                        var arr = [];
+                        arr ['punch_date'] = leavefrom;
+                        arr ['punch_out'] = time;
+                        error = false;
 
-        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/attendance/index/index';
-        if(error){
-                return false;
-        }else{
-        var response = ApiCall(arr,url);
-        if(response){
-                window.location.href = "http://localhost:3000/admindashboard";
-        }
-        }
-});
+                        var url = 'http://192.168.0.100:8074/Satrix_Saas2/pub/attendance/index/index';
+                        if(error){
+                                return false;
+                        }else{
+                        var response = ApiCall(arr,url);
+                        if(response){
+                                window.location.href = "http://localhost:3000/admindashboard";
+                        }
+                        }
+                });
 
 
 
@@ -415,10 +419,9 @@ $(document).ready(function () {
                         if (arr[i] == field_id) {
                                 $('#' + field_id).addClass(".focus");
                         } else {
-                                $('#' + arr[i]).removeClass(".focus")
+                                $('#' + arr[i]).removeClass(".focus");
                         }
                 }
-
         });
 
         $(document).on('click', '.submenu', function () {
@@ -430,21 +433,16 @@ $(document).ready(function () {
                         $(this).find('a').toggleClass('active');
                         $('.submenu').find('ul').css('display', 'none');
                         $(this).find('ul').css('display', 'block');
-
                 }
-
         });
-
 
         $(document).on('mouseenter','#dashboard',function(){
                 $('.submenu_dashboard').css('background-color','rgba(32, 33, 36, 0.059');
         });
-
         $(document).on('mouseleave','#dashboard',function(){
                 $('.submenu_dashboard').css('background-color','');
         });
 
-        
         // var count = 0;
         // $(document).on('click', '#mobile_btn', function () {
         //         // alert("hit");
@@ -471,7 +469,6 @@ $(document).ready(function () {
         //         count = 0;
         // })
 
-
         $('#editcred').on('show.bs.modal', function (e) {
                 $("#add_employee").removeClass("show");
         })
@@ -481,8 +478,6 @@ $(document).ready(function () {
         $(document).on('click', '#submit_editcred', function () {
                 $('#editcred').modal('toggle');
         })
-
-
 
         $(document).on('click', '.datetimepicker', function () {
                 $(".label").remove();
