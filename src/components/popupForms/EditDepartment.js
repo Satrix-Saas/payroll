@@ -18,7 +18,7 @@ export default  function EditDepartment() {
 								<form>
 									<div className="form-group">
 										<label>Department Name <span className="text-danger">*</span></label>
-										<input className="form-control" type="text"/>
+										<input className="form-control" id="dept_name" type="text"/>
 									</div>
 									<div className="submit-section">
 										<button className="btn btn-primary cancel-btn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
